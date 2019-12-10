@@ -58,6 +58,7 @@ export default class AnxietyRating extends Component {
                 "description": this.state.description
             }
             APIManager.post("baselineAnxietyScores", anxiety)
+            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/inteventions") : null)
         } else {
             const anxiety = {
                 "userId": localStorage.getItem("activeUser"),
@@ -67,6 +68,7 @@ export default class AnxietyRating extends Component {
                 "description": this.state.description
             }
             APIManager.post("userInterventions", anxiety)
+            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/inteventions") : null)
         }
     }
 
@@ -98,16 +100,6 @@ export default class AnxietyRating extends Component {
                     {this.state.interventions.map(intervention => 
                         <option key={intervention.id} value={intervention.id}>{intervention.name}</option>
                     )}
-                    {/* <option value="1">Deep Breathing</option>
-                    <option value="2">Exercise</option>
-                    <option value="3">Feel Feelings</option>
-                    <option value="4">Gratitude</option>
-                    <option value="5">Grounding</option>
-                    <option value="6">Comforting Inner Child</option>
-                    <option value="7">Journaling</option>
-                    <option value="8">Meditation</option>
-                    <option value="9">Physical Touch</option>
-                    <option value="10">Social Support</option> */}
                 </select>
                 </div>
                 <button
