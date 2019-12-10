@@ -1,0 +1,165 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Melody",
+      "email": "melliemusee@gmail.com",
+      "password": "None-ya'bizness"
+    },
+    {
+      "id": 2,
+      "username": "Midzie",
+      "email": "cuddlebug@gmail.com",
+      "password": "Kitty-High-Five"
+    }
+  ],
+  "baselineAnxietyScores": [
+    {
+      "id": 1,
+      "anxietyScore": 8,
+      "timestamp": "2019-12-04T04:34:59.063Z",
+      "userId": 1,
+      "description": "Freaking out about capstone"
+    },
+    {
+      "id": 2,
+      "anxietyScore": 9,
+      "timestamp": "2019-12-09T04:34:59.063Z",
+      "userId": 1,
+      "description": "Dealing with Dell"
+    },
+    {
+      "anxietyScore": "5",
+      "timestamp": "2019-12-10T17:26:42.169Z",
+      "userId": null,
+      "description": "",
+      "id": 3
+    }
+  ],
+  "interventions": [
+    {
+      "id": 1,
+      "name": "Deep Breathing",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 2,
+      "name": "Exercise",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 3,
+      "name": "Feel Feelings",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 4,
+      "name": "Gratitude",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 5,
+      "name": "Grounding",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 6,
+      "name": "Comforting Inner Child",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 7,
+      "name": "Journaling",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 8,
+      "name": "Meditation",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 9,
+      "name": "Physical Touch",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    },
+    {
+      "id": 10,
+      "name": "Social Support",
+      "timestamp": "",
+      "completed": "",
+      "description": "",
+      "icon": "",
+      "instructions": ""
+    }
+  ],
+  "userInterventions": [
+    {
+      "id": 1,
+      "userId": 10,
+      "interventionId": 1,
+      "timestamp": "",
+      "anxietyScore": 2
+    }
+  ],
+  "journals": [
+    {
+      "id": 1,
+      "userId": 1,
+      "entry": ""
+    }
+  ],
+  "prompts": [
+    {
+      "id": 1,
+      "prompt": "I am feeling scared because:"
+    },
+    {
+      "id": 2,
+      "prompt": "Can I control the outcome of this situation?"
+    },
+    {
+      "id": 3,
+      "prompt": "Is it ok if things don't go how I had envisioned? What would be the consequence? Is that realistic, and even if that did come to pass is that something I could accept if I had to?"
+    },
+    {
+      "id": 4,
+      "prompt": "What is an action I can take that will help me acheive my goal?"
+    }
+  ]
+}
