@@ -9,8 +9,8 @@ export default {
         return fetch(`${baseUrl}/${module}/${id}`)
         .then(data => data.json())
     },
-    getBy(module, modifier, modifier2) {
-        return fetch(`${baseUrl}/${module}?${modifier}&?${modifier2}`)
+    getUserBy(module, username, password) {
+        return fetch(`${baseUrl}/${module}?username=${username}&?password=${password}`)
         .then(data => data.json())
     },
     getWith(module, id, secondModule) {

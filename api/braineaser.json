@@ -27,6 +27,13 @@
       "timestamp": "2019-12-09T04:34:59.063Z",
       "userId": 1,
       "description": "Dealing with Dell"
+    },
+    {
+      "anxietyScore": "5",
+      "timestamp": "2019-12-10T17:26:42.169Z",
+      "userId": null,
+      "description": "",
+      "id": 3
     }
   ],
   "interventions": [

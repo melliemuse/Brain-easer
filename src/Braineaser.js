@@ -5,18 +5,31 @@ import ApplicationViews from './components/ApplicationViews'
 
 class Braineaser extends Component {
     state = {
-        users: []
+        users: [],
+        user: false
     }
 
-componentDidMount() {
+isAuthenticated = () => localStorage.getItem("activeUser") !== null
 
+componentDidMount() {
+    this.setState({
+        user: this.isAuthenticated()
+    })
+}
+
+setUser = (authObj) => {
+    localStorage.setItem("activeUser", JSON.stringify(authObj))
+    this.setState({
+        user: this.isAuthenticated
+    })
 }
 
 render() {
     return(
         <>
-        <NavBar />
-        <ApplicationViews/>
+        <NavBar user={this.state.user}/>
+        <ApplicationViews user={this.state.user}
+        setUser={this.setUser}/>
         </>
     )
 }

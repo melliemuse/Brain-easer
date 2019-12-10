@@ -14,7 +14,7 @@ export default class AnxietyRating extends Component {
     }
 
     componentDidMount(event) {
-        APIManager.getAll(this.state.interventions)
+        APIManager.getAll("interventions")
         .then(interventions => {
             this.setState({
                 interventions: interventions
