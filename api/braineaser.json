@@ -34,6 +34,20 @@
       "userId": null,
       "description": "",
       "id": 3
+    },
+    {
+      "anxietyScore": "3",
+      "timestamp": "2019-12-10T18:48:38.064Z",
+      "userId": "2",
+      "description": "",
+      "id": 4
+    },
+    {
+      "anxietyScore": "10",
+      "timestamp": "2019-12-10T18:49:22.822Z",
+      "userId": "2",
+      "description": "Omg!!",
+      "id": 5
     }
   ],
   "interventions": [
@@ -131,10 +145,27 @@
   "userInterventions": [
     {
       "id": 1,
-      "userId": 10,
+      "userId": 1,
       "interventionId": 1,
       "timestamp": "",
-      "anxietyScore": 2
+      "anxietyScore": 2,
+      "description": ""
+    },
+    {
+      "userId": "2",
+      "interventionId": "10",
+      "timestamp": "2019-12-10T18:49:57.958Z",
+      "anxietyScore": "2",
+      "id": 2,
+      "description": ""
+    },
+    {
+      "userId": "2",
+      "interventionId": "10",
+      "timestamp": "2019-12-10T18:51:49.766Z",
+      "anxietyScore": "3",
+      "description": "Yay for friends",
+      "id": 3
     }
   ],
   "journals": [
