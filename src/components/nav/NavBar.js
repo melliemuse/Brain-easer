@@ -9,9 +9,7 @@ render() {
         <>
         <nav>
             <ul>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/'></Link></li>
-                <li><Link to='/'></Link></li>
+                <li><Link to='/'>Rate Anxiety</Link></li>
             </ul>
         </nav>
         </>
