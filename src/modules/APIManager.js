@@ -1,12 +1,16 @@
-baseUrl = `http://localhost:5002`
+const baseUrl = `http://localhost:5002`
 
-export default apiManager = {
+export default {
     getAll(module) {
         return fetch(`${baseUrl}/${module}`)
         .then(data => data.json())
     },
     get(module, id) {
         return fetch(`${baseUrl}/${module}/${id}`)
+        .then(data => data.json())
+    },
+    getBy(module, modifier, modifier2) {
+        return fetch(`${baseUrl}/${module}?${modifier}&?${modifier2}`)
         .then(data => data.json())
     },
     getWith(module, id, secondModule) {
