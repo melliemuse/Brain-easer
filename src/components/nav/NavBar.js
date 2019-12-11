@@ -9,7 +9,12 @@ render() {
         <>
         <nav>
             <ul>
+                {this.props.user ?
+                <>
                 <li><Link to='/'>Rate Anxiety</Link></li>
+                <li><Link to='/interventions'>Interventions</Link></li>
+                </>
+                : null}
             </ul>
         </nav>
         </>
