@@ -9,7 +9,6 @@ export default class AnxietyRating extends Component {
         interventionId: "",
         addDescriptionField: true,
         addSelfCareField: true,
-        baselineAnxietyScores: "baselineAnxietyScores",
         interventions: []
     }
 
@@ -33,7 +32,7 @@ export default class AnxietyRating extends Component {
         let buttons = []
         for (let i = 0; i < 10; i++) {
             buttons.push(
-                <button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i}>{i + 1}</button>
+                <button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i+1}>{i + 1}</button>
             )
         }
         return buttons
@@ -54,18 +53,21 @@ export default class AnxietyRating extends Component {
             const anxiety = {
                 "anxietyScore": this.state.anxietyScore,
                 "timestamp": new Date(),
-                "userId": localStorage.getItem("activeUser"),
+                "userId": parseInt(localStorage.getItem("activeUser")),
                 "description": this.state.description
             }
-            APIManager.post(this.state.baselineAnxietyScores, anxiety)
+            APIManager.post("baselineAnxietyScores", anxiety)
+            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : null)
         } else {
             const anxiety = {
-                "userId": localStorage.getItem("activeUser"),
-                // "interventionId": ,
+                "userId": parseInt(localStorage.getItem("activeUser")),
+                "interventionId": this.state.interventionId,
                 "timestamp": new Date(),
-                "anxietyScore": this.state.anxietyScore
+                "anxietyScore": this.state.anxietyScore,
+                "description": this.state.description
             }
-            // APIManager.post(userInterventions, anxiety)
+            APIManager.post("userInterventions", anxiety)
+            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : null)
         }
     }
 
@@ -82,7 +84,9 @@ export default class AnxietyRating extends Component {
                 </div>
                 <div>
                 <input
+                id="description"
                     hidden={this.state.addDescriptionField}
+                    onChange={this.handleFieldChange}
                 />
                 </div>
                 <button
@@ -91,17 +95,10 @@ export default class AnxietyRating extends Component {
                 >Log Self-Care</button>
                 <div>
                     
-                <select name="interventionId" hidden={this.state.addSelfCareField}>
-                    <option value="1">Deep Breathing</option>
-                    <option value="2">Exercise</option>
-                    <option value="3">Feel Feelings</option>
-                    <option value="4">Gratitude</option>
-                    <option value="5">Grounding</option>
-                    <option value="6">Comforting Inner Child</option>
-                    <option value="7">Journaling</option>
-                    <option value="8">Meditation</option>
-                    <option value="9">Physical Touch</option>
-                    <option value="10">Social Support</option>
+                <select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
+                    {this.state.interventions.map(intervention => 
+                        <option key={intervention.id} value={intervention.id}>{intervention.name}</option>
+                    )}
                 </select>
                 </div>
                 <button

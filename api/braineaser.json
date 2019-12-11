@@ -34,6 +34,20 @@
       "userId": null,
       "description": "",
       "id": 3
+    },
+    {
+      "anxietyScore": "3",
+      "timestamp": "2019-12-10T18:48:38.064Z",
+      "userId": "2",
+      "description": "",
+      "id": 4
+    },
+    {
+      "anxietyScore": "4",
+      "timestamp": "2019-12-11T00:46:52.590Z",
+      "userId": "2",
+      "description": "",
+      "id": 5
     }
   ],
   "interventions": [
@@ -96,9 +110,9 @@
       "name": "Journaling",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "This a description of journaling",
       "icon": "",
-      "instructions": ""
+      "instructions": "Here's how to journal"
     },
     {
       "id": 8,
@@ -131,10 +145,59 @@
   "userInterventions": [
     {
       "id": 1,
-      "userId": 10,
+      "userId": 1,
       "interventionId": 1,
       "timestamp": "",
-      "anxietyScore": 2
+      "anxietyScore": 2,
+      "description": ""
+    },
+    {
+      "userId": "2",
+      "interventionId": "10",
+      "timestamp": "2019-12-10T18:49:57.958Z",
+      "anxietyScore": "2",
+      "id": 2,
+      "description": ""
+    },
+    {
+      "userId": "2",
+      "interventionId": "10",
+      "timestamp": "2019-12-10T18:51:49.766Z",
+      "anxietyScore": "3",
+      "description": "Yay for friends",
+      "id": 3
+    },
+    {
+      "userId": "2",
+      "interventionId": "9",
+      "timestamp": "2019-12-11T00:43:39.893Z",
+      "anxietyScore": "3",
+      "description": "",
+      "id": 4
+    },
+    {
+      "userId": "2",
+      "interventionId": "9",
+      "timestamp": "2019-12-11T00:44:59.775Z",
+      "anxietyScore": "6",
+      "description": "Worried about running out of wet food",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-11T01:59:15.438Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "interventionId": "8",
+      "timestamp": "2019-12-11T02:02:15.573Z",
+      "anxietyScore": "4",
+      "description": "Just meditated",
+      "id": 7
     }
   ],
   "journals": [
