@@ -22,7 +22,6 @@ export default class AnxietyRating extends Component {
     }
 
     handleFieldChange = event => {
-        // debugger
         event.preventDefault()
         const stateToChange = {}
         stateToChange[event.target.id] = event.target.value
@@ -33,7 +32,7 @@ export default class AnxietyRating extends Component {
         let buttons = []
         for (let i = 0; i < 10; i++) {
             buttons.push(
-                <button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i}>{i + 1}</button>
+                <button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i+1}>{i + 1}</button>
             )
         }
         return buttons
@@ -54,14 +53,14 @@ export default class AnxietyRating extends Component {
             const anxiety = {
                 "anxietyScore": this.state.anxietyScore,
                 "timestamp": new Date(),
-                "userId": localStorage.getItem("activeUser"),
+                "userId": parseInt(localStorage.getItem("activeUser")),
                 "description": this.state.description
             }
             APIManager.post("baselineAnxietyScores", anxiety)
             .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : null)
         } else {
             const anxiety = {
-                "userId": localStorage.getItem("activeUser"),
+                "userId": parseInt(localStorage.getItem("activeUser")),
                 "interventionId": this.state.interventionId,
                 "timestamp": new Date(),
                 "anxietyScore": this.state.anxietyScore,

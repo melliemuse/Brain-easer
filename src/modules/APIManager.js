@@ -1,24 +1,24 @@
 const baseUrl = `http://localhost:5002`
 
 export default {
-    getAll(module) {
-        return fetch(`${baseUrl}/${module}`)
+    getAll(endpoint) {
+        return fetch(`${baseUrl}/${endpoint}`)
         .then(data => data.json())
     },
-    get(module, id) {
-        return fetch(`${baseUrl}/${module}/${id}`)
+    get(endpoint, id) {
+        return fetch(`${baseUrl}/${endpoint}/${id}`)
         .then(data => data.json())
     },
-    getUserBy(module, username, password) {
-        return fetch(`${baseUrl}/${module}?username=${username}&?password=${password}`)
+    getUserBy(endpoint, username, password) {
+        return fetch(`${baseUrl}/${endpoint}?username=${username}&?password=${password}`)
         .then(data => data.json())
     },
-    getWith(module, id, secondModule) {
-        return fetch(`${baseUrl}/${module}/${id}/_?embed=${secondModule}`)
+    getWith(endpoint, id, secondEndpoint) {
+        return fetch(`${baseUrl}/${endpoint}/${id}/_?embed=${secondEndpoint}`)
         .then(data => data.json())
     },
-    post(module, newItem) {
-        return fetch(`${baseUrl}/${module}`, {
+    post(endpoint, newItem) {
+        return fetch(`${baseUrl}/${endpoint}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -27,8 +27,8 @@ export default {
         }
         ).then(data => data.json())
     },
-    update(module, editedItem) {
-        return fetch(`${baseUrl}/${module}/${editedItem.id}`, {
+    update(endpoint, editedItem) {
+        return fetch(`${baseUrl}/${endpoint}/${editedItem.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -37,8 +37,8 @@ export default {
         }
         ).then(data => data.json())
     },
-    delete(module) {
-        return fetch(`${baseUrl}/${module}`, {
+    delete(endpoint) {
+        return fetch(`${baseUrl}/${endpoint}`, {
             method: "DELETE"
         }
         ).then(data => data.json())

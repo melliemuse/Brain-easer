@@ -110,9 +110,9 @@
       "name": "Journaling",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "This a description of journaling",
       "icon": "",
-      "instructions": ""
+      "instructions": "Here's how to journal"
     },
     {
       "id": 8,
@@ -182,6 +182,22 @@
       "anxietyScore": "6",
       "description": "Worried about running out of wet food",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-11T01:59:15.438Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "interventionId": "8",
+      "timestamp": "2019-12-11T02:02:15.573Z",
+      "anxietyScore": "4",
+      "description": "Just meditated",
+      "id": 7
     }
   ],
   "journals": [
