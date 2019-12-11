@@ -16,9 +16,10 @@ export default class Interventions extends Component {
             })
     }
 
+    
+
     render() {
         console.log(this.state.interventions)
-        debugger
         return (
             <>
                 <div className="intervention-cards">
@@ -28,7 +29,8 @@ export default class Interventions extends Component {
                         intervention={intervention}
                         {...this.props}
                     />
-                    )}
+                    )
+                    }
             </div>
             </>
         )

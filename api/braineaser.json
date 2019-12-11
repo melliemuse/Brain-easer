@@ -43,10 +43,10 @@
       "id": 4
     },
     {
-      "anxietyScore": "10",
-      "timestamp": "2019-12-10T18:49:22.822Z",
+      "anxietyScore": "4",
+      "timestamp": "2019-12-11T00:46:52.590Z",
       "userId": "2",
-      "description": "Omg!!",
+      "description": "",
       "id": 5
     }
   ],
@@ -166,6 +166,22 @@
       "anxietyScore": "3",
       "description": "Yay for friends",
       "id": 3
+    },
+    {
+      "userId": "2",
+      "interventionId": "9",
+      "timestamp": "2019-12-11T00:43:39.893Z",
+      "anxietyScore": "3",
+      "description": "",
+      "id": 4
+    },
+    {
+      "userId": "2",
+      "interventionId": "9",
+      "timestamp": "2019-12-11T00:44:59.775Z",
+      "anxietyScore": "6",
+      "description": "Worried about running out of wet food",
+      "id": 5
     }
   ],
   "journals": [

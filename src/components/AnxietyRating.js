@@ -58,7 +58,7 @@ export default class AnxietyRating extends Component {
                 "description": this.state.description
             }
             APIManager.post("baselineAnxietyScores", anxiety)
-            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/inteventions") : null)
+            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : null)
         } else {
             const anxiety = {
                 "userId": localStorage.getItem("activeUser"),
@@ -68,7 +68,7 @@ export default class AnxietyRating extends Component {
                 "description": this.state.description
             }
             APIManager.post("userInterventions", anxiety)
-            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/inteventions") : null)
+            .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : null)
         }
     }
 
