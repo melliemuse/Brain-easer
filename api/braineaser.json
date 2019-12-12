@@ -29,32 +29,39 @@
       "description": "Dealing with Dell"
     },
     {
-      "anxietyScore": "5",
+      "anxietyScore": 5,
       "timestamp": "2019-12-10T17:26:42.169Z",
-      "userId": null,
+      "userId": 1,
       "description": "",
       "id": 3
     },
     {
-      "anxietyScore": "3",
+      "anxietyScore": 3,
       "timestamp": "2019-12-10T18:48:38.064Z",
-      "userId": "2",
+      "userId": 2,
       "description": "",
       "id": 4
     },
     {
-      "anxietyScore": "4",
+      "anxietyScore": 4,
       "timestamp": "2019-12-11T00:46:52.590Z",
-      "userId": "2",
+      "userId": 2,
       "description": "",
       "id": 5
     },
     {
-      "anxietyScore": "10",
+      "anxietyScore": 10,
       "timestamp": "2019-12-11T05:48:52.132Z",
       "userId": 1,
       "description": "Stressed out about capstone",
       "id": 6
+    },
+    {
+      "anxietyScore": 5,
+      "timestamp": "2019-12-12T20:01:07.015Z",
+      "userId": 1,
+      "description": "",
+      "id": 7
     }
   ],
   "interventions": [
@@ -159,34 +166,34 @@
       "description": ""
     },
     {
-      "userId": "2",
-      "interventionId": "10",
+      "userId": 2,
+      "interventionId": 10,
       "timestamp": "2019-12-10T18:49:57.958Z",
-      "anxietyScore": "2",
+      "anxietyScore": 2,
       "id": 2,
       "description": ""
     },
     {
-      "userId": "2",
-      "interventionId": "10",
+      "userId": 2,
+      "interventionId": 10,
       "timestamp": "2019-12-10T18:51:49.766Z",
-      "anxietyScore": "3",
+      "anxietyScore": 3,
       "description": "Yay for friends",
       "id": 3
     },
     {
-      "userId": "2",
-      "interventionId": "9",
+      "userId": 2,
+      "interventionId": 9,
       "timestamp": "2019-12-11T00:43:39.893Z",
-      "anxietyScore": "3",
+      "anxietyScore": 3,
       "description": "",
       "id": 4
     },
     {
-      "userId": "2",
-      "interventionId": "9",
+      "userId": 2,
+      "interventionId": 9,
       "timestamp": "2019-12-11T00:44:59.775Z",
-      "anxietyScore": "6",
+      "anxietyScore": 6,
       "description": "Worried about running out of wet food",
       "id": 5
     },
@@ -199,28 +206,36 @@
       "id": 6
     },
     {
-      "userId": "1",
-      "interventionId": "8",
+      "userId": 1,
+      "interventionId": 8,
       "timestamp": "2019-12-11T02:02:15.573Z",
-      "anxietyScore": "4",
+      "anxietyScore": 4,
       "description": "Just meditated",
       "id": 7
     },
     {
       "userId": 1,
-      "interventionId": "8",
+      "interventionId": 8,
       "timestamp": "2019-12-11T15:24:57.912Z",
-      "anxietyScore": "7",
+      "anxietyScore": 7,
       "description": "Stressed out about capstone",
       "id": 8
     },
     {
       "userId": 1,
-      "interventionId": "4",
+      "interventionId": 4,
       "timestamp": "2019-12-11T15:26:02.925Z",
-      "anxietyScore": "3",
+      "anxietyScore": 3,
       "description": "",
       "id": 9
+    },
+    {
+      "userId": 1,
+      "interventionId": 2,
+      "timestamp": "2019-12-12T19:59:37.688Z",
+      "anxietyScore": 3,
+      "description": "",
+      "id": 10
     }
   ],
   "journals": [
@@ -237,13 +252,6 @@
       "userId": 1,
       "promptId": 4,
       "id": 3
-    },
-    {
-      "entry": "Yes, I will be ok.",
-      "timestamp": "2019-12-11T21:31:18.664Z",
-      "userId": 1,
-      "promptId": 3,
-      "id": 4
     },
     {
       "entry": "Do loving kindness meditation",

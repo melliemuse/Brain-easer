@@ -41,8 +41,8 @@ export default {
         }
         ).then(data => data.json())
     },
-    delete(endpoint) {
-        return fetch(`${baseUrl}/${endpoint}`, {
+    delete(endpoint, id) {
+        return fetch(`${baseUrl}/${endpoint}/${id}`, {
             method: "DELETE"
         }
         ).then(data => data.json())

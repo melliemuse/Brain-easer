@@ -18,7 +18,10 @@ export default class JournalCard extends Component {
                         <div key={journal.id}>
                             <p>{journal.entry}</p>
                             <p>{journal.timestamp}</p>
-                            <button>Delete</button>
+                            <p>{journal.id}</p>
+                            <button
+                            onClick={()=> this.props.handleDelete(journal.id)}
+                            >Delete</button>
                             <button>Edit</button>
                             </div>
                             )}

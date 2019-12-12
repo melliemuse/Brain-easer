@@ -7,8 +7,18 @@ export default class JournalList extends Component {
         journals: []
     }
     componentDidMount() {
-        // debugger
+        debugger
         const currentUser = localStorage.getItem("activeUser")
+        APIManager.getPromptsEntriesByUser("prompts", "journals", currentUser)
+            .then(journals => {
+                console.log(journals)
+                this.setState({ journals: journals })
+            })
+    }
+    handleDelete = id => {
+        debugger
+        const currentUser = localStorage.getItem("activeUser")
+        APIManager.delete("journals", id)
         APIManager.getPromptsEntriesByUser("prompts", "journals", currentUser)
             .then(journals => {
                 console.log(journals)
@@ -27,6 +37,7 @@ export default class JournalList extends Component {
                         <JournalCard
                             key={journal.id}
                             journals={journal}
+                            handleDelete={this.handleDelete}
                             {...this.props}
                         />)}
                 </div>
