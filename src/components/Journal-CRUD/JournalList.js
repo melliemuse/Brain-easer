@@ -7,7 +7,7 @@ export default class JournalList extends Component {
         journals: []
     }
     componentDidMount() {
-        debugger
+        
         const currentUser = localStorage.getItem("activeUser")
         APIManager.getPromptsEntriesByUser("prompts", "journals", currentUser)
             .then(journals => {
@@ -16,18 +16,17 @@ export default class JournalList extends Component {
             })
     }
     handleDelete = id => {
-        debugger
+        
         const currentUser = localStorage.getItem("activeUser")
         APIManager.delete("journals", id)
-        APIManager.getPromptsEntriesByUser("prompts", "journals", currentUser)
+        .then(() => APIManager.getPromptsEntriesByUser("prompts", "journals", currentUser)
             .then(journals => {
-                console.log(journals)
+                console.log("journals post-delete", journals)
                 this.setState({ journals: journals })
-            })
+            }))
     }
 
     render() {
-        // console.log("Jisie", this.state.journals)
         console.log(this.state.journals[0])
         return (
             <>
