@@ -16,7 +16,8 @@ render() {
                 <>
                 <li><Link to='/'>Rate Anxiety</Link></li>
                 <li><Link to='/interventions'>Interventions</Link></li>
-                <li><Link to='/journal'>Journal</Link></li>
+                <li><Link to='/journal'>Create Journal Entry</Link></li>
+                <li><Link to='/journal/entries'>My Journal Entries</Link></li>
                 </>
                 : null}
             </ul>
