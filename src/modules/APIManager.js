@@ -13,6 +13,10 @@ export default {
         return fetch(`${baseUrl}/${endpoint}?username=${username}&?password=${password}`)
         .then(data => data.json())
     },
+    getPromptsEntriesByUser(parentEndpoint, childEndpoint, currentUserId) {
+        return fetch(`${baseUrl}/${parentEndpoint}?_embed=${childEndpoint}&userId=${currentUserId}`)
+        .then(data => data.json())
+    },
     getWith(endpoint, id, secondEndpoint) {
         return fetch(`${baseUrl}/${endpoint}/${id}/${secondEndpoint}`)
         .then(data => data.json())

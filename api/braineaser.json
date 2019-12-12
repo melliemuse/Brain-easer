@@ -225,12 +225,6 @@
   ],
   "journals": [
     {
-      "id": 1,
-      "userId": 1,
-      "entry": "",
-      "promptId": ""
-    },
-    {
       "entry": "It would feel good to let all that go",
       "timestamp": "2019-12-11T21:14:14.530Z",
       "userId": 1,

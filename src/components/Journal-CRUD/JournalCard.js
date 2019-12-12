@@ -7,8 +7,11 @@ render() {
     console.log(this.props)
     return (
         <>
-        <h3>{this.props.entries.entry.prompt}</h3>
-        <p>{this.props.entries.entry}</p>
+        <h3>{this.props.journals.prompt}</h3>
+        {/* {this.props.journals.journal.map(entry)
+        <p>{}</p> */}
+        <button>Delete</button>
+        <button>Edit</button> 
         </>
     )
 }
