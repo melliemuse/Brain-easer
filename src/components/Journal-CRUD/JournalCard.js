@@ -13,15 +13,15 @@ export default class JournalCard extends Component {
         // debugger
         return (
                 <div>
-                    <h5>{this.props.journals.prompt}</h5>
+                    <h4>{this.props.journals.prompt}</h4>
                     {this.props.journals.journals.map(journal =>
                         <div key={journal.id}>
                             <p>{journal.entry}</p>
                             <p>{journal.timestamp}</p>
+                            <button>Delete</button>
+                            <button>Edit</button>
                             </div>
                             )}
-                    <button>Delete</button>
-                    <button>Edit</button>
                 </div>
         )
     }
