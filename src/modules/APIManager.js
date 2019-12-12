@@ -14,7 +14,7 @@ export default {
         .then(data => data.json())
     },
     getWith(endpoint, id, secondEndpoint) {
-        return fetch(`${baseUrl}/${endpoint}/${id}/_?embed=${secondEndpoint}`)
+        return fetch(`${baseUrl}/${endpoint}?userId=${id}&?embed=${secondEndpoint}`)
         .then(data => data.json())
     },
     post(endpoint, newItem) {

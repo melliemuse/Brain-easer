@@ -236,6 +236,34 @@
       "userId": 1,
       "promptId": 2,
       "id": 2
+    },
+    {
+      "entry": "Do some loving kindness meditation",
+      "timestamp": "2019-12-11T21:27:27.250Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 3
+    },
+    {
+      "entry": "Yes, I will be ok.",
+      "timestamp": "2019-12-11T21:31:18.664Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 4
+    },
+    {
+      "entry": "Do loving kindness meditation",
+      "timestamp": "2019-12-11T21:54:46.363Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 5
+    },
+    {
+      "entry": "No, I guess not... But I'd like to be able to!",
+      "timestamp": "2019-12-11T22:08:31.540Z",
+      "userId": 1,
+      "promptId": 2,
+      "id": 6
     }
   ],
   "prompts": [

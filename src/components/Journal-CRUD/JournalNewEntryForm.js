@@ -48,7 +48,7 @@ createEntry = event => {
             promptId: this.state.randomPrompt.id
         }
         APIManager.post("journals", entry)
-        // .then()
+        .then(() => this.props.history.push("/journal/entries"))
     }
 
 }
