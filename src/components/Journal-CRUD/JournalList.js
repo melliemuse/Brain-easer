@@ -11,7 +11,7 @@ componentDidMount() {
     APIManager.getWith("users", currentUser, "journals")
     .then(entries => {
         console.log(entries)
-        // this.setState({entries: entries})
+        this.setState({entries: entries})
     })
 }
 
@@ -19,11 +19,16 @@ render() {
     console.log(this.state.entries)
     return (
         <>
-        <h1>Hello</h1>
+        <h1>My Journal Entries</h1>
+        <div>
+        {this.state.entries.map(entry => 
         <JournalCard
-        entries={this.entries}
+        key={entry.id}
+        entries={entry}
         {...this.props}
         />
+            )}
+        </div>
         </>
     )
 }
