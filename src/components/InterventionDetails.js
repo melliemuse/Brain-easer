@@ -25,7 +25,10 @@ export default class InterventionDetails extends Component {
         //     anxietyScore: ""
         // }
         // APIManager.post("userInterventions", completedSelfCare)
-        .then(() => this.props.history.push("/"))
+
+        this.state.intervention.id === 7 ? 
+            this.props.history.push("/journal")
+        : this.props.history.push("/")
     }
 
     render() {
