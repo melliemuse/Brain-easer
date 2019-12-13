@@ -12,7 +12,8 @@ export default class JournalEditForm extends Component {
         APIManager.getWith("journals", this.props.match.params.journalId, "prompt")
             .then(journal => {
                 this.setState({
-                    journal: journal.entry,
+                    journal: journal,
+                    entry: journal.entry,
                     prompt: journal.prompt.prompt,
                     promptId: journal.prompt.id
                 })
@@ -30,6 +31,7 @@ export default class JournalEditForm extends Component {
             window.alert("Please enter a change before hitting submit")
         } else {
             const entry = {
+                id: Number(this.props.match.params.journalId),
                 userId: parseInt(localStorage.getItem("activeUser")),
                 entry: this.state.entry,
                 promptId: this.state.promptId
@@ -46,8 +48,10 @@ export default class JournalEditForm extends Component {
                 <h3>{this.state.prompt}</h3>
                 <form>
                     <fieldset>
-                        <input id="entry"
-                            value={this.state.journal}
+                        <input 
+                            id="entry"
+                            type="text"
+                            value={this.state.entry}
                             onChange={this.handleFieldChange}
                         />
                         <div>
