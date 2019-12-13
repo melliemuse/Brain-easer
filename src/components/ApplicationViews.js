@@ -34,7 +34,7 @@ export default class ApplicationViews extends Component {
                         return <Redirect to="/login" />
                     }
                 }}/>
-                <Route path="/interventions/:interventionId(\d+)" render={props => {
+                <Route exact path="/interventions/:interventionId(\d+)" render={props => {
                     if (this.props.user) {
                         return <InterventionDetails {...props} />
                     } else {

@@ -32,6 +32,16 @@ export default {
         }
         ).then(data => data.json())
     },
+    patch(endpoint, itemToUpdate) {
+        return fetch(`${baseUrl}/${endpoint}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(itemToUpdate)
+        }
+        ).then(data => data.json())
+    },
     update(endpoint, editedItem) {
         return fetch(`${baseUrl}/${endpoint}/${editedItem.id}`, {
             method: "PUT",

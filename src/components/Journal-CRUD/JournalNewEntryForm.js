@@ -19,11 +19,11 @@ export default class JournalNewEntryForm extends Component {
             })
     }
 
-// min = 0, max this.state.prompts.length-1
     generatePrompt = event => {
+        console.log(this.state.prompts.length)
         event.preventDefault()
-        const min = 1;
-        const max = 5;
+        const min = 0;
+        const max = this.state.prompts.length;
         const random = Math.floor(min + Math.random() * (max - min));
         this.setState({
             hidePrompt: false,
@@ -70,9 +70,9 @@ export default class JournalNewEntryForm extends Component {
                             onChange={this.handleFieldChange}
                         />
                         <div>
-                        <button
-                            onClick={this.createEntry}>
-                            Submit Entry</button>
+                            <button
+                                onClick={this.createEntry}>
+                                Submit Entry</button>
                         </div>
                     </fieldset>
                 </form>

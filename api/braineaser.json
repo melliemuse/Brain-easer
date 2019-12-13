@@ -343,6 +343,10 @@
     {
       "id": 5,
       "prompt": "Is my thinking realistic? Even if my fears are all accurate, could I accept those feared situations if I had to?"
+    },
+    {
+      "id": 5,
+      "prompt": "Am I being hard on myself? What am I thinking about myself? What are two things I like about myself?"
     }
   ]
 }
