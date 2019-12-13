@@ -62,62 +62,76 @@
       "userId": 1,
       "description": "",
       "id": 7
+    },
+    {
+      "anxietyScore": 7,
+      "timestamp": "2019-12-13T16:29:07.247Z",
+      "userId": 2,
+      "description": "",
+      "id": 8
+    },
+    {
+      "anxietyScore": 3,
+      "timestamp": "2019-12-13T16:29:45.924Z",
+      "userId": 2,
+      "description": "",
+      "id": 9
     }
   ],
   "interventions": [
     {
       "id": 1,
       "name": "Deep Breathing",
-      "timestamp": "",
+      "timestamp": "2019-12-12T20:01:07.015Z",
       "completed": "",
-      "description": "",
+      "description": "placeholder description deep breathing",
       "icon": "",
-      "instructions": ""
+      "instructions": "Breathe in for 10 seconds, and breathe out for longer, apporximately 15 seconds"
     },
     {
       "id": 2,
       "name": "Exercise",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder description exercise",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder instructions exercise"
     },
     {
       "id": 3,
       "name": "Feel Feelings",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder"
     },
     {
       "id": 4,
       "name": "Gratitude",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder"
     },
     {
       "id": 5,
       "name": "Grounding",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder"
     },
     {
       "id": 6,
       "name": "Comforting Inner Child",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder"
     },
     {
       "id": 7,
@@ -133,27 +147,27 @@
       "name": "Meditation",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder"
     },
     {
       "id": 9,
       "name": "Physical Touch",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder"
     },
     {
       "id": 10,
       "name": "Social Support",
       "timestamp": "",
       "completed": "",
-      "description": "",
+      "description": "placeholder",
       "icon": "",
-      "instructions": ""
+      "instructions": "placeholder"
     }
   ],
   "userInterventions": [
@@ -236,6 +250,14 @@
       "anxietyScore": 3,
       "description": "",
       "id": 10
+    },
+    {
+      "userId": 2,
+      "interventionId": 8,
+      "timestamp": "2019-12-13T16:28:27.278Z",
+      "anxietyScore": 10,
+      "description": "Worried about running out of wet food",
+      "id": 11
     }
   ],
   "journals": [
@@ -247,18 +269,10 @@
       "id": 2
     },
     {
-      "entry": "Do some loving kindness meditation",
-      "timestamp": "2019-12-11T21:27:27.250Z",
+      "id": 5,
       "userId": 1,
-      "promptId": 4,
-      "id": 3
-    },
-    {
-      "entry": "Do loving kindness meditation",
-      "timestamp": "2019-12-11T21:54:46.363Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 5
+      "entry": "Something else Do loving kindness meditation",
+      "promptId": 4
     },
     {
       "entry": "No, I guess not... But I'd like to be able to!",

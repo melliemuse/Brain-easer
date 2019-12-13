@@ -19,7 +19,7 @@ export default class JournalNewEntryForm extends Component {
             })
     }
 
-
+// min = 0, max this.state.prompts.length-1
     generatePrompt = event => {
         event.preventDefault()
         const min = 1;
