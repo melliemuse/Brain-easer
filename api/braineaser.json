@@ -3,7 +3,7 @@
     {
       "id": 1,
       "username": "Melody",
-      "email": "melliemusee@gmail.com",
+      "email": "melliemuse@gmail.com",
       "password": "None-ya'bizness"
     },
     {
@@ -48,13 +48,6 @@
       "userId": 2,
       "description": "",
       "id": 5
-    },
-    {
-      "anxietyScore": 10,
-      "timestamp": "2019-12-11T05:48:52.132Z",
-      "userId": 1,
-      "description": "Stressed out about capstone",
-      "id": 6
     },
     {
       "anxietyScore": 5,
@@ -258,6 +251,30 @@
       "anxietyScore": 10,
       "description": "Worried about running out of wet food",
       "id": 11
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2019-12-13T23:21:21.811Z",
+      "anxietyScore": 2,
+      "description": "I feel so much better now! <3",
+      "id": 12
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2019-12-13T23:21:25.931Z",
+      "anxietyScore": 2,
+      "description": "I feel so much better now! <3",
+      "id": 13
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2019-12-13T23:25:54.316Z",
+      "anxietyScore": 4,
+      "description": "I feel so much better now! <3",
+      "id": 14
     }
   ],
   "journals": [

@@ -30,7 +30,7 @@ export default class InterventionRerate extends Component {
             const anxiety = {
                 "userId": parseInt(localStorage.getItem("activeUser")),
                 "interventionId": parseInt(this.props.intervention.id),
-                "timestamp": new Date(),
+                "timestamp": this.props.intervention.timestamp,
                 "anxietyScore": parseInt(this.state.anxietyScore),
                 "description": this.state.description
             }
