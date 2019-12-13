@@ -301,6 +301,13 @@
       "userId": 1,
       "promptId": 4,
       "id": 11
+    },
+    {
+      "entry": "I'm starting to see that it's not. I can, and it feels better to let go honestly.",
+      "timestamp": "2019-12-13T04:15:33.232Z",
+      "userId": 2,
+      "promptId": 5,
+      "id": 12
     }
   ],
   "prompts": [

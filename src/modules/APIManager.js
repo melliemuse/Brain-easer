@@ -19,7 +19,7 @@ export default {
         .then(data => data.json())
     },
     getWith(endpoint, id, secondEndpoint) {
-        return fetch(`${baseUrl}/${endpoint}/${id}/${secondEndpoint}`)
+        return fetch(`${baseUrl}/${endpoint}/${id}?_expand=${secondEndpoint}`)
         .then(data => data.json())
     },
     post(endpoint, newItem) {
