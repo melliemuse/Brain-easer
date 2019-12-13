@@ -6,6 +6,7 @@ import Interventions from './Interventions'
 import InterventionDetails from './InterventionDetails'
 import JournalNewEntryForm from './Journal-CRUD/JournalNewEntryForm'
 import JournalList from './Journal-CRUD/JournalList'
+import JournalEditForm from './Journal-CRUD/JournalEditForm'
 
 export default class ApplicationViews extends Component {
 
@@ -47,9 +48,16 @@ export default class ApplicationViews extends Component {
                         return <Redirect to="/login" />
                     }
                 }} />
-                <Route path="/journal/entries" render={props => {
+                <Route exact path="/journal/entries" render={props => {
                     if (this.props.user) {
                         return <JournalList {...props} />
+                    } else {
+                        return <Redirect to="/login" />
+                    }
+                }} />
+                <Route path="/journal/entries/:journalId(\d+)" render={props => {
+                    if (this.props.user) {
+                        return <JournalEditForm {...props} />
                     } else {
                         return <Redirect to="/login" />
                     }
