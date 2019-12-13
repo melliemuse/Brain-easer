@@ -13,8 +13,9 @@ export default {
         return fetch(`${baseUrl}/${endpoint}?username=${username}&?password=${password}`)
         .then(data => data.json())
     },
-    getPromptsEntriesByUser(parentEndpoint, childEndpoint, currentUserId) {
-        return fetch(`${baseUrl}/${parentEndpoint}?_embed=${childEndpoint}&userId=${currentUserId}`)
+    // http://localhost:5002/journals?userId=1&_expand=prompt
+    getEntriesPromptsByUser(childEndpoint, currentUserId, parentEndpoint) {
+        return fetch(`${baseUrl}/${childEndpoint}?userId=${currentUserId}&_expand=${parentEndpoint}`)
         .then(data => data.json())
     },
     getWith(endpoint, id, secondEndpoint) {
@@ -41,8 +42,8 @@ export default {
         }
         ).then(data => data.json())
     },
-    delete(endpoint) {
-        return fetch(`${baseUrl}/${endpoint}`, {
+    delete(endpoint, id) {
+        return fetch(`${baseUrl}/${endpoint}/${id}`, {
             method: "DELETE"
         }
         ).then(data => data.json())
