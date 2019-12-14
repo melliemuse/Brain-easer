@@ -122,27 +122,27 @@
       "name": "Comforting Inner Child",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder",
+      "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. Unfortunately, most people do not have this skill, and if your parents, like, most people, did not posses this skill, you do not either. That is why it is neccessary for many people to go through this process to consciously to develop this skill later in life. The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way that might otherwise be difficult. Many times, emotional upset is tied to self-judgement, whether or not that is immediatly apparent. When we experience any sort of adverse experience as a child, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations.",
       "icon": "",
-      "instructions": "placeholder"
+      "instructions": "Grab your journal and write whatever comes to mind about the situations which are sparking distress and the thoughts you are having. Try to drill down into the beliefs you are carrying about yourself. Now find a picture of yourself as a small child- the cuter you looked, the better. Stare at it for a while. See how sweet and innocent you were. That is you. Do the thoughts and beliefs you are having match up with what you see when you look at that picture? Now imagine yourself at your current age giving the smaller, hurting version of yourself a hug and telling them that you are there to protect them and everything is going to be alright."
     },
     {
       "id": 7,
       "name": "Journaling",
       "timestamp": "",
       "completed": "",
-      "description": "This a description of journaling",
+      "description": "There is a term for the effect where your brain, trying to be helpful, will endlessly remind you of things it thinks you need to take care of. It's like an alarm clock that you are hitting snooze on but never able to turn off. Forming a plan for how you will accomplish those tasks turns off that alarm because your brain is then satisfied that it's done its job in making sure you accomplish those tasks it deems important for your survival. Journaling helps you get those looping, urgent, anxious thoughts out of your head, it shuts off the brain alarm by allowing you to think through your thoughts and come to a place of clarity and insight which you can use as a jumping off point to plan.",
       "icon": "",
-      "instructions": "Here's how to journal"
+      "instructions": "I find stream-of-consciousness writing to be a highly effective method of journaling because I am writing so quickly I do not have time to censor or judge myself, and that is good because those self-judgements fan the flames of anxiety. I have also written some prompts to help you think through some cognitive pitfalls and to come to a more constructive mode of thinking to alleviate your anxiety. Click on the button below to do some journaling."
     },
     {
       "id": 8,
       "name": "Meditation",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder",
+      "description": "Much has been written about the efficacy of meditation for anxiety. It anchors you inside your body, allows you to unhook from distressing thoughts, and calms the mind.",
       "icon": "",
-      "instructions": "placeholder"
+      "instructions": "Spend at least five minutes, ideally ten to twenty seated with your eyes slightly open gazing at a spot on the ground in front of you. Follow your breath as you allow your thoughts to come and go. If you notice yourself getting distracted, just bring your attention back to your breath with kindness. If you notice any dicomfort in the body, this is a good opportunity to practice acceptance. Though it is counterintuitive, if you consciously tell yourself that it is ok that you are feeling discomfort and try to lean into the sensation, it generally disspates."
     },
     {
       "id": 9,
@@ -168,7 +168,7 @@
       "id": 1,
       "userId": 1,
       "interventionId": 1,
-      "timestamp": "",
+      "timestamp": "2019-12-10T18:49:57.958Z",
       "anxietyScore": 2,
       "description": ""
     },
@@ -418,6 +418,22 @@
       "anxietyScore": 2,
       "description": "Feeling good",
       "id": 32
+    },
+    {
+      "userId": 1,
+      "timestamp": "Sat, Dec 14, 2019",
+      "interventionId": 3,
+      "description": "",
+      "anxietyScore": "",
+      "id": 33
+    },
+    {
+      "userId": 1,
+      "timestamp": "Sat, Dec 14, 2019, 12 AM",
+      "interventionId": 5,
+      "description": "",
+      "anxietyScore": "",
+      "id": 34
     }
   ],
   "journals": [
@@ -482,6 +498,16 @@
       "userId": 1,
       "promptId": 6,
       "id": 13
+    },
+    {
+      "entry": "Yes, I have already done a lot that I am proud of, and I am being harder on myself than anyone else is going to be. I can let go of being perfect and that is a giant relief.",
+      "timestamp": {
+        "type": "date",
+        "min": 1576349948349
+      },
+      "userId": 1,
+      "promptId": 3,
+      "id": 14
     }
   ],
   "prompts": [

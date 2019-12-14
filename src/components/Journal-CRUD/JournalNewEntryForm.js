@@ -49,8 +49,9 @@ export default class JournalNewEntryForm extends Component {
                 userId: parseInt(localStorage.getItem("activeUser")),
                 promptId: this.state.randomPrompt.id
             }
-            APIManager.post("journals", entry)
-                .then(() => this.props.history.push("/journal/entries"))
+            console.log(entry)
+            // APIManager.post("journals", entry)
+            //     .then(() => this.props.history.push("/journal/entries"))
         }
 
     }

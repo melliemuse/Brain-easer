@@ -23,7 +23,7 @@ export default class InterventionDetails extends Component {
         const currentUser = localStorage.getItem("activeUser")
         const completedSelfCare = {
             userId: parseInt(currentUser),
-            timestamp: new Date(),
+            timestamp: new Date().toLocaleDateString("en-EN", {month: "short", weekday: "short", day: "2-digit", year: "numeric", hour: "2-digit"}),
             interventionId: this.state.intervention.id,
             description: "",
             anxietyScore: ""
@@ -49,7 +49,6 @@ export default class InterventionDetails extends Component {
                 <article className="intervention-details">
                     <h1>{this.state.intervention.name}</h1>
                     <div>
-                        <h3>Description</h3>
                         <p>{this.state.intervention.description}</p>
                     </div>
                     <div>

@@ -13,6 +13,10 @@ export default {
         return fetch(`${baseUrl}/${endpoint}?username=${username}&?password=${password}`)
         .then(data => data.json())
     },
+    getAllInterventionsbyUser(endpoint, userId) {
+        return fetch(`${baseUrl}/${endpoint}?userId=${userId}`)
+        .then(data => data.json())
+    },
     getUserInterventions(endpoint, userId, interventionId) {
         return fetch(`${baseUrl}/${endpoint}?userId=${userId}&interventionId=${interventionId}`)
         .then(data => data.json())
