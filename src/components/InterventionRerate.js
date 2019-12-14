@@ -8,6 +8,18 @@ export default class InterventionRerate extends Component {
         description: "",
         interventionId: ""
     }
+    // componentDidMount() {
+    //     // http://localhost:5002/userInterventions?userId=1&interventionId=2
+    //     const currentUser = localStorage.getItem("activeUser")
+    //     APIManager.getUserInterventions("userInterventions", currentUser, this.props.intervention.id) 
+    //     .then(interventions => {
+    //         console.log("interventions data", interventions)
+    //         this.setState({
+    //             interventions: interventions
+    //         })
+    //     })
+    //     console.log(this.state.interventions)
+    // }
     handleFieldChange = event => {
         event.preventDefault()
         const stateToChange = {}
@@ -24,25 +36,32 @@ export default class InterventionRerate extends Component {
         return buttons
     }
     createAnxietyRating = () => {
+        console.log(this.props.interventions[this.props.interventions.length-1].id)
         if (this.state.anxietyScore === "") {
             alert("Please select an anxiety score")
         }  else {
             const anxiety = {
                 "userId": parseInt(localStorage.getItem("activeUser")),
                 "interventionId": parseInt(this.props.intervention.id),
-                "timestamp": this.props.intervention.timestamp,
+                "timestamp": this.props.interventions[this.props.interventions.length-1].timestamp,
                 "anxietyScore": parseInt(this.state.anxietyScore),
-                "description": this.state.description
+                "description": this.state.description,
+                "id": Number(this.props.interventions[this.props.interventions.length-1].id)
             }
-            APIManager.post("userInterventions", anxiety)
+            console.log("anxiety rerate object", anxiety)
+            APIManager.update("userInterventions", anxiety)
                 .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : null)
         }
     }
 
     render() {
+        console.log("all returned ints of type", this.props.interventions)
+        console.log("last completed int of type", this.props.interventions[this.props.interventions.length-1])
+        // console.log([this.state.interventions[length-1].id])
         return (
             <>
-                <h1>How is Your Anxiety?</h1>
+                <h2>Congratulations!</h2>
+                <h4>Now rerate your anxiety to track your progress</h4>
                 {this.createbuttons()}
                 <div>
                     <button

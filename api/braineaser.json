@@ -95,9 +95,9 @@
       "name": "Feel Feelings",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder",
+      "description": "There is a concept is Buddhism called 'the second arrow'- it's the idea that often when you are noticing an emotional reaction, it is not just one reaction but many. By resisting and not accepting the feeling you are having, you are making your suffering worse. There is an overlap between physical sensation and emotional feeling- locating the physical gives you something concrete to focus on that can impact the emotional.",
       "icon": "",
-      "instructions": "placeholder"
+      "instructions": "Close your eyes and tune into what you are feeling in your body. Try to locate where you feel feelings in your body. Tell yourself that it's ok that they are there and try to increase the sensation, leaning into it. Paradoxically, this will generally cause the sensation to disspate along with the difficult emotion."
     },
     {
       "id": 4,
@@ -190,11 +190,10 @@
     },
     {
       "userId": 2,
-      "interventionId": 9,
-      "timestamp": "2019-12-11T00:43:39.893Z",
-      "anxietyScore": 3,
-      "description": "",
-      "id": 4
+      "id": 4,
+      "timestamp": "",
+      "anxietyScore": 2,
+      "description": "Feeling much calmer now"
     },
     {
       "userId": 2,
@@ -275,6 +274,150 @@
       "anxietyScore": 4,
       "description": "I feel so much better now! <3",
       "id": 14
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T00:20:31.696Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 15
+    },
+    {
+      "userId": 2,
+      "interventionId": 2,
+      "timestamp": "",
+      "anxietyScore": 2,
+      "description": "Much better!",
+      "id": 16
+    },
+    {
+      "userId": 2,
+      "interventionId": 9,
+      "timestamp": "2019-12-14T01:00:50.782Z",
+      "anxietyScore": 3,
+      "description": "I feel much better!!",
+      "id": 17
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T01:04:17.219Z",
+      "interventionId": 4,
+      "description": "",
+      "anxietyScore": "",
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "interventionId": 10,
+      "timestamp": "2019-12-14T01:45:43.042Z",
+      "anxietyScore": 4,
+      "description": "",
+      "id": 19
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T01:50:52.860Z",
+      "interventionId": 4,
+      "description": "",
+      "anxietyScore": "",
+      "id": 20
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T01:52:38.498Z",
+      "interventionId": 4,
+      "description": "",
+      "anxietyScore": "",
+      "id": 21
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T01:54:17.175Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 22
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T01:58:05.091Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 23
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T02:06:49.839Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 24
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T02:10:17.987Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 25
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T02:11:54.902Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 26
+    },
+    {
+      "userId": 2,
+      "interventionId": 1,
+      "timestamp": "",
+      "anxietyScore": 2,
+      "description": "Wow, that helped a lot. I feel much calmer",
+      "id": 27
+    },
+    {
+      "userId": 2,
+      "interventionId": 9,
+      "timestamp": "2019-12-14T02:25:12.099Z",
+      "anxietyScore": 2,
+      "description": "OOOOOOH yeah! much better",
+      "id": 28
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T02:31:58.082Z",
+      "interventionId": 6,
+      "description": "",
+      "anxietyScore": "",
+      "id": 29
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T02:34:41.905Z",
+      "interventionId": 6,
+      "description": "",
+      "anxietyScore": "",
+      "id": 30
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-14T03:02:33.876Z",
+      "interventionId": 5,
+      "description": "",
+      "anxietyScore": "",
+      "id": 31
+    },
+    {
+      "userId": 2,
+      "interventionId": 4,
+      "timestamp": "2019-12-14T03:06:24.037Z",
+      "anxietyScore": 2,
+      "description": "Feeling good",
+      "id": 32
     }
   ],
   "journals": [

@@ -4,8 +4,10 @@ import InterventionRerate from './InterventionRerate'
 
 export default class InterventionDetails extends Component {
     state = {
+        interventions: {},
         intervention: [],
-        displayRerate: false
+        displayRerate: false,
+        completedSelfCare: {}
     }
 
     componentDidMount() {
@@ -17,64 +19,59 @@ export default class InterventionDetails extends Component {
             })
     }
 
-    // handleClick = event => {
-        //     event.preventDefault()
-        //     // const completedSelfCare = {
-        //     //     userId: parseInt(localStorage.getItem("activeUser")),
-        //     //     timestamp: new Date(),
-        //     //     interventionId: this.state.intervention.id,
-        //     //     description: "",
-        //     //     anxietyScore: ""
-        //     // }
-        //     // APIManager.post("userInterventions", completedSelfCare)
-
-        //     this.state.intervention.id === 7 ? 
-        //         this.props.history.push("/journal")
-        //     // : this.props.history.push("/")
-        //     : 
-
-        // if (this.state.intervention.id === 7) {
-        //     this.props.history.push("/journal")
-        // } else {
-        //     {event.preventDefault()}
-        //     return <InterventionRerate {...this.props}/>
-        // }
-        // }
-    displayRerate = () => {
-        this.setState({
-            displayRerate: !this.state.displayRerate
-        })
+    handleClick = () => {
+        const currentUser = localStorage.getItem("activeUser")
+        const completedSelfCare = {
+            userId: parseInt(currentUser),
+            timestamp: new Date(),
+            interventionId: this.state.intervention.id,
+            description: "",
+            anxietyScore: ""
+        }
+        APIManager.post("userInterventions", completedSelfCare)
+            .then(intervention => APIManager.get("userInterventions", intervention.id)
+                .then(interventions => {
+                    console.log("interventions data", interventions)
+                    this.setState({
+                        interventions: interventions
+                    })
+                    console.log(this.state.interventions)
+                }))
+                .then(this.setState({
+                    displayRerate: !this.state.displayRerate
+                }))
     }
 
-        render() {
-            console.log(this.state.intervention)
-            return (
-                <>
-                    <article className="intervention-details">
-                        <h1>{this.state.intervention.name}</h1>
-                        <div>
-                            <h3>Description</h3>
-                            <p>{this.state.intervention.description}</p>
-                        </div>
-                        <div>
-                            <h3>Instructions</h3>
-                            <p>{this.state.intervention.instructions}</p>
-                        </div>
-                        <button
-                            onClick={() => {
-                                // debugger
-                                if (this.state.intervention.id === 7) {
-                                    this.props.history.push("/journal")
-                                } else {
-                                    this.displayRerate()
-                                }
+    render() {
+        console.log(this.state.intervention)
+        return (
+            <>
+                <article className="intervention-details">
+                    <h1>{this.state.intervention.name}</h1>
+                    <div>
+                        <h3>Description</h3>
+                        <p>{this.state.intervention.description}</p>
+                    </div>
+                    <div>
+                        <h3>Instructions</h3>
+                        <p>{this.state.intervention.instructions}</p>
+                    </div>
+                    <button
+                        onClick={() => {
+                            if (this.state.intervention.id === 7) {
+                                this.props.history.push("/journal")
+                            } else {
+                                this.handleClick()
+                                // this.displayRerate()
                             }
                         }
-                        >Complete this intervention!</button>
-                        {this.state.displayRerate &&  
-                        <InterventionRerate intervention={this.state.intervention} {...this.props} />}
-                    </article>
-                </>
-            )
-        }
+                        }
+                    >Complete this intervention!</button>
+                    {this.state.displayRerate &&
+                        <InterventionRerate intervention={this.state.intervention}
+                            interventions={[this.state.interventions]} {...this.props} />}
+                </article>
+            </>
+        )
+    }
 }

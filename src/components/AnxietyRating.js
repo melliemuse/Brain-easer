@@ -77,7 +77,6 @@ export default class AnxietyRating extends Component {
     }
 
     setBoolean = (event) => {
-        // debugger
         const stateToChange = {}
         stateToChange[event.target.id] = false
         this.setState(stateToChange)
@@ -115,7 +114,8 @@ export default class AnxietyRating extends Component {
     render() {
         return (
             <>
-                <h1>How is Your Anxiety?</h1>
+                <h1>Welcome to Brain/easer!</h1>
+                <h2>How is your anxiety on a scale from 1 - 10?</h2>
                 {this.createbuttons()}
                 <div>
                     <button
