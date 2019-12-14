@@ -104,18 +104,18 @@
       "name": "Gratitude",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder",
+      "description": "Practicing gratitude can help get you out of the headspace you find yourself in when you're experiencing anxiety. One of the challenges with anxiety and depression is something called state-dependant memory. It means that while you are in a certain frame of mind, it takes more effort to retrieve memories that were formed in another frame of mind, meaning, when you are anxious or depressed, your brain makes it hard to remember a time when you weren't feeling that way, and you have a harder time accessing the happy thoughts that could help pull you out. But the bleak thoughts you have when it the throes of anxiety are not the whole picture, and praticing gratitude can help remind you of the balance that exists.",
       "icon": "",
-      "instructions": "placeholder"
+      "instructions": "Make out a list or write stream-of-consciousness about all of the things you are grateful for (or if not all, shoot for 10)"
     },
     {
       "id": 5,
       "name": "Grounding",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder",
+      "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses to acheive this result and loosen the grip of anxiety. Grounding techniques exist for all five senses, some may resonate more for you than others, so try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation",
       "icon": "",
-      "instructions": "placeholder"
+      "instructions": "• Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths • Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. • Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present • Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. • • Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. • Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
     },
     {
       "id": 6,
@@ -149,18 +149,18 @@
       "name": "Physical Touch",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder",
+      "description": "Physical touch releases oxytocin, a bonding hormone that produces feelings of relaxation. It also lowers cortisol, which is a hormone produced by the body as a result of stress, and lowers blood pressure.",
       "icon": "",
-      "instructions": "placeholder"
+      "instructions": "Pet or cuddle an animal, ask for hugs, go dancing, spend time with people who are both safe and physically affectionate"
     },
     {
       "id": 10,
       "name": "Social Support",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder",
+      "description": "Social support is incredibly powerful for supporting mental health. It is considered a protective factor which can mean the difference between developing a condition as serious and debilitating as PTSD and being able to integrate incredibly challenging experiences.",
       "icon": "",
-      "instructions": "placeholder"
+      "instructions": "Take the time to spend with people who are supportive and make you feel like you belong when you are feeling anxious, especially if you can share how you are feeling and receive understanding and validation."
     }
   ],
   "userInterventions": [
@@ -430,6 +430,7 @@
     },
     {
       "id": 5,
+      "timestamp": "2017-12-11T21:14:14.530Z",
       "userId": 1,
       "entry": "Something else Do loving kindness meditation",
       "promptId": 4
@@ -456,13 +457,6 @@
       "id": 8
     },
     {
-      "entry": "No, it isn't. No one is expecting me to be perfect except myself. Even if my app bombs and no one wants to hire me, I will still get by. I have a lot going for me and I don't need to put so much pressure on myself. ",
-      "timestamp": "2019-12-12T03:51:31.259Z",
-      "userId": 1,
-      "promptId": 5,
-      "id": 9
-    },
-    {
       "entry": "Make sure I'm taking good care of myself and achieving balance",
       "timestamp": "2019-12-12T03:52:56.665Z",
       "userId": 1,
@@ -481,12 +475,19 @@
       "userId": 2,
       "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control.",
       "promptId": 5
+    },
+    {
+      "entry": "ok here goes it's wierd knowing that ppl are going to read this it's not the same as it would be but man it feels good just to write i love this yeah this feels great :) no eiditing myself thats the best feeling",
+      "timestamp": "2019-12-14T03:36:23.080Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 13
     }
   ],
   "prompts": [
     {
       "id": 1,
-      "prompt": "I am feeling scared because:"
+      "prompt": "I am feeling scared because..."
     },
     {
       "id": 2,
@@ -507,6 +508,10 @@
     {
       "id": 5,
       "prompt": "Am I being hard on myself? What am I thinking about myself? What are two things I like about myself?"
+    },
+    {
+      "id": 6,
+      "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation- just to get it out"
     }
   ]
 }

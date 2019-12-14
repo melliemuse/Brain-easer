@@ -40,6 +40,8 @@ export default class JournalNewEntryForm extends Component {
         event.preventDefault()
         if (this.state.entry === "") {
             window.alert("Please complete entry field before submitting")
+        } else if (this.state.randomPrompt === {}) {
+            window.alert("Please generate a prompt before submitting")
         } else {
             const entry = {
                 entry: this.state.entry,
