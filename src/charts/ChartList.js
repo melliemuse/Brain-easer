@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import APIManager from '../modules/APIManager'
+import MainChart from './MainChart'
 
 export default class ChartList extends Component {
     state = {
         baseAnxiety: [],
-        userIntervention: []
+        userInterventions: []
     }
     componentDidMount() {
         const currentUser = localStorage.getItem("activeUser")
@@ -28,7 +29,15 @@ export default class ChartList extends Component {
             render() {
                 return (
                     <>
-                    <h1>TEST</h1>
+                    <h1>My Progress</h1>
+                    <div class="card chart-card">
+                    {this.state.userInterventions.map(userIntervention =>
+                    <MainChart userIntervention={userIntervention}/>
+                    )}
+                    {this.state.baseAnxiety.map(baseAnxiety =>
+                    <MainChart userIntervention={baseAnxiety}/>
+                    )}
+                    </div>
                     </>
                 )
             }

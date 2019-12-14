@@ -58,10 +58,12 @@ export default class AnxietyCharts extends Component {
         console.log(this.state)
     return (
       <div>
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="myChart" width="200" height="200"></canvas>
         <Bar
           data={this.state}
           options={{
+            responsive: true,
+            maintainAspectRatio: false,
             title:{
               display:true,
               text:'Base Anxiety',
