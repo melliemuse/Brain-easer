@@ -53,11 +53,11 @@ export default class InterventionDetails extends Component {
                     <article className="intervention-details">
                         <h1>{this.state.intervention.name}</h1>
                         <div>
-                            <h2>Description</h2>
+                            <h3>Description</h3>
                             <p>{this.state.intervention.description}</p>
                         </div>
                         <div>
-                            <h2>Instructions</h2>
+                            <h3>Instructions</h3>
                             <p>{this.state.intervention.instructions}</p>
                         </div>
                         <button

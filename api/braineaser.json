@@ -75,20 +75,20 @@
     {
       "id": 1,
       "name": "Deep Breathing",
-      "timestamp": "2019-12-12T20:01:07.015Z",
+      "timestamp": "",
       "completed": "",
-      "description": "placeholder description deep breathing",
+      "description": "Practicing deep breathing, where you take a deep breath in and exhale for longer than your inhale calms the parasympathetic nervous system, which is what controls your fight or flight response. This response is triggered in moments of high stress or panic - this technique relieves that response.",
       "icon": "",
-      "instructions": "Breathe in for 10 seconds, and breathe out for longer, apporximately 15 seconds"
+      "instructions": "Breathe in for 10 seconds, and breathe out for longer, approximately 15 seconds. Repeat until you feel some relief."
     },
     {
       "id": 2,
       "name": "Exercise",
       "timestamp": "",
       "completed": "",
-      "description": "placeholder description exercise",
+      "description": "Exercise has been shown to relieve stress even in cases of extreme trauma which are notoriously hard to treat. The fight or flight response triggered by a perceived threat produces anxiety, and renowned somatic researcher Peter Levine found through original research that through physical activity such as shaking and running, the traumatic response of extreme stress is releived. This holds true for lesser anxiety as well but the impact is demostrated by its efficacy in very hard to treat panic.",
       "icon": "",
-      "instructions": "placeholder instructions exercise"
+      "instructions": "Even mild exercise produces endorphins and will have a positive impact on mood- this is really dealer's choice. If this is a difficult activity for you, start small and keep praciticing as often as you can stomach it to reduce resistance and form a habit."
     },
     {
       "id": 3,
