@@ -19,7 +19,7 @@ export default class Interventions extends Component {
     
 
     render() {
-        console.log(this.state.interventions)
+        // console.log(this.state.interventions)
         return (
             <>
                 <div className="intervention-cards">

@@ -434,6 +434,14 @@
       "description": "",
       "anxietyScore": "",
       "id": 34
+    },
+    {
+      "userId": 2,
+      "timestamp": "Sat, Dec 14, 2019, 03 PM",
+      "interventionId": 3,
+      "description": "",
+      "anxietyScore": "",
+      "id": 35
     }
   ],
   "journals": [
@@ -489,6 +497,7 @@
     {
       "id": 12,
       "userId": 2,
+      "timestamp": "2000-09-14T03:36:23.080Z",
       "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control.",
       "promptId": 5
     },
@@ -501,10 +510,7 @@
     },
     {
       "entry": "Yes, I have already done a lot that I am proud of, and I am being harder on myself than anyone else is going to be. I can let go of being perfect and that is a giant relief.",
-      "timestamp": {
-        "type": "date",
-        "min": 1576349948349
-      },
+      "timestamp": "2015-03-14T03:36:23.080Z",
       "userId": 1,
       "promptId": 3,
       "id": 14
@@ -537,7 +543,7 @@
     },
     {
       "id": 6,
-      "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation- just to get it out"
+      "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation just to get it out"
     }
   ]
 }

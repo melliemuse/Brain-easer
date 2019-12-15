@@ -1,72 +1,106 @@
 import React, { Component, useState, useEffect, useCallback } from 'react';
 import {Bar} from 'react-chartjs-2';
-import {Chart} from 'react-chartjs-2';
 
 let moment = require('moment');
 moment().format();
 
 
-
-// Chart.plugins.register({
-//     // plugin implementation
-//     plugins: [{
-//         beforeInit: function(chart) {
-//            let time = chart.options.scales.xAxes.time // 'time' object reference
-//               // difference (in days) between min and max date
-//             //   timeDiff = moment(time.max).diff(moment(time.min), 'd');
-//            // populate 'labels' array
-//            // (create a date string for each date between min and max, inclusive)
-//            for (let i = 0; i <= time; i++) {
-//               let _label = moment(time).add(i, 'd').format('YYYY-MM-DD HH:mm:ss');
-//               chart.data.labels.push(_label);
-//            }
-//         }
-//      }]
-// });
-
-
-
-export default class AnxietyCharts extends Component {
+export default class MainChart extends Component {
 
     state = {
         labels: [],
+        // datasets: [
+        //     {
+        //       label: "Africa",
+        //       backgroundColor: "#3e95cd",
+        //       data: [133,221,783,2478]
+        //     }, {
+        //       label: "Europe",
+        //       backgroundColor: "#8e5ea2",
+        //       data: [408,547,675,734]
+        //     }
+        //   ]
         datasets: [
-          {
-            label: 'Base Anxiety',
-            backgroundColor: 'rgba(75,192,192,1)',
-            borderColor: 'rgba(0,0,0,1)',
-            borderWidth: 2,
-            data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
-          }
+        //   {
+        //     label: 'Base Anxiety',
+        //     backgroundColor: 'rgba(50, 133, 168,1)',
+        //     borderColor: 'rgba(0,0,0,1)',
+        //     borderWidth: 2,
+        //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
+        //   },
+        //   {
+        //     label: 'Meditation',
+        //     backgroundColor: 'rgba(75,192,192,1)',
+        //     borderColor: 'rgba(0,0,0,1)',
+        //     borderWidth: 2,
+        //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
+        //   }
+
         ]
       }
     
     componentDidMount() {
-        console.log(this.state.datasets[0].data)
-        console.log(this.state.datasets[0].data.t)
-        let time = []
-        this.state.datasets[0].data.forEach(element => {
-            moment(element).format("dddd, MMMM Do YYYY, h:mm:ss a")
-            time.push(element.t)
-        })
-                this.setState({
-                    labels: time
-            })
+    }
+
+    buildChartData = () => {
+        // {
+        //     if (this.props.userInterventions !== []) {
+        //         let time = []
+        //         const interventions = []
+        //         // create an array to group each rating by intervention type 
+        //         {for (let i = 1; i < this.props.userInterventions.length; i++) {
+        //             interventions.push(this.props.userInterventions.filter(userInt => userInt.interventionId === i))
+        //         }} 
+               
+                // less dry method of sorting and grouping each rating by intervention type used - has the advantage of not creating any empty arrays
+                // const int1 = this.props.userInterventions.filter(userInt => userInt.interventionId === 1)
+                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
+                // const int3 = this.props.userInterventions.filter(userInt => userInt.interventionId === 3)
+                // const int4 = this.props.userInterventions.filter(userInt => userInt.interventionId === 4)
+                // const int5 = this.props.userInterventions.filter(userInt => userInt.interventionId === 5)
+                // const int6 = this.props.userInterventions.filter(userInt => userInt.interventionId === 6)
+                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
+                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
+                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
+                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
+                    // console.log("int2", int2)
+
+
+                let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
+                // label: 'Base Anxiety',
+        //     backgroundColor: 'rgba(50, 133, 168,1)',
+        //     borderColor: 'rgba(0,0,0,1)',
+        //     borderWidth: 2,
+        //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
+                // this.state.datasets.forEach(dataset => {
+                //     time.push(dataset.t)
+                    
+                // })
+                // const datasets = {}
+                //         this.setState({
+                //             labels: time
+                //     })
+            // } 
+            // else {
+            //     return null 
+            // }
+        // }
     }
     
     render() {
-        console.log(this.state)
+        // console.log(this.state)
+        console.log("Main chart props render return", this.props)
     return (
       <div>
-        <canvas id="myChart" width="200" height="200"></canvas>
+          {/* {this.buildChartData()} */}
         <Bar
           data={this.state}
           options={{
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
             title:{
               display:true,
-              text:'Base Anxiety',
+              text:'Anxiety Tracker',
               fontSize:20, 
               scales: {
                 xAxes: [{

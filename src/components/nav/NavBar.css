@@ -1,7 +1,21 @@
-#logo {
-    width: 100px;
-    height: auto;
+.nav-container {
+    flex-wrap: wrap;
 }
 ul {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
+    align-content: flex-end;
+}
+#logo {
+    width: auto;
+    height: 90px;
+    margin-bottom: 10px;
+}
+#logo-text {
+    height: 200px;
+    width: auto;
+}
+a {
+    text-decoration: none;
 }
