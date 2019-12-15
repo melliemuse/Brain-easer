@@ -208,7 +208,7 @@
       "timestamp": "2019-12-11T01:59:15.438Z",
       "interventionId": 7,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 3,
       "id": 6
     },
     {
@@ -280,7 +280,7 @@
       "timestamp": "2019-12-14T00:20:31.696Z",
       "interventionId": 2,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 5,
       "id": 15
     },
     {
@@ -304,7 +304,7 @@
       "timestamp": "2019-12-14T01:04:17.219Z",
       "interventionId": 4,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 1,
       "id": 18
     },
     {
@@ -320,7 +320,7 @@
       "timestamp": "2019-12-14T01:50:52.860Z",
       "interventionId": 4,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 6,
       "id": 20
     },
     {
@@ -328,7 +328,7 @@
       "timestamp": "2019-12-14T01:52:38.498Z",
       "interventionId": 4,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 3,
       "id": 21
     },
     {
@@ -336,7 +336,7 @@
       "timestamp": "2019-12-14T01:54:17.175Z",
       "interventionId": 2,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 4,
       "id": 22
     },
     {
@@ -344,7 +344,7 @@
       "timestamp": "2019-12-14T01:58:05.091Z",
       "interventionId": 1,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 6,
       "id": 23
     },
     {
@@ -352,7 +352,7 @@
       "timestamp": "2019-12-14T02:06:49.839Z",
       "interventionId": 1,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 7,
       "id": 24
     },
     {
@@ -360,7 +360,7 @@
       "timestamp": "2019-12-14T02:10:17.987Z",
       "interventionId": 1,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 4,
       "id": 25
     },
     {
@@ -368,7 +368,7 @@
       "timestamp": "2019-12-14T02:11:54.902Z",
       "interventionId": 1,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 3,
       "id": 26
     },
     {
@@ -392,7 +392,7 @@
       "timestamp": "2019-12-14T02:31:58.082Z",
       "interventionId": 6,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 2,
       "id": 29
     },
     {
@@ -400,7 +400,7 @@
       "timestamp": "2019-12-14T02:34:41.905Z",
       "interventionId": 6,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 5,
       "id": 30
     },
     {
@@ -408,7 +408,7 @@
       "timestamp": "2019-12-14T03:02:33.876Z",
       "interventionId": 5,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 9,
       "id": 31
     },
     {
@@ -424,7 +424,7 @@
       "timestamp": "Sat, Dec 14, 2019",
       "interventionId": 3,
       "description": "",
-      "anxietyScore": "",
+      "anxietyScore": 2,
       "id": 33
     },
     {

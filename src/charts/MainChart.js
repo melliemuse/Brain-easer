@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect, useCallback } from 'react';
-import {Bar} from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 let moment = require('moment');
 moment().format();
@@ -21,108 +21,117 @@ export default class MainChart extends Component {
         //     }
         //   ]
         datasets: [
-        //   {
-        //     label: 'Base Anxiety',
-        //     backgroundColor: 'rgba(50, 133, 168,1)',
-        //     borderColor: 'rgba(0,0,0,1)',
-        //     borderWidth: 2,
-        //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
-        //   },
-        //   {
-        //     label: 'Meditation',
-        //     backgroundColor: 'rgba(75,192,192,1)',
-        //     borderColor: 'rgba(0,0,0,1)',
-        //     borderWidth: 2,
-        //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
-        //   }
+            //   {
+            //     label: 'Base Anxiety',
+            //     backgroundColor: 'rgba(50, 133, 168,1)',
+            //     borderColor: 'rgba(0,0,0,1)',
+            //     borderWidth: 2,
+            //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
+            //   },
+            //   {
+            //     label: 'Meditation',
+            //     backgroundColor: 'rgba(75,192,192,1)',
+            //     borderColor: 'rgba(0,0,0,1)',
+            //     borderWidth: 2,
+            //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
+            //   }
 
         ]
-      }
-    
+    }
     componentDidMount() {
+        console.log("component did mount")
+        console.log(this.props.ratingData[0])
     }
 
     buildChartData = () => {
-        // {
-        //     if (this.props.userInterventions !== []) {
-        //         let time = []
-        //         const interventions = []
-        //         // create an array to group each rating by intervention type 
-        //         {for (let i = 1; i < this.props.userInterventions.length; i++) {
-        //             interventions.push(this.props.userInterventions.filter(userInt => userInt.interventionId === i))
-        //         }} 
-               
-                // less dry method of sorting and grouping each rating by intervention type used - has the advantage of not creating any empty arrays
-                // const int1 = this.props.userInterventions.filter(userInt => userInt.interventionId === 1)
-                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
-                // const int3 = this.props.userInterventions.filter(userInt => userInt.interventionId === 3)
-                // const int4 = this.props.userInterventions.filter(userInt => userInt.interventionId === 4)
-                // const int5 = this.props.userInterventions.filter(userInt => userInt.interventionId === 5)
-                // const int6 = this.props.userInterventions.filter(userInt => userInt.interventionId === 6)
-                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
-                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
-                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
-                // const int2 = this.props.userInterventions.filter(userInt => userInt.interventionId === 2)
-                    // console.log("int2", int2)
+        debugger
+        console.log(this.props.ratingData[0])
+        let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
+        let label = []
+        let backgroundColor = []
+        let borderColor = []
+        let borderWidth = []
+        let data = []
 
+        this.props.ratingData.forEach(interventionData =>
+            // console.log(interventionData)
+            interventionData.forEach(eachEntry =>
+            data.push({t: eachEntry.timestamp, y: eachEntry.anxietyScore}),
+                console.log(data)
+            )
+        )
+            //     {const datasets = {
+            //     label: '',
+            //     backgroundColor: '',
+            //     borderColor: 'rgba(0,0,0,1)',
+            //     borderWidth: 2,
+            //     data: []
+            // }
+            // this.setState({
+            //     datasets: datasets
+            // })
 
-                let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
-                // label: 'Base Anxiety',
+            // }
+        // )
+
+        // label: 'Base Anxiety',
         //     backgroundColor: 'rgba(50, 133, 168,1)',
         //     borderColor: 'rgba(0,0,0,1)',
         //     borderWidth: 2,
         //     data: [{t: "Sat, Dec 14, 2019, 12 AM", y: 4}, {t: "2013-02-07", y: 6}, {t: "1927-03-027", y: 10}, {t: "2047-02-04",y: 1}, {t: "2050-12-04", y: 8}]
-                // this.state.datasets.forEach(dataset => {
-                //     time.push(dataset.t)
-                    
-                // })
-                // const datasets = {}
-                //         this.setState({
-                //             labels: time
-                //     })
-            // } 
-            // else {
-            //     return null 
-            // }
+        // this.state.datasets.forEach(dataset => {
+        //     time.push(dataset.t)
+
+        // })
+        // const datasets = {}
+        //         this.setState({
+        //             labels: time
+        //     })
+        // } 
+        // else {
+        //     return null 
+        // }
         // }
     }
-    
+
     render() {
         // console.log(this.state)
         console.log("Main chart props render return", this.props)
-    return (
-      <div>
-          {/* {this.buildChartData()} */}
-        <Bar
-          data={this.state}
-          options={{
-            responsive: true,
-            maintainAspectRatio: true,
-            title:{
-              display:true,
-              text:'Anxiety Tracker',
-              fontSize:20, 
-              scales: {
-                xAxes: [{
-                parser: true,
-                distribution: 'series',
-                bounds: 'ticks',
-                ticks: {
-                    source: 'data'},
-                 type: 'time',
-                 time: {
-                    unit: 'day'
-                }
-              }]}
-            },
-            legend:{
-              display:true,
-              position:'right'
-            }
-          }}
-          
-        />
-      </div>
-    );
-  }
+        return (
+            <div>
+                {this.buildChartData()}
+                <Bar
+                    data={this.state}
+                    options={{
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        title: {
+                            display: true,
+                            text: 'Anxiety Tracker',
+                            fontSize: 20,
+                            scales: {
+                                xAxes: [{
+                                    parser: true,
+                                    distribution: 'series',
+                                    bounds: 'ticks',
+                                    ticks: {
+                                        source: 'data'
+                                    },
+                                    type: 'time',
+                                    time: {
+                                        unit: 'day'
+                                    }
+                                }]
+                            }
+                        },
+                        legend: {
+                            display: true,
+                            position: 'right'
+                        }
+                    }}
+
+                />
+            </div>
+        );
+    }
 }
