@@ -44,7 +44,7 @@ export default class MainChart extends Component {
     }
 
     buildChartData = () => {
-        debugger
+        console.log(this.props.ratingData)
         console.log(this.props.ratingData[0])
         let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
         let label = []
@@ -99,7 +99,9 @@ export default class MainChart extends Component {
         console.log("Main chart props render return", this.props)
         return (
             <div>
+                {this.props.ratingData !== []} ?
                 {this.buildChartData()}
+                : {null}
                 <Bar
                     data={this.state}
                     options={{
