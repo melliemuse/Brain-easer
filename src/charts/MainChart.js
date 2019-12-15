@@ -55,9 +55,11 @@ export default class MainChart extends Component {
 
         this.props.ratingData.forEach(interventionData =>
             // console.log(interventionData)
-            interventionData.forEach(eachEntry =>
+            interventionData.forEach(entries =>
+            entries.forEach(eachEntry =>
             data.push({t: eachEntry.timestamp, y: eachEntry.anxietyScore}),
                 console.log(data)
+            )
             )
         )
             //     {const datasets = {
@@ -99,9 +101,9 @@ export default class MainChart extends Component {
         console.log("Main chart props render return", this.props)
         return (
             <div>
-                {this.props.ratingData !== []} ?
-                {this.buildChartData()}
-                : {null}
+                {this.props.ratingData !== [] ?
+                this.buildChartData()
+                : null}
                 <Bar
                     data={this.state}
                     options={{

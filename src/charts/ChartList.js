@@ -13,6 +13,7 @@ export default class ChartList extends Component {
     componentDidMount() {
         const currentUser = localStorage.getItem("activeUser")
         let allData = []
+        
         Promise.all([
             APIManager.getAllInterventionsbyUser("baselineAnxietyScores", currentUser)
                 .then((baseAnxiety) => {
