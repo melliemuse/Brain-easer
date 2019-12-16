@@ -192,6 +192,7 @@
       "userId": 2,
       "id": 4,
       "timestamp": "",
+      "interventionId": 10,
       "anxietyScore": 2,
       "description": "Feeling much calmer now"
     },

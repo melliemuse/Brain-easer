@@ -28,23 +28,14 @@ export default class ChartList extends Component {
                         baseAnxietyScore: baseAnxietyScore,
                     })
                 }),
-            APIManager.getAllInterventionsbyUser("interventions", currentUser)
+            APIManager.getAllUserInterventionsWithInterventions("userInterventions", currentUser)
                 .then((interventions) => {
                     console.log(interventions)
                     this.setState({
                         interventions: interventions
                     })
-                        for (let i = 1; i < this.state.interventions.length; i++) {
-                            APIManager.getUserInterventionsWithInterventions("userInterventions", currentUser, i)
-                                .then(userInterventions => {
-                                    allData.push(userInterventions)
-                                })
-                                }
-                                this.setState({
-                                    allData: allData
-                                })
                 }),
-                    console.log(this.state.allData)
+                    console.log(this.state.interventions)
         ])
     }
 render() {

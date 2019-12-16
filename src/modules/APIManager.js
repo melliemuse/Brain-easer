@@ -21,6 +21,11 @@ export default {
         return fetch(`${baseUrl}/${endpoint}?userId=${userId}&interventionId=${interventionId}`)
         .then(data => data.json())
     },
+    // http://localhost:5002/userInterventions?userId=1&_expand=intervention
+    getAllUserInterventionsWithInterventions(endpoint, userId) {
+        return fetch(`${baseUrl}/${endpoint}?userId=${userId}&_expand=intervention`)
+        .then(data => data.json())
+    },
     getUserInterventionsWithInterventions(endpoint, userId, interventionId) {
         return fetch(`${baseUrl}/${endpoint}?userId=${userId}&interventionId=${interventionId}&_expand=intervention`)
         .then(data => data.json())

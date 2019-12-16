@@ -3,7 +3,6 @@ import { Bar } from 'react-chartjs-2';
 
 
 export default class MainChart extends Component {
-
     state = {
         data: {},
         labels: [],
@@ -15,7 +14,7 @@ export default class MainChart extends Component {
             [
                 {
                     label: 'Base Anxiety',
-                    backgroundColor: 'rgba(75,192,192,1)',
+                    backgroundColor: 'rgba(179, 55, 168)',
                     borderColor: 'rgba(0,0,0,1)',
                     borderWidth: 2,
                     data: this.props.baseAnxietyScore
@@ -35,6 +34,9 @@ export default class MainChart extends Component {
                 <button onClick={() => this.props !== [] ?
                     this.buildChartData()
                     : null}>View Baseline Scores</button>
+                <button onClick={() => this.props !== [] ?
+                    this.buildChartData()
+                    : null}>View Deep Breathing Scores</button>
                 <Bar
                     data={this.state}
                     options={{
@@ -45,6 +47,11 @@ export default class MainChart extends Component {
                             text: 'Anxiety Tracker',
                             fontSize: 20,
                             scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        source: 'data'
+                                    },
+                                }],
                                 xAxes: [{
                                     parser: true,
                                     distribution: 'series',
