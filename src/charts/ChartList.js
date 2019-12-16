@@ -8,7 +8,9 @@ export default class ChartList extends Component {
         allData: [],
         userInterventions: [],
         interventions: [],
-        baseAnxiety: []
+        baseAnxietyId: [],
+        baseAnxietyTimestamp: [],
+        baseAnxietyScore: [],
     }
     componentDidMount() {
         const currentUser = localStorage.getItem("activeUser")
@@ -17,13 +19,13 @@ export default class ChartList extends Component {
         Promise.all([
             APIManager.getAllInterventionsbyUser("baselineAnxietyScores", currentUser)
                 .then((baseAnxiety) => {
-                    console.log("baseAnxiety", baseAnxiety)
-                    console.log("baseAnxiety.timestamp", baseAnxiety.timestamp)
-                    console.log("baseAnxiety.anxietyScore", baseAnxiety.anxietyScore)
-                    console.log("baseAnxiety.id", baseAnxiety.id)
-                    allData.push(baseAnxiety.timestamp, baseAnxiety.anxietyScore, baseAnxiety.id)
+                    const baseAnxietyId = baseAnxiety.map(anxiety => anxiety.id)
+                    const baseAnxietyTimestamp = baseAnxiety.map(anxiety => anxiety.timestamp)
+                    const baseAnxietyScore = baseAnxiety.map(anxiety => anxiety.anxietyScore)
                     this.setState({
-                        baseAnxiety: baseAnxiety
+                        baseAnxietyId: baseAnxietyId,
+                        baseAnxietyTimestamp: baseAnxietyTimestamp,
+                        baseAnxietyScore: baseAnxietyScore,
                     })
                 }),
             APIManager.getAllInterventionsbyUser("interventions", currentUser)
@@ -51,7 +53,7 @@ render() {
     return (
         <>
             <div className="card chart-card">
-                <MainChart ratingData={[this.state.allData]} />
+                <MainChart baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} ratingData={[this.state.allData]} />
 
             </div>
         </>

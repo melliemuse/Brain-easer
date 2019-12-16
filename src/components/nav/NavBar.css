@@ -1,19 +1,29 @@
 .nav-container {
-    flex-wrap: wrap;
-}
-ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.nav {
+    flex-wrap: wrap;
+    width: 50%,
+}
+#lockup {
+    width: 100%;
+    display: flex;
+}
+ul {
+    justify-content: center;
     list-style-type: none;
-    align-content: flex-end;
+    align-content: flex-start;
 }
 #logo {
     width: auto;
-    height: 90px;
+    height: 85px;
     margin-bottom: 10px;
 }
 #logo-text {
-    height: 200px;
+    margin-left: 30px;
+    height: 140px;
     width: auto;
 }
 a {
