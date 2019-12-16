@@ -13,11 +13,15 @@ export default class ChartList extends Component {
     componentDidMount() {
         const currentUser = localStorage.getItem("activeUser")
         let allData = []
-        
+
         Promise.all([
             APIManager.getAllInterventionsbyUser("baselineAnxietyScores", currentUser)
                 .then((baseAnxiety) => {
-                    allData.push(baseAnxiety)
+                    console.log("baseAnxiety", baseAnxiety)
+                    console.log("baseAnxiety.timestamp", baseAnxiety.timestamp)
+                    console.log("baseAnxiety.anxietyScore", baseAnxiety.anxietyScore)
+                    console.log("baseAnxiety.id", baseAnxiety.id)
+                    allData.push(baseAnxiety.timestamp, baseAnxiety.anxietyScore, baseAnxiety.id)
                     this.setState({
                         baseAnxiety: baseAnxiety
                     })
