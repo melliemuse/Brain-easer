@@ -18,6 +18,13 @@ export default class MainChart extends Component {
                     borderColor: 'rgba(0,0,0,1)',
                     borderWidth: 2,
                     data: this.props.baseAnxietyScore
+                },
+                {
+                    label: 'Meditation',
+                    backgroundColor: 'rgba(224, 47, 80)',
+                    borderColor: 'rgba(0,0,0,1)',
+                    borderWidth: 2,
+                    data: this.props.baseAnxietyScore
                 }
             ]
         this.setState({
@@ -29,6 +36,7 @@ export default class MainChart extends Component {
     }
 
     render() {
+        console.log("main chart props", this.props.interventions)
         return (
             <div>
                 <button onClick={() => this.props !== [] ?
@@ -53,7 +61,7 @@ export default class MainChart extends Component {
                                     },
                                 }],
                                 xAxes: [{
-                                    parser: true,
+                                    parser: "HH:mm",
                                     distribution: 'series',
                                     bounds: 'ticks',
                                     ticks: {
