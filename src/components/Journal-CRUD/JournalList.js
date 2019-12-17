@@ -27,6 +27,7 @@ export default class JournalList extends Component {
         })
     }
     render() {
+        console.log(this.state.journals)
         console.log(this.state.journals[0])
         return (
             <>

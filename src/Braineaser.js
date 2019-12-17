@@ -30,7 +30,7 @@ render() {
         <>
         <NavBar user={this.state.user}/>
         <ApplicationViews user={this.state.user}
-        setUser={this.setUser}/>
+        setUser={this.setUser} isAuthenticated={this.isAuthenticated}/>
         </>
     )
 }

@@ -1,7 +1,31 @@
-#logo {
-    width: 100px;
-    height: auto;
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    flex-wrap: wrap;
+    width: 50%,
+}
+#lockup {
+    width: 100%;
+    display: flex;
 }
 ul {
+    justify-content: center;
     list-style-type: none;
+    align-content: flex-start;
+}
+#logo {
+    width: auto;
+    height: 85px;
+    margin-bottom: 10px;
+}
+#logo-text {
+    margin-left: 30px;
+    height: 140px;
+    width: auto;
+}
+a {
+    text-decoration: none;
 }

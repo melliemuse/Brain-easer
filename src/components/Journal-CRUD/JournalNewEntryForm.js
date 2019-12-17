@@ -19,11 +19,11 @@ export default class JournalNewEntryForm extends Component {
             })
     }
 
-
     generatePrompt = event => {
+        console.log(this.state.prompts.length)
         event.preventDefault()
-        const min = 1;
-        const max = 5;
+        const min = 0;
+        const max = this.state.prompts.length;
         const random = Math.floor(min + Math.random() * (max - min));
         this.setState({
             hidePrompt: false,
@@ -40,6 +40,8 @@ export default class JournalNewEntryForm extends Component {
         event.preventDefault()
         if (this.state.entry === "") {
             window.alert("Please complete entry field before submitting")
+        } else if (this.state.randomPrompt === {}) {
+            window.alert("Please generate a prompt before submitting")
         } else {
             const entry = {
                 entry: this.state.entry,
@@ -47,8 +49,9 @@ export default class JournalNewEntryForm extends Component {
                 userId: parseInt(localStorage.getItem("activeUser")),
                 promptId: this.state.randomPrompt.id
             }
-            APIManager.post("journals", entry)
-                .then(() => this.props.history.push("/journal/entries"))
+            console.log(entry)
+            // APIManager.post("journals", entry)
+            //     .then(() => this.props.history.push("/journal/entries"))
         }
 
     }
@@ -70,9 +73,9 @@ export default class JournalNewEntryForm extends Component {
                             onChange={this.handleFieldChange}
                         />
                         <div>
-                        <button
-                            onClick={this.createEntry}>
-                            Submit Entry</button>
+                            <button
+                                onClick={this.createEntry}>
+                                Submit Entry</button>
                         </div>
                     </fieldset>
                 </form>

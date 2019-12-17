@@ -13,6 +13,23 @@ export default {
         return fetch(`${baseUrl}/${endpoint}?username=${username}&?password=${password}`)
         .then(data => data.json())
     },
+    getAllInterventionsbyUser(endpoint, userId) {
+        return fetch(`${baseUrl}/${endpoint}?userId=${userId}`)
+        .then(data => data.json())
+    },
+    getUserInterventions(endpoint, userId, interventionId) {
+        return fetch(`${baseUrl}/${endpoint}?userId=${userId}&interventionId=${interventionId}`)
+        .then(data => data.json())
+    },
+    // http://localhost:5002/userInterventions?userId=1&_expand=intervention
+    getAllUserInterventionsWithInterventions(endpoint, userId) {
+        return fetch(`${baseUrl}/${endpoint}?userId=${userId}&_expand=intervention`)
+        .then(data => data.json())
+    },
+    getUserInterventionsWithInterventions(endpoint, userId, interventionId) {
+        return fetch(`${baseUrl}/${endpoint}?userId=${userId}&interventionId=${interventionId}&_expand=intervention`)
+        .then(data => data.json())
+    },
     // http://localhost:5002/journals?userId=1&_expand=prompt
     getEntriesPromptsByUser(childEndpoint, currentUserId, parentEndpoint) {
         return fetch(`${baseUrl}/${childEndpoint}?userId=${currentUserId}&_expand=${parentEndpoint}`)
@@ -29,6 +46,16 @@ export default {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(newItem)
+        }
+        ).then(data => data.json())
+    },
+    patch(endpoint, itemToUpdate) {
+        return fetch(`${baseUrl}/${endpoint}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(itemToUpdate)
         }
         ).then(data => data.json())
     },

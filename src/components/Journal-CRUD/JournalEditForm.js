@@ -3,7 +3,6 @@ import APIManager from '../../modules/APIManager'
 
 export default class JournalEditForm extends Component {
     state = {
-        journal: "",
         prompt: "",
         entry: "",
         promptId: ""
@@ -12,7 +11,6 @@ export default class JournalEditForm extends Component {
         APIManager.getWith("journals", this.props.match.params.journalId, "prompt")
             .then(journal => {
                 this.setState({
-                    journal: journal,
                     entry: journal.entry,
                     prompt: journal.prompt.prompt,
                     promptId: journal.prompt.id
