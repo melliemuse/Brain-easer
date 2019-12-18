@@ -69,6 +69,13 @@
       "userId": 2,
       "description": "",
       "id": 9
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2019-12-18T04:10:51.725Z",
+      "userId": 2,
+      "description": "This is a new entry and AHHHH!",
+      "id": 10
     }
   ],
   "interventions": [
@@ -443,6 +450,22 @@
       "description": "",
       "anxietyScore": "",
       "id": 35
+    },
+    {
+      "userId": 2,
+      "interventionId": 2,
+      "timestamp": "2019-12-18T04:09:43.525Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
+      "id": 36
+    },
+    {
+      "userId": 2,
+      "interventionId": 10,
+      "timestamp": "Tue, Dec 17, 2019, 10 PM",
+      "anxietyScore": 3,
+      "description": "I think I'll have wet food for a while",
+      "id": 37
     }
   ],
   "journals": [
@@ -498,8 +521,7 @@
     {
       "id": 12,
       "userId": 2,
-      "timestamp": "2000-09-14T03:36:23.080Z",
-      "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control.",
+      "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control. :)",
       "promptId": 5
     },
     {

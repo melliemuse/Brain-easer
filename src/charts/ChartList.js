@@ -29,10 +29,10 @@ export default class ChartList extends Component {
             })
         APIManager.getAllUserInterventionsWithInterventions("userInterventions", currentUser)
             .then((interventions) => {
-                console.log("intervention data pre-map", interventions)
+                // console.log("intervention data pre-map", interventions)
                 const interventionMap = {}
                 interventions.map(intervention => {
-                    console.log(intervention)
+                    // console.log(intervention)
                     const interventionType = intervention.interventionId
                     if (`${interventionType}` in interventionMap) {
                         // console.log("True", interventionType)
@@ -40,19 +40,19 @@ export default class ChartList extends Component {
                     } else {
                         // console.log("False", interventionType)
                         interventionMap[interventionType] = [intervention]
-                        console.log("intervention map", interventionMap)
+                        // console.log("intervention map", interventionMap)
                     }
                     let megaArray = []
                 for (let i = 0; i <= Object.keys(interventionMap).length; i++) {
                     megaArray.push(interventionMap[i+1])
                 }
-                console.log(megaArray)
+                // console.log(megaArray)
                     this.setState({
                         interventionMap: interventionMap,
                         megaArray: megaArray
                     })
-                    console.log("state intervention map", this.state.interventionMap)
-                    console.log("state mega array", this.state.megaArray)
+                    // console.log("state intervention map", this.state.interventionMap)
+                    // console.log("state mega array", this.state.megaArray)
                 })
                 // const result = words.filter(word => word.length > 6);
             }).then(() => {
@@ -66,7 +66,7 @@ export default class ChartList extends Component {
                         }
                     }
                     ) 
-                    console.log(timestamps)
+                    // console.log(timestamps)
                 
 
                 // console.log("chgvjk", this.state.interventionMap[i+1])
@@ -84,8 +84,8 @@ export default class ChartList extends Component {
             })
         }
         render() {
-        console.log("Chart List state base anxiety", this.state.baseAnxiety)
-        console.log("Chart List state user interventions", this.state)
+        // console.log("Chart List state base anxiety", this.state.baseAnxiety)
+        // console.log("Chart List state user interventions", this.state)
         return (
             <>
                 <div className="card chart-card">

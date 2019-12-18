@@ -23,7 +23,6 @@ export default class AnxietyRating extends Component {
     }
 
     handleFieldChange = event => {
-        // console.log("target.value", event.currentTarget.value)
         event.preventDefault()
         const stateToChange = {}
         stateToChange[event.currentTarget.id] = event.currentTarget.value
@@ -79,49 +78,48 @@ export default class AnxietyRating extends Component {
 
     render() {
         return (
-            <>
+                <div className="main">
                 <h1>Welcome to Brain Easer!</h1>
                 <h2>How is your anxiety on a scale from 1 - 10?</h2>
+                <div className="rating-buttons">
                 {this.createbuttons()}
-                <div>
+                </div>
+                
                     <Button
                         id="addDescriptionField"
                         name="addDescriptionField"
-                        className="MuiButton-Label"
+                        className="button"
                         onClick={this.setBoolean}
                     >Add Description</Button>
-                </div>
-                <div>
+                
+                
                     <input
                         id="description"
                         hidden={this.state.addDescriptionField}
                         onChange={this.handleFieldChange}
                     />
-                </div>
-                <div
-                >
+                
                     <Button
-                        variant="contained"
                         color="secondary"
                         id="addSelfCareField"
-                        className="MuiButton-Label"
+                        className="button"
                         onClick={this.setBoolean}
                     >Log Self-Care</Button>
-                </div>
-                <div>
+                
+                
                     <select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
                         {this.state.interventions.map(intervention =>
                             <option key={intervention.id} value={intervention.id}>{intervention.name}</option>
                         )}
                     </select>
-                </div>
+                
                 <Button
-                    variant="contained"
+                className="button"
                     color="primary"
                     onClick={this.createAnxietyRating}
                 >Submit Rating
                 </Button>
-            </>
+                </div>
         )
     }
 }

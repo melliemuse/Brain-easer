@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect, useCallback } from 'react';
 import { Bar } from 'react-chartjs-2';
-
+import Button from '@material-ui/core/Button';
 
 export default class MainChart extends Component {
     state = {
@@ -36,15 +36,16 @@ export default class MainChart extends Component {
     }
 
     render() {
-        console.log("main chart props", this.props.interventions)
+        // console.log("main chart props", this.props.interventions)
+        console.log("main chart props", this.props)
         return (
             <div>
-                <button onClick={() => this.props !== [] ?
+                <Button onClick={() => this.props !== [] ?
                     this.buildChartData()
-                    : null}>View Baseline Scores</button>
-                <button onClick={() => this.props !== [] ?
+                    : null}>View Baseline Scores</Button>
+                {/* <Button onClick={() => this.props !== [] ?
                     this.buildChartData()
-                    : null}>View Deep Breathing Scores</button>
+                    : null}>View Deep Breathing Scores</Button> */}
                 <Bar
                     data={this.state}
                     options={{

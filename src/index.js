@@ -5,6 +5,7 @@ import './index.css';
 import Braineaser from './Braineaser';
 import * as serviceWorker from './serviceWorker';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const theme = createMuiTheme({
@@ -13,15 +14,15 @@ const theme = createMuiTheme({
             black: "#000", white: "#fff"
         },
         primary: {
-            light: "rgba(218, 190, 251, 1)",
-            main: "rgba(93, 5, 171, 1)",
-            dark: "rgba(246, 51, 255, 1)",
+            light: "rgba(108, 89, 244, 1)",
+            main: "rgba(227, 154, 18 , 1)",
+            dark: "rgba(216, 32, 228, 1)",
             contrastText: "#fff"
         },
         secondary: {
-            light: "rgba(41, 180, 253, 1)",
+            light: "rgba(89, 244, 230, 1)",
             main: "rgba(51, 206, 255, 1)",
-            dark: "rgba(255, 233, 51, 1)",
+            dark: "rgba(51, 255, 240, 1)",
             contrastText: "rgba(255, 255, 255, 1)"
         },
         error: {
