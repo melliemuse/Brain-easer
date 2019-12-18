@@ -4,6 +4,10 @@ import NavBar from './components/nav/NavBar'
 import ApplicationViews from './components/ApplicationViews'
 
 
+
+
+
+
 class Braineaser extends Component {
     state = {
         users: [],
@@ -37,5 +41,4 @@ render() {
 
 }
 
-
-export default Braineaser
+export default Braineaser;

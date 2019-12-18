@@ -16,8 +16,8 @@ render() {
                 {this.props.user ?
                 <>
                 <div id="lockup">
-                <li><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logoPainted.png')}></img></Link></li>
                 <li><Link to='/'><img id="logo-text" alt="logo" src={require('../../assets/Braineaser_Logo.png')}></img></Link></li>
+                <li><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logoPainted.png')}></img></Link></li>
                 </div>
                 <div className="nav-container">
                 <li className="nav"><Link to='/'>Rate Anxiety</Link></li>

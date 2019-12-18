@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+}
 input {
     width: 500px;
     height: 100px;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import MainChart from './MainChart'
-import { promised } from 'q'
 
 export default class ChartList extends Component {
     state = {

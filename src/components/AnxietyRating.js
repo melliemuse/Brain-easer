@@ -1,43 +1,6 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import Button from '@material-ui/core/Button';
-// import { createMuiTheme } from '@material-ui/core/styles';
-
-// const theme = createMuiTheme({
-//     palette: {
-//         common: {
-//             black: "#000", white: "#fff"
-//         },
-//         background: {
-//             paper: "#fff",
-//             default: "#fafafa"
-//         },
-//         primary: {
-//             light: "rgba(218, 190, 251, 1)",
-//             main: "rgba(145, 29, 249, 1)",
-//             dark: "rgba(93, 5, 171, 1)",
-//             contrastText: "#fff"
-//         },
-//         secondary: {
-//             light: "rgba(41, 180, 253, 1)",
-//             main: "rgba(63, 0, 245, 1)",
-//             dark: "rgba(4, 68, 145, 1)",
-//             contrastText: "rgba(255, 255, 255, 1)"
-//         },
-//         error: {
-//             light: "#e57373",
-//             main: "rgba(235, 28, 33, 1)",
-//             dark: "#d32f2f",
-//             contrastText: "#fff"
-//         },
-//         text: {
-//             primary: "rgba(0, 0, 0, 0.87)",
-//             secondary: "rgba(0, 0, 0, 0.54)",
-//             disabled: "rgba(0, 0, 0, 0.38)",
-//             hint: "rgba(0, 0, 0, 0.38)"
-//         }
-//     },
-// });
 
 
 export default class AnxietyRating extends Component {
@@ -60,9 +23,10 @@ export default class AnxietyRating extends Component {
     }
 
     handleFieldChange = event => {
+        // console.log("target.value", event.currentTarget.value)
         event.preventDefault()
         const stateToChange = {}
-        stateToChange[event.target.id] = event.target.value
+        stateToChange[event.currentTarget.id] = event.currentTarget.value
         this.setState(stateToChange)
     }
 
@@ -70,15 +34,17 @@ export default class AnxietyRating extends Component {
         let buttons = []
         for (let i = 0; i < 10; i++) {
             buttons.push(
-                <button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</button>
+                <Button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
             )
         }
+        buttons.unshift()
         return buttons
     }
 
     setBoolean = (event) => {
+        // debugger
         const stateToChange = {}
-        stateToChange[event.target.id] = false
+        stateToChange[event.currentTarget.id] = false
         this.setState(stateToChange)
         console.log(stateToChange)
         console.log(this.state.addSelfCareField)
@@ -114,14 +80,16 @@ export default class AnxietyRating extends Component {
     render() {
         return (
             <>
-                <h1>Welcome to Brain/easer!</h1>
+                <h1>Welcome to Brain Easer!</h1>
                 <h2>How is your anxiety on a scale from 1 - 10?</h2>
                 {this.createbuttons()}
                 <div>
-                    <button
+                    <Button
                         id="addDescriptionField"
+                        name="addDescriptionField"
+                        className="MuiButton-Label"
                         onClick={this.setBoolean}
-                    >Add Description</button>
+                    >Add Description</Button>
                 </div>
                 <div>
                     <input
@@ -132,12 +100,13 @@ export default class AnxietyRating extends Component {
                 </div>
                 <div
                 >
-                <button
-                    variant="contained"
-                    color="primary"
-                    id="addSelfCareField"
-                    onClick={this.setBoolean}
-                >Log Self-Care</button>
+                    <Button
+                        variant="contained"
+                        color="secondary"
+                        id="addSelfCareField"
+                        className="MuiButton-Label"
+                        onClick={this.setBoolean}
+                    >Log Self-Care</Button>
                 </div>
                 <div>
                     <select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
@@ -146,10 +115,12 @@ export default class AnxietyRating extends Component {
                         )}
                     </select>
                 </div>
-                <button
+                <Button
+                    variant="contained"
+                    color="primary"
                     onClick={this.createAnxietyRating}
                 >Submit Rating
-                </button>
+                </Button>
             </>
         )
     }
