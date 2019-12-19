@@ -1,3 +1,4 @@
+
 import React, { Component, useState, useEffect, useCallback } from 'react';
 import { Bar } from 'react-chartjs-2';
 
@@ -29,7 +30,9 @@ export default class MainChart extends Component {
                     console.log(mainAnxietyArray)
 
                 }
-
+                var randomColor = opacity => {
+                    return 'rgba(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + (opacity || '.3') + ')';
+                  }
 
         let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
         const datasets =
@@ -128,3 +131,56 @@ export default class MainChart extends Component {
         );
     }
 }
+
+<canvas id="canvas" style="display: block; height: 570px; width: 1140px;" width="1425" height="712" class="chartjs-render-monitor"></canvas>
+		var color = Chart.helpers.color;
+		function generateData() {
+			var data = [];
+			for (var i = 0; i < 7; i++) {
+				data.push({
+					x: randomScalingFactor(),
+					y: randomScalingFactor()
+				});
+			}
+			return data;
+		}
+
+		var scatterChartData = {
+			datasets: [{
+				label: 'My First dataset',
+				borderColor: window.chartColors.red,
+				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+				data: generateData()
+			}, {
+				label: 'My Second dataset',
+				borderColor: window.chartColors.blue,
+				backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+				data: generateData()
+			}]
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myScatter = Chart.Scatter(ctx, {
+				data: scatterChartData,
+				options: {
+					title: {
+						display: true,
+						text: 'Chart.js Scatter Chart'
+					},
+				}
+			});
+		};
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			scatterChartData.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return {
+						x: randomScalingFactor(),
+						y: randomScalingFactor()
+					};
+				});
+			});
+			window.myScatter.update();
+		});
+	
