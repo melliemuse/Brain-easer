@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from '@material-ui/core/Button';
 
 
 export default class JournalCard extends Component {
@@ -17,12 +18,12 @@ export default class JournalCard extends Component {
                 <div>
                     <p>{this.props.journals.entry}</p>
                     <p>{this.props.journals.timestamp}</p>
-                    <button
+                    <Button
                         onClick={() => this.props.handleDelete(this.props.journals.id)}
-                    >Delete</button>
-                    <button
+                    >Delete</Button>
+                    <Button
                         onClick={() => this.props.history.push(`/journal/entries/${this.props.journals.id}`)}
-                    >Edit</button>
+                    >Edit</Button>
                 </div>
 
             </div>

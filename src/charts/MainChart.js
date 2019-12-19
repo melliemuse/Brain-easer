@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect, useCallback } from 'react';
 import { Bar } from 'react-chartjs-2';
-
+import Button from '@material-ui/core/Button';
 
 export default class MainChart extends Component {
     state = {
@@ -10,70 +10,58 @@ export default class MainChart extends Component {
     }
     buildChartData = () => {
         // this.props !== [] ?
-            // console.log("main chart props Mega Array", this.props.megaArray[1][0].anxietyScore)
-            // : null
-            
-         // All timestamps in one array
-                // let timestamps = []
-                // const test = this.state.megaArray.map(object => {
-                //     // debugger
-                //     if (object !== undefined ) {
-                //         for (const element of object) {
-                //              timestamps.push(element.timestamp)
-                //         }
-                //     }
-                // }
-                // ) 
-                // console.log(timestamps)
+        // console.log("main chart props Mega Array", this.props.megaArray[1][0].anxietyScore)
+        // : null
 
-                // Trying to get all anxiety scores and maybe timestamps into their own arrays by intervention type
-                const mainAnxietyArray = []
-                for (let i = 0; i <= this.props.megaArray.length; i++) {
-                    // debugger
-                    const eachScoreArray = []
-                    this.props.megaArray.forEach(eachArray => {
-                        console.log("each array", eachArray)
-                        if (eachArray) {
-                            eachArray.forEach(entry => {
-                                console.log(entry.anxietyScore)
 
-                                //
-                                // const interventionType = entry.interventionId
-                                // if (`${interventionType}` in eachScoreArray) {
-                                //     // console.log("True", interventionType)
-                                //     interventionMap[`${interventionType}`].push(intervention)
-                                // } else {
-                                //     // console.log("False", interventionType)
-                                //     interventionMap[interventionType] = [intervention]
-                                //     console.log("intervention map", interventionMap)
-                                // }
-                                //
-                                // if (entry.interventionId === i+1) {
+        // Trying to get all anxiety scores and maybe timestamps into their own arrays by intervention type
+        // const mainAnxietyArray = []
+        // for (let i = 0; i <= this.props.megaArray.length; i++) {
+        //     // debugger
+        //     const eachScoreArray = []
+        //     this.props.megaArray.forEach(eachArray => {
+        //         console.log("each array", eachArray)
+        //         if (eachArray) {
+        //             eachArray.forEach(entry => {
+        //                 console.log(entry.anxietyScore)
 
-                                // }
-                                eachScoreArray.push(entry.anxietyScore)
-                                console.log("each score array", eachScoreArray)
+        //
+        // const interventionType = entry.interventionId
+        // if (`${interventionType}` in eachScoreArray) {
+        //     // console.log("True", interventionType)
+        //     interventionMap[`${interventionType}`].push(intervention)
+        // } else {
+        //     // console.log("False", interventionType)
+        //     interventionMap[interventionType] = [intervention]
+        //     console.log("intervention map", interventionMap)
+        // }
+        //
+        // if (entry.interventionId === i+1) {
 
-                            })
-                        }
-                    })
-                    mainAnxietyArray.push(eachScoreArray)
-                    console.log(mainAnxietyArray)
+        // }
+        //         eachScoreArray.push(entry.anxietyScore)
+        //         console.log("each score array", eachScoreArray)
 
-                }
+        //     })
+        // }
+        // })
+        // mainAnxietyArray.push(eachScoreArray)
+        // console.log(mainAnxietyArray)
+
+        // }
 
 
 
-                // console.log("chgvjk", this.state.interventionMap[i+1])
-                // let timestamps = []
-                // let anxietyScores = []
-                // this.state.interventionMap[1].map((object) => {
-                //     console.log("Mapppppppp", object)
-                //     timestamps.push(object.timestamp)
-                //     anxietyScores.push(object.anxietyScore)
-                // })
-                // console.log(timestamps)
-                // console.log(anxietyScores)
+        // console.log("chgvjk", this.state.interventionMap[i+1])
+        // let timestamps = []
+        // let anxietyScores = []
+        // this.state.interventionMap[1].map((object) => {
+        //     console.log("Mapppppppp", object)
+        //     timestamps.push(object.timestamp)
+        //     anxietyScores.push(object.anxietyScore)
+        // })
+        // console.log(timestamps)
+        // console.log(anxietyScores)
 
 
         let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
@@ -101,6 +89,13 @@ export default class MainChart extends Component {
                     data: [{ t: "1800-12-10T18:26:42.169Z", y: 4 }]
                 },
                 {
+                    label: 'Different',
+                    backgroundColor: 'rgba(224, 47, 80)',
+                    borderColor: 'rgba(0,0,0,1)',
+                    borderWidth: 2,
+                    data: [{ t: "2605-12-10T18:26:42.169Z", y: 15 }, null, {t: "2605-12-10T18:26:42.169Z", y: 15 }]
+                },
+                {
                     label: 'Meditation',
                     backgroundColor: 'rgba(224, 47, 80)',
                     borderColor: 'rgba(0,0,0,1)',
@@ -120,7 +115,7 @@ export default class MainChart extends Component {
             data: datasets,
             labels: this.props.baseAnxietyTimestamp
         })
-  
+
     }
 
     render() {
@@ -128,13 +123,13 @@ export default class MainChart extends Component {
         // console.log("main chart props Mega Array", this.props.megaArray[1])
         return (
             <div>
-                       
-                <button onClick={() => this.props !== [] ?
+
+                <Button onClick={() => this.props !== [] ?
                     this.buildChartData()
-                    : null}>View Baseline Scores</button>
-                <button onClick={() => this.props !== [] ?
+                    : null}>View Baseline Scores</Button>
+                {/* <Button onClick={() => this.props !== [] ?
                     this.buildChartData()
-                    : null}>View Deep Breathing Scores</button>
+                    : null}>View Deep Breathing Scores</Button> */}
                 <Bar
                     data={this.state}
                     options={{

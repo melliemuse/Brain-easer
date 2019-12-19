@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import JournalCard from './JournalCard'
 
+
 export default class JournalList extends Component {
     state = {
         journals: []
