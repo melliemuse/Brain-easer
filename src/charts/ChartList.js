@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import MainChart from './MainChart'
-import { promised } from 'q'
+import ScatterPlot from './ScatterPlot'
+import InterventionChartCard from './InterventionChartCard'
 
 export default class ChartList extends Component {
     state = {
@@ -98,11 +99,29 @@ export default class ChartList extends Component {
     render() {
         // console.log("Chart List state base anxiety", this.state.baseAnxiety)
         // console.log("Chart List state user interventions", this.state)
+        // debugger
         return (
             <>
                 <div className="card chart-card">
                     <MainChart baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} interventionMap={this.state.interventionMap} megaArray={this.state.megaArray} />
                 </div>
+
+                {/* <div className="card chart-card">
+                    <MainChart baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} interventionMap={this.state.interventionMap} megaArray={this.state.megaArray} />
+                </div> */}
+
+                {/* <div className="card chart-card">
+                     if (this.state.megaArray !== []) {
+                    this.state.megaArray.map((miniArray, i) =>
+                        <InterventionChartCard
+                        key={miniArray[i]}
+                        megaArray={this.state.megaArray}
+                        />)}
+                </div> */}
+                
+                {/* <div className="card chart-card">
+                    <ScatterPlot baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} interventionMap={this.state.interventionMap} megaArray={this.state.megaArray} />
+                </div> */}
             </>
         )
     }
