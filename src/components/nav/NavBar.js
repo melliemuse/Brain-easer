@@ -45,16 +45,16 @@ render() {
             <ul> 
                 {this.props.user ?
                 <>
-                <Typography >
                 <div className="nav-container">
+                <Typography >
                 <li id="lockup"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logoPainted.png')}></img></Link></li>
                 <li className="nav"><Link to='/'>Rate Anxiety</Link></li>
                 <li className="nav"><Link to='/charts'>Anxiety Tracker</Link></li>
                 <li className="nav"><Link to='/interventions'>Interventions</Link></li>
                 <li className="nav"><Link to='/journal'>Create Journal Entry</Link></li>
                 <li className="nav"><Link to='/journal/entries'>My Journal Entries</Link></li>
-                </div>
                 </Typography>
+                </div>
                 </>
                 : null}
             </ul>

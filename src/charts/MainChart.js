@@ -89,6 +89,13 @@ export default class MainChart extends Component {
                     data: [{ t: "1800-12-10T18:26:42.169Z", y: 4 }]
                 },
                 {
+                    label: 'Different',
+                    backgroundColor: 'rgba(224, 47, 80)',
+                    borderColor: 'rgba(0,0,0,1)',
+                    borderWidth: 2,
+                    data: [{ t: "2605-12-10T18:26:42.169Z", y: 15 }, null, {t: "2605-12-10T18:26:42.169Z", y: 15 }]
+                },
+                {
                     label: 'Meditation',
                     backgroundColor: 'rgba(224, 47, 80)',
                     borderColor: 'rgba(0,0,0,1)',
