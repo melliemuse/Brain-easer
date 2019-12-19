@@ -52,8 +52,6 @@ export default class ChartList extends Component {
                         interventionMap: interventionMap,
                         megaArray: megaArray
                     })
-                    // console.log("state intervention map", this.state.interventionMap)
-                    // console.log("state mega array", this.state.megaArray)
                 })
             }).then(() => {
                 // console.log("Mega Array", this.state.megaArray)
