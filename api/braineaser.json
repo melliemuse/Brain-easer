@@ -69,6 +69,13 @@
       "userId": 2,
       "description": "",
       "id": 9
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2019-12-18T04:10:51.725Z",
+      "userId": 2,
+      "description": "This is a new entry and AHHHH!",
+      "id": 10
     }
   ],
   "interventions": [
@@ -375,7 +382,7 @@
     {
       "userId": 2,
       "interventionId": 1,
-      "timestamp": "Tuesday",
+      "timestamp": "2019-12-01T02:25:12.012Z",
       "anxietyScore": 2,
       "description": "Wow, that helped a lot. I feel much calmer",
       "id": 27
@@ -422,27 +429,19 @@
     },
     {
       "userId": 1,
-      "timestamp": "Sat, Dec 14, 2019",
+      "timestamp": "2019-10-13T02:14:04.0300Z",
       "interventionId": 3,
       "description": "",
       "anxietyScore": 2,
       "id": 33
     },
     {
-      "userId": 1,
-      "timestamp": "Sat, Dec 14, 2019, 12 AM",
-      "interventionId": 5,
-      "description": "",
-      "anxietyScore": "",
-      "id": 34
-    },
-    {
       "userId": 2,
-      "timestamp": "Sat, Dec 14, 2019, 03 PM",
-      "interventionId": 3,
-      "description": "",
-      "anxietyScore": "",
-      "id": 35
+      "interventionId": 2,
+      "timestamp": "2019-12-18T04:09:43.525Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
+      "id": 36
     }
   ],
   "journals": [
@@ -457,7 +456,7 @@
       "id": 5,
       "timestamp": "2017-12-11T21:14:14.530Z",
       "userId": 1,
-      "entry": "Something else Do loving kindness meditation",
+      "entry": "Do loving kindness meditation",
       "promptId": 4
     },
     {
@@ -498,8 +497,7 @@
     {
       "id": 12,
       "userId": 2,
-      "timestamp": "2000-09-14T03:36:23.080Z",
-      "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control.",
+      "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control. :)",
       "promptId": 5
     },
     {

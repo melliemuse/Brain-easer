@@ -55,43 +55,104 @@ export default class ChartList extends Component {
                         megaArray: megaArray
                     })
                 })
-                // const result = words.filter(word => word.length > 6);
             }).then(() => {
-                console.log("Mega Array", this.state.megaArray)
+                // console.log("Mega Array", this.state.megaArray)
                 // console.log("Mega Array index 0", this.state.megaArray[0])
                 // console.log("Mega Array index 0, index 0", this.state.megaArray[0][0])
                 // console.log("Mega Array index 0, index 0, anxiety score", this.state.megaArray[0][0].anxietyScore)
 
-                
-                const interventionData = [[], [], [], [], [], [], [], [], [], []]
-                
+                // parse timestamp to back to date object in readable format
+                const testDate = new Date("2019-12-14T03:02:33.876Z")
+                console.log(testDate)
+
+                // create a container array with nested empty arrays- one per array in megaArray
+                const interventionData = []
+                for (let i = 0; i < this.state.megaArray.length; i++) {
+                    interventionData.push([])
+                }
+
+                //figuring out sort
+
+                    const sortTest = this.state.baseAnxietyTimestamp.sort(function (a, b) {
+                        // debugger
+                        let d1 = new Date(a), d2 = new Date(b)
+                        return d1 - d2
+                    })
+                      
+
+                console.log("pre-sort", this.state.baseAnxietyTimestamp)
+                console.log("sort", sortTest)
+                console.log("reverse sort", sortTest.reverse())
+
+                // sorting megaArray by timestamp
+
+                // if (this.state.megaArray !== []) {
+                //     for (let i = 0; i < this.state.megaArray.length; i++) {
+                //         if (this.state.megaArray[i] !== undefined) {
+                //             for (let j = 0; j < this.state.megaArray[i].length; j++) {
+                //                 const intervention = this.state.megaArray[i][j]
+                //                 const sortedMegaArray = this.state.megaArray.sort(function (a, b) {
+                //                     return b[0].date.getTime() - a[0].date.getTime();
+                //                 });
+
+                //                 const dataObject =
+                //                     { t: intervention.timestamp, y: intervention.anxietyScore }
+
+                //                 interventionData[i].push(dataObject)
+                //             }
+                //         }
+                //     }
+                // }
+                console.log("interventionData", interventionData)
+
+
+                // console.log(sortedMegaArray)
+                // const sortedInterventions = intervention.sort((a, b) => b.timestamp - a.timestamp)
+
+                console.log(interventionData)
+                console.log(this.state.megaArray.length)
+
                 if (this.state.megaArray !== []) {
                     for (let i = 0; i < this.state.megaArray.length; i++) {
                         if (this.state.megaArray[i] !== undefined) {
                             for (let j = 0; j < this.state.megaArray[i].length; j++) {
-                                // debugger
                                 const intervention = this.state.megaArray[i][j]
-                                
+
+
                                 const dataObject =
                                     { t: intervention.timestamp, y: intervention.anxietyScore }
-                            
-                                interventionData[i].push(dataObject)
-                                // this.state.megaArray[i].forEach(element => {
-                                //     console.log("element", element)
-                                // });
-                                // this.state.megaArray[i].map((intervention) => {
 
-                                // //     const dataObject = [
-                                // //         { t: intervention.timestamp, y: intervention.anxietyScore }
-                                // // ]
-                                // //     interventionData.push(dataObject)
-                                // //     return dataObject
-                                // })
+                                interventionData[i].push(dataObject)
                             }
                         }
                     }
                 }
                 console.log("interventionData", interventionData)
+
+
+                // All timestamps in one array
+                let timestamps = []
+                const megaTimestamps = this.state.baseAnxietyTimestamp.sort(function (a, b) {
+                    
+                    let d1 = new Date(a), d2 = new Date(b)
+                    return d1 - d2
+                })
+                const test = this.state.megaArray.map(object => {
+                    if (object !== undefined) {
+                        for (const element of object) {
+                            timestamps.push(element.timestamp)
+                        }
+                    }
+                }
+                )
+                
+                console.log(timestamps)
+               const megaTimestampSort = timestamps.sort(function (a, b) {
+                    // debugger
+                    let d1 = new Date(a), d2 = new Date(b)
+                    return d1 - d2
+                })
+                console.log(megaTimestampSort)
                 // this.setState({ intervention1Data: interventionData })
                 // console.log("intervention data state", this.state.intervention1Data)
             })

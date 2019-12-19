@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 export default class JournalNewEntryForm extends Component {
     state = {
@@ -33,7 +35,7 @@ export default class JournalNewEntryForm extends Component {
     handleFieldChange = event => {
         event.preventDefault()
         const stateToChange = {}
-        stateToChange[event.target.id] = event.target.value
+        stateToChange[event.currentTarget.id] = event.currentTarget.value
         this.setState(stateToChange)
     }
     createEntry = event => {
@@ -50,32 +52,33 @@ export default class JournalNewEntryForm extends Component {
                 promptId: this.state.randomPrompt.id
             }
             console.log(entry)
-            // APIManager.post("journals", entry)
-            //     .then(() => this.props.history.push("/journal/entries"))
+            APIManager.post("journals", entry)
+                .then(() => this.props.history.push("/journal/entries"))
         }
 
     }
 
     render() {
-        console.log(this.state.prompts)
-        console.log("random prompt", this.state.randomPrompt)
         return (
             <>
                 <form>
                     <h1>New Journal Entry</h1>
                     <fieldset>
-                        <button onClick={this.generatePrompt}>Generate Prompt</button>
+                        <Button className="button" onClick={this.generatePrompt}>Generate Prompt</Button>
                         <header
                             className="prompt"
                             hidden={this.state.hidePrompt}>{this.state.randomPrompt.prompt}</header>
-                        <input
+
+                        <TextField variant="outlined"
+
                             id="entry"
                             onChange={this.handleFieldChange}
                         />
                         <div>
-                            <button
+                            <Button
+                            className="button"
                                 onClick={this.createEntry}>
-                                Submit Entry</button>
+                                Submit Entry</Button>
                         </div>
                     </fieldset>
                 </form>
