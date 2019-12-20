@@ -75,42 +75,42 @@ export default class MainChart extends Component {
                         borderColor: 'rgba(0,0,0,1)',
                         borderWidth: 2,
                         data: this.props.baseAnxietyScore
-                    },
-                    {
-                        label: this.props.megaArray[0][0].intervention.name,
-                        backgroundColor: 'rgba(224, 47, 80)',
-                        borderColor: 'rgba(0,0,0,1)',
-                        borderWidth: 2,
-                        data: [{ t: "1800-12-10T17:26:42.169Z", y: 4 }, { t: "2019-12-10T17:26:42.169Z", y: 6 }, { t: "1927-03-027", y: 10 }, { t: "2047-02-04", y: 1 }, { t: "2050-12-04", y: 8 }]
-                    },
-                    {
-                        label: 'Test',
-                        backgroundColor: 'rgba(224, 47, 80)',
-                        borderColor: 'rgba(0,0,0,1)',
-                        borderWidth: 2,
-                        data: [{ t: "1800-12-10T18:26:42.169Z", y: 4 }]
-                    },
-                    {
-                        label: 'Different',
-                        backgroundColor: 'rgba(224, 47, 80)',
-                        borderColor: 'rgba(0,0,0,1)',
-                        borderWidth: 2,
-                        data: [{ t: "2605-12-10T18:26:42.169Z", y: 15 }, null, { t: "2605-12-10T18:26:42.169Z", y: 15 }]
-                    },
-                    {
-                        label: 'Meditation',
-                        backgroundColor: 'rgba(224, 47, 80)',
-                        borderColor: 'rgba(0,0,0,1)',
-                        borderWidth: 2,
-                        data: this.props.baseAnxietyScore
-                    },
-                    {
-                        label: 'Meditation',
-                        backgroundColor: 'rgba(224, 47, 80)',
-                        borderColor: 'rgba(0,0,0,1)',
-                        borderWidth: 2,
-                        data: this.props.baseAnxietyScore
                     }
+                    // {
+                    //     label: this.props.megaArray[0][0].intervention.name,
+                    //     backgroundColor: 'rgba(224, 47, 80)',
+                    //     borderColor: 'rgba(0,0,0,1)',
+                    //     borderWidth: 2,
+                    //     data: [{ t: "1800-12-10T17:26:42.169Z", y: 4 }, { t: "2019-12-10T17:26:42.169Z", y: 6 }, { t: "1927-03-027", y: 10 }, { t: "2047-02-04", y: 1 }, { t: "2050-12-04", y: 8 }]
+                    // },
+                    // {
+                    //     label: 'Test',
+                    //     backgroundColor: 'rgba(224, 47, 80)',
+                    //     borderColor: 'rgba(0,0,0,1)',
+                    //     borderWidth: 2,
+                    //     data: [{ t: "1800-12-10T18:26:42.169Z", y: 4 }]
+                    // },
+                    // {
+                    //     label: 'Different',
+                    //     backgroundColor: 'rgba(224, 47, 80)',
+                    //     borderColor: 'rgba(0,0,0,1)',
+                    //     borderWidth: 2,
+                    //     data: [{ t: "2605-12-10T18:26:42.169Z", y: 15 }, null, { t: "2605-12-10T18:26:42.169Z", y: 15 }]
+                    // },
+                    // {
+                    //     label: 'Meditation',
+                    //     backgroundColor: 'rgba(224, 47, 80)',
+                    //     borderColor: 'rgba(0,0,0,1)',
+                    //     borderWidth: 2,
+                    //     data: this.props.baseAnxietyScore
+                    // },
+                    // {
+                    //     label: 'Meditation',
+                    //     backgroundColor: 'rgba(224, 47, 80)',
+                    //     borderColor: 'rgba(0,0,0,1)',
+                    //     borderWidth: 2,
+                    //     data: this.props.baseAnxietyScore
+                    // }
                 ]
             this.setState({
                 datasets: datasets,
