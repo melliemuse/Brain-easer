@@ -1,30 +1,22 @@
 
 .nav-container {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    height: 70px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 20px 20px;
     min-height: 4em;
-    /* background: linear-gradient(to top left,rgb(89, 185, 244, .2), rgb(108, 89, 244, .1)); */
+    padding: 10px 20px;
+    background: linear-gradient(to top, rgb(108, 89, 244, .001), rgb(89, 185, 244, .002));
+    box-shadow: 2px 2px 30px rgb(89, 185, 244, .3); 
 }
-.nav {
-    flex-wrap: wrap;
-    width: 90%;
-    align-content: center;
-}
-#lockup {
-    width: 100%;
-    display: flex;
-    list-style-type: none;
-}
+
+
 ul {
     justify-content: center;
     list-style-type: none;
     align-content: flex-start;
 }
 #logo {
-    display: block;
     margin: 0 auto;
     width: auto;
     height: 100px;

@@ -3,20 +3,14 @@
     padding: 0
 }
 
-#root {
-    margin-top: 20px;
-    max-width: 1700px;
-    width: 70%;
-}
 .main {
     margin: 20px auto;
     max-width: 1700px;
     width: 900px;
-  text-align: center;
+    text-align: center;
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
     justify-content: center;
     font-size: 1.4em;
 }
@@ -29,7 +23,7 @@ h1, h2, h3 {
     margin: 10px 0 15px 0;
 }
 h1 {
-    font-size: 60px;
+    font-size: 65px;
   background: -webkit-linear-gradient(#eee, rgb(203, 114, 231));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

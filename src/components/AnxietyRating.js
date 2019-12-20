@@ -92,13 +92,13 @@ export default class AnxietyRating extends Component {
                         onClick={this.setBoolean}
                     >Add Description</Button>
                 
-                
+                    <div hidden={this.state.addDescriptionField}>
                     <input
                         id="description"
                         hidden={this.state.addDescriptionField}
                         onChange={this.handleFieldChange}
                     />
-                
+                    </div>
                     <Button
                         color="secondary"
                         id="addSelfCareField"
@@ -106,12 +106,13 @@ export default class AnxietyRating extends Component {
                         onClick={this.setBoolean}
                     >Log Self-Care</Button>
                 
-                
+                    <div hidden={this.state.addSelfCareField}>
                     <select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
                         {this.state.interventions.map(intervention =>
                             <option key={intervention.id} value={intervention.id}>{intervention.name}</option>
                         )}
                     </select>
+                    </div>
                 
                 <Button
                 className="button"

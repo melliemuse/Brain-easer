@@ -76,6 +76,13 @@
       "userId": 2,
       "description": "This is a new entry and AHHHH!",
       "id": 10
+    },
+    {
+      "anxietyScore": 5,
+      "timestamp": "2019-12-20T04:56:58.292Z",
+      "userId": 2,
+      "description": "",
+      "id": 11
     }
   ],
   "interventions": [
@@ -513,6 +520,12 @@
       "userId": 1,
       "promptId": 3,
       "id": 14
+    },
+    {
+      "id": 15,
+      "userId": 2,
+      "entry": "I can't believe we are presenting tomorrow. This experience is going by so fast! I am really grateful to be on this journey with my classmates. I can't believe how much they have stepped up to help me and each other with our projects. I am in awe of their humor and generosity and I feel lucky to be in this class with them. ",
+      "promptId": 6
     }
   ],
   "prompts": [
