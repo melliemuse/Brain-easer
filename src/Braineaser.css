@@ -24,19 +24,24 @@ h1, h2, h3 {
 }
 h1 {
     font-size: 65px;
+    font-weight: 800;
   background: -webkit-linear-gradient(#eee, rgb(203, 114, 231));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 55px 0;
   text-align: center;
 }
-input {
-    width: 500px;
-    height: 100px;
+#entry {
+    width: 750px;
+    height: 350px;
+    margin: 0 auto;
+}
+.prompt {
+    margin: 65px 0;
 }
 canvas {
-    width: 75% !important ;
-    height: 500px !important ;
+    width: 45% !important ;
+    height: auto !important ;
 }
 Button.button {
     font-size: .7em;

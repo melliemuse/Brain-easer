@@ -9,11 +9,11 @@ export default class InterventionChartCard extends Component {
         datasets: []
     }
     
-    // generateColor = () => {   
-    //     debugger
-    //     const randomValue = Math.round(Math.random() * 255)
-    //     return `rbg(${randomValue}, ${randomValue} , ${randomValue})`  
-    // }
+    generateColor = () => {   
+        // debugger
+        const randomValue = Math.round(Math.random() * 255)
+        return `rbg(${randomValue}, ${randomValue} , ${randomValue})`  
+    }
     buildChartData = () => {
         let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
         
@@ -30,7 +30,7 @@ export default class InterventionChartCard extends Component {
             [
               {
                     label: this.props.interventionData[0].name,
-                    backgroundColor: 'rgba(50, 133, 168,1)',
+                    backgroundColor: this.generateColor(),
                     borderColor: 'rgba(0,0,0,1)',
                     borderWidth: 2,
                     data: this.props.interventionData
