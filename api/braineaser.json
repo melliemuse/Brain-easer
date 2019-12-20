@@ -449,6 +449,22 @@
       "anxietyScore": 5,
       "description": "Worried about running out of wet food",
       "id": 36
+    },
+    {
+      "userId": 2,
+      "interventionId": 8,
+      "timestamp": "2019-12-20T20:22:43.095Z",
+      "anxietyScore": 7,
+      "description": "Worried about running out of wet food",
+      "id": 37
+    },
+    {
+      "userId": 2,
+      "interventionId": 4,
+      "timestamp": "Fri, Dec 20, 2019, 02 PM",
+      "anxietyScore": 3,
+      "description": "",
+      "id": 38
     }
   ],
   "journals": [
@@ -526,6 +542,13 @@
       "userId": 2,
       "entry": "I can't believe we are presenting tomorrow. This experience is going by so fast! I am really grateful to be on this journey with my classmates. I can't believe how much they have stepped up to help me and each other with our projects. I am in awe of their humor and generosity and I feel lucky to be in this class with them. ",
       "promptId": 6
+    },
+    {
+      "entry": "Yes Im being hard on myself",
+      "timestamp": "2019-12-20T20:24:18.105Z",
+      "userId": 2,
+      "promptId": 5,
+      "id": 16
     }
   ],
   "prompts": [

@@ -122,14 +122,12 @@ export default class MainChart extends Component {
 
     render() {
         return (
-            <div>
+            <div 
+            onMouseOver={() => this.props !== [] ?
+                this.buildChartData()
+                : null}
+            >
 
-                <Button onClick={() => this.props !== [] ?
-                    this.buildChartData()
-                    : null}>View Baseline Scores</Button>
-                {/* <Button onClick={() => this.props !== [] ?
-                    this.buildChartData()
-                    : null}>View Deep Breathing Scores</Button> */}
                 <Bar
                     data={this.state}
                     options={{

@@ -47,11 +47,12 @@ export default class InterventionChartCard extends Component {
     render() {
         console.log("PROPS", this.props.interventionData)
         return (
-            <div>
+            <div
+            onMouseOver={() => this.props !== [] ?
+                this.buildChartData()
+                : null}
+            >
                        
-                <button onClick={() => this.props !== [] ?
-                    this.buildChartData()
-                    : null}>View intervention Scores</button>
                 <Bar
                     data={this.state}
                     options={{
