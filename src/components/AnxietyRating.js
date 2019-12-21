@@ -37,14 +37,13 @@ export default class AnxietyRating extends Component {
                 <Button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
             )
         }
-        buttons.unshift()
         return buttons
     }
 
     setBoolean = (event) => {
         // debugger
         const stateToChange = {}
-        stateToChange[event.currentTarget.id] = false
+        stateToChange[event.currentTarget.id] = !event.currentTarget.id
         this.setState(stateToChange)
         console.log(stateToChange)
         console.log(this.state.addSelfCareField)
@@ -97,9 +96,6 @@ export default class AnxietyRating extends Component {
                         className="button"
                         onClick={this.setBoolean}
                     >Add Description</Button>
-                
-                   
-                    
                     <Button
                         color="secondary"
                         id="addSelfCareField"
