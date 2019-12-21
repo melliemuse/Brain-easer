@@ -1,0 +1,43 @@
+
+.interventionLink:link {
+    color: grey;
+  }
+  
+  /* visited link */
+  .interventionLink:visited {
+    color: rgb(146, 157, 163);
+  }
+.interventionLink:hover {
+    text-decoration: none;
+    color: rgba(51, 206, 255, 1);
+}
+.interventionCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4em;
+}
+#interventionCard {
+    border: none;
+    background-color: rgba(198, 13, 201, 0.03);
+    flex-shrink: 0;
+    margin: 45px 60px;
+    justify-content: center;
+    /* height: 140px; */
+    border-radius: 40%;
+    padding: 10px 5px;
+    box-shadow: unset;
+}
+.interventionLink {
+    width: 25%;
+    
+    /* padding-bottom: 50px; */
+}
+.interventionName {
+    display: block;
+    width: 180px;
+    height: 90px;
+    text-decoration: none;
+    margin: 0 auto 40px;
+    text-align: center;
+    /* line-height: 10px; */
+}

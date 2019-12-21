@@ -13,20 +13,22 @@ export default class JournalCard extends Component {
         // : null
         // debugger
         return (
-            <div>
-                <h4>{this.props.journals.prompt[1]}</h4>
+            <>
                 <div>
-                    <p>{this.props.journals.entry}</p>
-                    <p>{this.props.journals.timestamp}</p>
+                <h4>{this.props.journals.prompt.prompt}</h4>
+                    <p className="entryList">{this.props.journals.entry}</p>
+                    <p>{new Date(this.props.journals.timestamp).toString()}</p>
+                    <div>
                     <Button
                         onClick={() => this.props.handleDelete(this.props.journals.id)}
                     >Delete</Button>
                     <Button
                         onClick={() => this.props.history.push(`/journal/entries/${this.props.journals.id}`)}
                     >Edit</Button>
+                    </div>
                 </div>
 
-            </div>
+            </>
         )
     }
 }

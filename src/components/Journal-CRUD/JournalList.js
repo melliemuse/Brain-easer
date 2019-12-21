@@ -33,7 +33,7 @@ export default class JournalList extends Component {
         return (
             <>
                 <h1>My Journal Entries</h1>
-                <div>
+                <div className="main">
                     {this.state.journals.map(journal =>
                         <JournalCard
                             key={journal.id}

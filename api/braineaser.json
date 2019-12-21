@@ -83,6 +83,13 @@
       "userId": 2,
       "description": "",
       "id": 11
+    },
+    {
+      "anxietyScore": 8,
+      "timestamp": "2019-12-21T20:32:00.529Z",
+      "userId": 2,
+      "description": "Pretty down and spun out this morning",
+      "id": 12
     }
   ],
   "interventions": [
@@ -465,6 +472,14 @@
       "anxietyScore": 3,
       "description": "",
       "id": 38
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2019-12-21T20:30:34.694Z",
+      "anxietyScore": 1,
+      "description": "I just journaled and it made a drastic difference!! I feel 10 million times better now!",
+      "id": 39
     }
   ],
   "journals": [
@@ -518,12 +533,6 @@
       "id": 11
     },
     {
-      "id": 12,
-      "userId": 2,
-      "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control. :)",
-      "promptId": 5
-    },
-    {
       "entry": "ok here goes it's wierd knowing that ppl are going to read this it's not the same as it would be but man it feels good just to write i love this yeah this feels great :) no eiditing myself thats the best feeling",
       "timestamp": "2019-12-14T03:36:23.080Z",
       "userId": 1,
@@ -538,17 +547,18 @@
       "id": 14
     },
     {
-      "id": 15,
+      "entry": "Taking a break and getting a snack, then getting more practice and reading up on CSS.",
+      "timestamp": "2019-12-21T16:36:03.389Z",
       "userId": 2,
-      "entry": "I can't believe we are presenting tomorrow. This experience is going by so fast! I am really grateful to be on this journey with my classmates. I can't believe how much they have stepped up to help me and each other with our projects. I am in awe of their humor and generosity and I feel lucky to be in this class with them. ",
-      "promptId": 6
+      "promptId": 4,
+      "id": 17
     },
     {
-      "entry": "Yes Im being hard on myself",
-      "timestamp": "2019-12-20T20:24:18.105Z",
+      "entry": "I am being very hard on myself. I am telling myself that I am bad at this, that people don't like me, really all sorts of terrible things that aren't true. I am very hard-working there is hope for me. I am lovable. ",
+      "timestamp": "2019-12-21T19:33:14.841Z",
       "userId": 2,
       "promptId": 5,
-      "id": 16
+      "id": 18
     }
   ],
   "prompts": [

@@ -48,11 +48,11 @@ render() {
                 <div >
                 <Typography className="nav-container">
                 <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logoPainted.png')}></img></Link></li>
-                <li className="nav"><Link to='/'>Rate Anxiety</Link></li>
-                <li className="nav"><Link to='/charts'>Anxiety Tracker</Link></li>
-                <li className="nav"><Link to='/interventions'>Interventions</Link></li>
-                <li className="nav"><Link to='/journal'>Create Journal Entry</Link></li>
-                <li className="nav"><Link to='/journal/entries'>My Journal Entries</Link></li>
+                <li className="nav"><Link className="navlink"  to='/'>Rate Anxiety</Link></li>
+                <li className="nav"><Link className="navlink"  to='/charts'>Anxiety Tracker</Link></li>
+                <li className="nav"><Link className="navlink"  to='/interventions'>Interventions</Link></li>
+                <li className="nav"><Link className="navlink"  to='/journal'>Create Journal Entry</Link></li>
+                <li className="nav"><Link className="navlink" to='/journal/entries'>My Journal Entries</Link></li>
                 </Typography>
                 </div>
                 </>

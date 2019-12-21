@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import './Journal.css'
 
 export default class JournalNewEntryForm extends Component {
     state = {
