@@ -142,7 +142,7 @@ export default class MainChart extends Component {
                         maintainAspectRatio: true,
                         title: {
                             display: true,
-                            text: 'Anxiety Tracker',
+                            text: 'Base Anxiety',
                             fontSize: 20,
                             scales: {
                                 yAxes: [{

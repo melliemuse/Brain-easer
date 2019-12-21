@@ -68,7 +68,7 @@ export default class InterventionChartCard extends Component {
                         maintainAspectRatio: true,
                         title: {
                             display: true,
-                            text: 'Anxiety Tracker',
+                            text: this.props.interventionData[0].name,
                             fontSize: 20,
                             scales: {
                                 yAxes: [{
