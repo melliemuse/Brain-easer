@@ -45,13 +45,9 @@ export default class AnxietyRating extends Component {
         const stateToChange = {}
         stateToChange[event.currentTarget.id] = !event.currentTarget.id
         this.setState(stateToChange)
-        console.log(stateToChange)
-        console.log(this.state.addSelfCareField)
     }
 
     createAnxietyRating = () => {
-        console.log("Let's submit this sucker!")
-        console.log(localStorage.getItem("activeUser"))
         if (this.state.anxietyScore === "") {
             alert("Please select an anxiety score")
         } else if (this.state.interventionId === "") {
@@ -78,7 +74,7 @@ export default class AnxietyRating extends Component {
 
     render() {
         return (
-                <div className="main">
+                <div className="main text-center">
                 <h1 id="anxiety-rating-welcome">Welcome to Brain Easer!</h1>
                 <h2 id="anxiety-rating-scale">How is your anxiety on a scale from 1 - 10?</h2>
                 <div className="rating-buttons">

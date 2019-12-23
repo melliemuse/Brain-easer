@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import InterventionRerate from './InterventionRerate'
+import Button from '@material-ui/core/Button';
 
 export default class InterventionDetails extends Component {
     state = {
@@ -23,7 +24,7 @@ export default class InterventionDetails extends Component {
         const currentUser = localStorage.getItem("activeUser")
         const completedSelfCare = {
             userId: parseInt(currentUser),
-            timestamp: new Date().toLocaleDateString("en-EN", {month: "short", weekday: "short", day: "2-digit", year: "numeric", hour: "2-digit"}),
+            timestamp: new Date(),
             interventionId: this.state.intervention.id,
             description: "",
             anxietyScore: ""
@@ -46,7 +47,7 @@ export default class InterventionDetails extends Component {
         console.log(this.state.intervention)
         return (
             <>
-                <article className="intervention-details">
+                <article className="intervention-details main">
                     <h1>{this.state.intervention.name}</h1>
                     <div>
                         <p>{this.state.intervention.description}</p>
@@ -55,17 +56,24 @@ export default class InterventionDetails extends Component {
                         <h3>Instructions</h3>
                         <p>{this.state.intervention.instructions}</p>
                     </div>
-                    <button
+                    <Button
+                    color="primary"
+                        onClick={() => {
+                            this.props.history.push("/interventions")
+                            }
+                        }
+                    >Back to Interventions</Button>
+                    <Button
+                    color="secondary"
                         onClick={() => {
                             if (this.state.intervention.id === 7) {
                                 this.props.history.push("/journal")
                             } else {
                                 this.handleClick()
-                                // this.displayRerate()
                             }
                         }
                         }
-                    >Complete this intervention!</button>
+                    >Complete this intervention!</Button>
                     {this.state.displayRerate &&
                         <InterventionRerate intervention={this.state.intervention}
                             interventions={[this.state.interventions]} {...this.props} />}

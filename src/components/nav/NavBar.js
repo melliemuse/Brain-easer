@@ -47,7 +47,7 @@ render() {
                 <>
                 <div >
                 <Typography className="nav-container">
-                <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logoPainted.png')}></img></Link></li>
+                <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logos/newLogo.png')}></img></Link></li>
                 <li className="nav"><Link className="navlink"  to='/'>Rate Anxiety</Link></li>
                 <li className="nav"><Link className="navlink"  to='/charts'>Anxiety Tracker</Link></li>
                 <li className="nav"><Link className="navlink"  to='/interventions'>Interventions</Link></li>

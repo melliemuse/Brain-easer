@@ -9,7 +9,10 @@
     margin: 20px auto;
     max-width: 1700px;
     width: 900px;
-    text-align: center;
+    text-align: left;
+}
+.text-center {
+    text-align: left;
 }
 body {
     font-family: 'Montserrat', sans-serif;

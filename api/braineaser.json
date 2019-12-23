@@ -464,6 +464,30 @@
       "anxietyScore": 1,
       "description": "I just journaled and it made a drastic difference!! I feel 10 million times better now!",
       "id": 39
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-23T21:28:26.679Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 40
+    },
+    {
+      "userId": 2,
+      "interventionId": 8,
+      "timestamp": "2019-12-23T21:30:06.914Z",
+      "anxietyScore": 1,
+      "description": "This did wonders for my mood",
+      "id": 41
+    },
+    {
+      "userId": 2,
+      "interventionId": 8,
+      "timestamp": "2019-12-23T21:32:25.681Z",
+      "anxietyScore": 1,
+      "description": "I feel so much better now!",
+      "id": 42
     }
   ],
   "journals": [
