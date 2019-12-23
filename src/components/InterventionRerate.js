@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import APIManager from '../modules/APIManager'
-
+import Button from '@material-ui/core/Button';
 
 export default class InterventionRerate extends Component {
     state = {
@@ -23,14 +23,14 @@ export default class InterventionRerate extends Component {
     handleFieldChange = event => {
         event.preventDefault()
         const stateToChange = {}
-        stateToChange[event.target.id] = event.target.value
+        stateToChange[event.currentTarget.id] = event.currentTarget.value
         this.setState(stateToChange)
     }
     createbuttons = () => {
         let buttons = []
         for (let i = 0; i < 10; i++) {
             buttons.push(
-                <button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</button>
+                <Button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
             )
         }
         return buttons
@@ -50,7 +50,7 @@ export default class InterventionRerate extends Component {
             }
             console.log("anxiety rerate object", anxiety)
             APIManager.update("userInterventions", anxiety)
-                .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : null)
+                .then(anxiety.anxietyScore > 3 ? this.props.history.push("/interventions") : this.props.history.push("/charts"))
         }
     }
 
@@ -59,16 +59,10 @@ export default class InterventionRerate extends Component {
         console.log("last completed int of type", this.props.interventions[this.props.interventions.length-1])
         // console.log([this.state.interventions[length-1].id])
         return (
-            <>
-                <h2>Congratulations!</h2>
-                <h4>Now rerate your anxiety to track your progress</h4>
+            <div className="main">
+                <h2>Congratulations! You have taken action to make yourself feel beter.</h2>
+                <h4>Rerate your anxiety to track your progress</h4>
                 {this.createbuttons()}
-                <div>
-                    <button
-                        id="addDescriptionField"
-                        onClick={this.setBoolean}
-                    >Add Description</button>
-                </div>
                 <div>
                     <input
                         id="description"
@@ -76,11 +70,13 @@ export default class InterventionRerate extends Component {
                         onChange={this.handleFieldChange}
                     />
                 </div>
-                <button
+                <Button
+                color="secondary"
+                variant="contained"
                     onClick={this.createAnxietyRating}
                 >Submit Rating
-                </button>
-            </> 
+                </Button>
+            </div> 
         )
     }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 
 export default class AnxietyRating extends Component {
@@ -36,22 +37,17 @@ export default class AnxietyRating extends Component {
                 <Button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
             )
         }
-        buttons.unshift()
         return buttons
     }
 
     setBoolean = (event) => {
         // debugger
         const stateToChange = {}
-        stateToChange[event.currentTarget.id] = false
+        stateToChange[event.currentTarget.id] = !event.currentTarget.id
         this.setState(stateToChange)
-        console.log(stateToChange)
-        console.log(this.state.addSelfCareField)
     }
 
     createAnxietyRating = () => {
-        console.log("Let's submit this sucker!")
-        console.log(localStorage.getItem("activeUser"))
         if (this.state.anxietyScore === "") {
             alert("Please select an anxiety score")
         } else if (this.state.interventionId === "") {
@@ -78,27 +74,24 @@ export default class AnxietyRating extends Component {
 
     render() {
         return (
-                <div className="main">
-                <h1>Welcome to Brain Easer!</h1>
-                <h2>How is your anxiety on a scale from 1 - 10?</h2>
+                <div className="main text-center">
+                <h1 id="anxiety-rating-welcome">Welcome to Brain Easer!</h1>
+                <h2 id="anxiety-rating-scale">How is your anxiety on a scale from 1 - 10?</h2>
                 <div className="rating-buttons">
                 {this.createbuttons()}
                 </div>
-                
+                 <div className="descriptionField" hidden={this.state.addDescriptionField}>
+                    <TextField variant="outlined"
+                        id="description"
+                        hidden={this.state.addDescriptionField}
+                        onChange={this.handleFieldChange}
+                    /> </div>
                     <Button
                         id="addDescriptionField"
                         name="addDescriptionField"
                         className="button"
                         onClick={this.setBoolean}
                     >Add Description</Button>
-                
-                
-                    <input
-                        id="description"
-                        hidden={this.state.addDescriptionField}
-                        onChange={this.handleFieldChange}
-                    />
-                
                     <Button
                         color="secondary"
                         id="addSelfCareField"
@@ -106,12 +99,13 @@ export default class AnxietyRating extends Component {
                         onClick={this.setBoolean}
                     >Log Self-Care</Button>
                 
-                
+                    <div hidden={this.state.addSelfCareField}>
                     <select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
                         {this.state.interventions.map(intervention =>
                             <option key={intervention.id} value={intervention.id}>{intervention.name}</option>
                         )}
                     </select>
+                    </div>
                 
                 <Button
                 className="button"

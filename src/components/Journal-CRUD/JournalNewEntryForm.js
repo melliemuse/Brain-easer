@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import './Journal.css'
 
 export default class JournalNewEntryForm extends Component {
     state = {
@@ -60,17 +61,16 @@ export default class JournalNewEntryForm extends Component {
 
     render() {
         return (
-            <>
+            <div className="main">
                 <form>
                     <h1>New Journal Entry</h1>
                     <fieldset>
                         <Button className="button" onClick={this.generatePrompt}>Generate Prompt</Button>
                         <header
                             className="prompt"
-                            hidden={this.state.hidePrompt}>{this.state.randomPrompt.prompt}</header>
+                            >{this.state.randomPrompt.prompt}</header>
 
                         <TextField variant="outlined"
-
                             id="entry"
                             onChange={this.handleFieldChange}
                         />
@@ -84,7 +84,7 @@ export default class JournalNewEntryForm extends Component {
                 </form>
 
 
-            </>
+            </div>
         )
 
     }

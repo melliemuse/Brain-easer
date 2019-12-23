@@ -76,6 +76,13 @@
       "userId": 2,
       "description": "This is a new entry and AHHHH!",
       "id": 10
+    },
+    {
+      "anxietyScore": 5,
+      "timestamp": "2019-12-20T04:56:58.292Z",
+      "userId": 2,
+      "description": "",
+      "id": 11
     }
   ],
   "interventions": [
@@ -232,7 +239,7 @@
       "interventionId": 8,
       "timestamp": "2019-12-11T15:24:57.912Z",
       "anxietyScore": 7,
-      "description": "Stressed out about capstone",
+      "description": "Stressed about capstone",
       "id": 8
     },
     {
@@ -242,14 +249,6 @@
       "anxietyScore": 3,
       "description": "",
       "id": 9
-    },
-    {
-      "userId": 1,
-      "interventionId": 2,
-      "timestamp": "2019-12-12T19:59:37.688Z",
-      "anxietyScore": 3,
-      "description": "",
-      "id": 10
     },
     {
       "userId": 2,
@@ -293,14 +292,6 @@
     },
     {
       "userId": 2,
-      "interventionId": 2,
-      "timestamp": "1852-01-27T00:13:84.696Z",
-      "anxietyScore": 2,
-      "description": "Much better!",
-      "id": 16
-    },
-    {
-      "userId": 2,
       "interventionId": 9,
       "timestamp": "2019-12-14T01:00:50.782Z",
       "anxietyScore": 3,
@@ -333,7 +324,7 @@
     },
     {
       "userId": 2,
-      "timestamp": "2019-12-14T01:52:38.498Z",
+      "timestamp": "2019-12-11T15:24:57.912Z",
       "interventionId": 4,
       "description": "",
       "anxietyScore": 3,
@@ -442,6 +433,54 @@
       "anxietyScore": 5,
       "description": "Worried about running out of wet food",
       "id": 36
+    },
+    {
+      "userId": 2,
+      "interventionId": 8,
+      "timestamp": "2019-12-20T20:22:43.095Z",
+      "anxietyScore": 7,
+      "description": "Worried about running out of wet food",
+      "id": 37
+    },
+    {
+      "userId": 2,
+      "interventionId": 4,
+      "timestamp": "2017-07-11T15:24:57.912Z",
+      "anxietyScore": 3,
+      "description": "",
+      "id": 38
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2019-12-21T20:30:34.694Z",
+      "anxietyScore": 1,
+      "description": "I just journaled and it made a drastic difference!! I feel 10 million times better now!",
+      "id": 39
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-23T21:28:26.679Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 40
+    },
+    {
+      "userId": 2,
+      "interventionId": 8,
+      "timestamp": "2019-12-23T21:30:06.914Z",
+      "anxietyScore": 1,
+      "description": "This did wonders for my mood",
+      "id": 41
+    },
+    {
+      "userId": 2,
+      "interventionId": 8,
+      "timestamp": "2019-12-23T21:32:25.681Z",
+      "anxietyScore": 1,
+      "description": "I feel so much better now!",
+      "id": 42
     }
   ],
   "journals": [
@@ -495,12 +534,6 @@
       "id": 11
     },
     {
-      "id": 12,
-      "userId": 2,
-      "entry": "Probably not. It might be tough, but it certainly beats worrying about things I can't control. :)",
-      "promptId": 5
-    },
-    {
       "entry": "ok here goes it's wierd knowing that ppl are going to read this it's not the same as it would be but man it feels good just to write i love this yeah this feels great :) no eiditing myself thats the best feeling",
       "timestamp": "2019-12-14T03:36:23.080Z",
       "userId": 1,
@@ -513,6 +546,20 @@
       "userId": 1,
       "promptId": 3,
       "id": 14
+    },
+    {
+      "entry": "Taking a break and getting a snack, then getting more practice and reading up on CSS.",
+      "timestamp": "2019-12-21T16:36:03.389Z",
+      "userId": 2,
+      "promptId": 4,
+      "id": 17
+    },
+    {
+      "entry": "I am being very hard on myself. I am telling myself all sorts of terrible things about myself that aren't true. I am very hard-working there is hope.",
+      "timestamp": "2019-12-21T19:33:14.841Z",
+      "userId": 2,
+      "promptId": 5,
+      "id": 18
     }
   ],
   "prompts": [
@@ -538,11 +585,11 @@
     },
     {
       "id": 5,
-      "prompt": "Am I being hard on myself? What am I thinking about myself? What are two things I like about myself?"
+      "prompt": "Am I judging myself harshly? Do I think other people are judging me (generally this is self-judgement in diguise). Name at least one thing you like about yourself or that you are proud of."
     },
     {
       "id": 6,
-      "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation just to get it out"
+      "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation just to get it out."
     }
   ]
 }

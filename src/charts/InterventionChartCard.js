@@ -9,28 +9,36 @@ export default class InterventionChartCard extends Component {
         datasets: []
     }
     
-    // generateColor = () => {   
-    //     debugger
-    //     const randomValue = Math.round(Math.random() * 255)
-    //     return `rbg(${randomValue}, ${randomValue} , ${randomValue})`  
-    // }
+    generateColor = () => {   
+        // debugger
+        const randomValue = Math.round(Math.random() * 255)
+        return `rbg(${randomValue}, ${randomValue} , ${randomValue})`  
+    }
     buildChartData = () => {
+        let dates = this.props.interventionData.map(date => {
+            console.log("TIMESTAMPS", date.t)
+            let dateObj = new Date(date.t)
+            // let month = dateObj.getMonth()
+            // let date = dateObj.getDate()
+            // let day = dateObj.getDay()
+            return dateObj.toDateString()
+        })
         let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
         
         
-        const timestamps = this.props.interventionData.map(item => {
-             let date = item.t
-             return new Date(date)
+        // const timestamps = this.props.interventionData.map(item => {
+        //      let date = item.t
+        //      return new Date(date)
 
-        })
-        console.log(timestamps)
+        // })
+        // console.log(timestamps)
 
         
         const datasets =
             [
               {
                     label: this.props.interventionData[0].name,
-                    backgroundColor: 'rgba(50, 133, 168,1)',
+                    backgroundColor: this.generateColor(),
                     borderColor: 'rgba(0,0,0,1)',
                     borderWidth: 2,
                     data: this.props.interventionData
@@ -39,7 +47,7 @@ export default class InterventionChartCard extends Component {
         this.setState({
             datasets: datasets,
             data: datasets,
-            labels: timestamps
+            labels: dates
         })
   
     }
@@ -47,11 +55,12 @@ export default class InterventionChartCard extends Component {
     render() {
         console.log("PROPS", this.props.interventionData)
         return (
-            <div>
+            <div
+            onMouseOver={() => this.props !== [] ?
+                this.buildChartData()
+                : null}
+            >
                        
-                <button onClick={() => this.props !== [] ?
-                    this.buildChartData()
-                    : null}>View intervention Scores</button>
                 <Bar
                     data={this.state}
                     options={{
@@ -59,7 +68,7 @@ export default class InterventionChartCard extends Component {
                         maintainAspectRatio: true,
                         title: {
                             display: true,
-                            text: 'Anxiety Tracker',
+                            text: this.props.interventionData[0].name,
                             fontSize: 20,
                             scales: {
                                 yAxes: [{
