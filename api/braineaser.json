@@ -83,13 +83,6 @@
       "userId": 2,
       "description": "",
       "id": 11
-    },
-    {
-      "anxietyScore": 8,
-      "timestamp": "2019-12-21T20:32:00.529Z",
-      "userId": 2,
-      "description": "Pretty down and spun out this morning",
-      "id": 12
     }
   ],
   "interventions": [
@@ -246,7 +239,7 @@
       "interventionId": 8,
       "timestamp": "2019-12-11T15:24:57.912Z",
       "anxietyScore": 7,
-      "description": "Stressed out about capstone",
+      "description": "Stressed about capstone",
       "id": 8
     },
     {
@@ -562,7 +555,7 @@
       "id": 17
     },
     {
-      "entry": "I am being very hard on myself. I am telling myself that I am bad at this, that people don't like me, really all sorts of terrible things that aren't true. I am very hard-working there is hope for me. I am lovable. ",
+      "entry": "I am being very hard on myself. I am telling myself all sorts of terrible things about myself that aren't true. I am very hard-working there is hope.",
       "timestamp": "2019-12-21T19:33:14.841Z",
       "userId": 2,
       "promptId": 5,
@@ -592,11 +585,11 @@
     },
     {
       "id": 5,
-      "prompt": "Am I being hard on myself? What am I thinking about myself? What are two things I like about myself?"
+      "prompt": "Am I judging myself harshly? Do I think other people are judging me (generally this is self-judgement in diguise). Name at least one thing you like about yourself or that you are proud of."
     },
     {
       "id": 6,
-      "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation just to get it out"
+      "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation just to get it out."
     }
   ]
 }

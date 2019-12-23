@@ -74,6 +74,19 @@ export default class InterventionDetails extends Component {
                         }
                         }
                     >Complete this intervention!</Button>
+                    {this.state.intervention.id === 6 &&
+                        <Button
+                        color="secondary"
+                            onClick={() => {
+                                if (this.state.intervention.id === 7) {
+                                    this.props.history.push("/journal")
+                                } else {
+                                    this.handleClick()
+                                }
+                            }
+                            }
+                        >Upload Image of Yourself as a Child</Button>
+                    }
                     {this.state.displayRerate &&
                         <InterventionRerate intervention={this.state.intervention}
                             interventions={[this.state.interventions]} {...this.props} />}
