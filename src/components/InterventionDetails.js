@@ -8,7 +8,8 @@ export default class InterventionDetails extends Component {
         interventions: {},
         intervention: [],
         displayRerate: false,
-        completedSelfCare: {}
+        completedSelfCare: {},
+        imageUrl: "",
     }
 
     componentDidMount() {
@@ -32,16 +33,32 @@ export default class InterventionDetails extends Component {
         APIManager.post("userInterventions", completedSelfCare)
             .then(intervention => APIManager.get("userInterventions", intervention.id)
                 .then(interventions => {
-                    console.log("interventions data", interventions)
                     this.setState({
                         interventions: interventions
                     })
-                    console.log(this.state.interventions)
                 }))
-                .then(this.setState({
-                    displayRerate: !this.state.displayRerate
-                }))
+            .then(this.setState({
+                displayRerate: !this.state.displayRerate
+            }))
     }
+
+    // Uploading images to Cloudinary: https://cloudinary.com/blog/how_to_build_an_image_library_with_react_cloudinary#uploading_images
+
+//I wrote this as a fat arrow function because I wanted to use this.state()
+uploadWidget = () => {
+    window.cloudinary.openUploadWidget({ cloud_name: "dwjgfd51f", upload_preset: "yt2dp2iy", tags:['atag']},
+        (error, result) => {
+            // See what cloudinary returns
+            if (result) {
+                console.log(result); 
+                // Building the entire URL for the uploaded image using the data cloudinary returns
+                console.log("https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/" + result[0].public_id)
+      
+                // Just like other input forms, changing state so that the imageUrl property will contain the URL of the uploaded image
+                this.setState({imageUrl: `https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/${result[0].public_id}`})
+            };
+            })
+  }
 
     render() {
         console.log(this.state.intervention)
@@ -57,36 +74,30 @@ export default class InterventionDetails extends Component {
                         <p>{this.state.intervention.instructions}</p>
                     </div>
                     <Button
-                    color="primary"
+                        variant="contained"
+                        color="primary"
                         onClick={() => {
                             this.props.history.push("/interventions")
-                            }
-                        }
-                    >Back to Interventions</Button>
+                        }}> Back to Interventions
+                    </Button>
                     <Button
-                    color="secondary"
+                        variant="contained"
+                        color="secondary"
                         onClick={() => {
                             if (this.state.intervention.id === 7) {
                                 this.props.history.push("/journal")
                             } else {
                                 this.handleClick()
                             }
-                        }
-                        }
-                    >Complete this intervention!</Button>
+                        }}>Complete this intervention!
+                        </Button>
                     {this.state.intervention.id === 6 &&
                         <Button
-                        color="secondary"
-                            onClick={() => {
-                                if (this.state.intervention.id === 7) {
-                                    this.props.history.push("/journal")
-                                } else {
-                                    this.handleClick()
-                                }
-                            }
-                            }
-                        >Upload Image of Yourself as a Child</Button>
-                    }
+                            variant="contained"
+                            color="primary"
+                            onClick={
+                            this.uploadWidget}>Upload Image
+                            </Button>}
                     {this.state.displayRerate &&
                         <InterventionRerate intervention={this.state.intervention}
                             interventions={[this.state.interventions]} {...this.props} />}
