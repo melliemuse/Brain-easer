@@ -98,7 +98,8 @@ uploadWidget = () => {
             <>
                 <article className="intervention-details main">
                     <h1>{this.state.intervention.name}</h1>
-                    {this.state.user.inner_child_image &&
+                    {this.state.user.inner_child_image && 
+                    this.state.intervention.id === 6 &&
                        <img src={this.state.user.inner_child_image} alt="inner child picture" className="inner-child-image"></img>
                     }
                     <div>
@@ -129,7 +130,6 @@ uploadWidget = () => {
                     {this.state.intervention.id === 6 &&
                     <div>
                     <img className="uploadImage" src={this.state.imageUrl} alt=""/>
-                    </div>}
                         <Button
                             variant="contained"
                             color="primary"
@@ -140,6 +140,7 @@ uploadWidget = () => {
                             
                             >Add Inner Child Image
                             </Button>
+                    </div>}
                             
                     {this.state.displayRerate &&
                         <InterventionRerate intervention={this.state.intervention}
