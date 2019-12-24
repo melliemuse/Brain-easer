@@ -4,13 +4,15 @@
       "id": 1,
       "username": "Melody",
       "email": "melliemuse@gmail.com",
-      "password": "None-ya'bizness"
+      "password": "None-ya'bizness",
+      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/rtfhuxpko85aejfj7ycw"
     },
     {
       "id": 2,
       "username": "Midzie",
       "email": "cuddlebug@gmail.com",
-      "password": "Kitty-High-Five"
+      "password": "Kitty-High-Five",
+      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/hzhq9psigrjydxtp4fc1"
     }
   ],
   "baselineAnxietyScores": [
@@ -83,6 +85,13 @@
       "userId": 2,
       "description": "",
       "id": 11
+    },
+    {
+      "anxietyScore": 2,
+      "timestamp": "2019-12-24T04:03:01.560Z",
+      "userId": 1,
+      "description": "",
+      "id": 12
     }
   ],
   "interventions": [
@@ -129,14 +138,14 @@
       "completed": "",
       "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses to acheive this result and loosen the grip of anxiety. Grounding techniques exist for all five senses, some may resonate more for you than others, so try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation",
       "icon": "",
-      "instructions": "• Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths • Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. • Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present • Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. • • Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. • Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
+      "instructions": "• Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths • Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. • Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present • Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. • Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. • Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
     },
     {
       "id": 6,
       "name": "Comforting Inner Child",
       "timestamp": "",
       "completed": "",
-      "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. Unfortunately, most people do not have this skill, and if your parents, like, most people, did not posses this skill, you do not either. That is why it is neccessary for many people to go through this process to consciously to develop this skill later in life. The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way that might otherwise be difficult. Many times, emotional upset is tied to self-judgement, whether or not that is immediatly apparent. When we experience any sort of adverse experience as a child, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations.",
+      "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. If your parents, like, most people, did not possess this skill, then you do not either. That is why it is necessary for many people to go through the process of consciously developing the ability to self-soothe later in life. The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way which might otherwise be difficult. Many times, emotional upset is tied to self-judgement, and often this has its roots in childhood. When we experience adverse experiences as children, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations.",
       "icon": "",
       "instructions": "Grab your journal and write whatever comes to mind about the situations which are sparking distress and the thoughts you are having. Try to drill down into the beliefs you are carrying about yourself. Now find a picture of yourself as a small child- the cuter you looked, the better. Stare at it for a while. See how sweet and innocent you were. That is you. Do the thoughts and beliefs you are having match up with what you see when you look at that picture? Now imagine yourself at your current age giving the smaller, hurting version of yourself a hug and telling them that you are there to protect them and everything is going to be alright."
     },
@@ -145,16 +154,16 @@
       "name": "Journaling",
       "timestamp": "",
       "completed": "",
-      "description": "There is a term for the effect where your brain, trying to be helpful, will endlessly remind you of things it thinks you need to take care of. It's like an alarm clock that you are hitting snooze on but never able to turn off. Forming a plan for how you will accomplish those tasks turns off that alarm because your brain is then satisfied that it's done its job in making sure you accomplish those tasks it deems important for your survival. Journaling helps you get those looping, urgent, anxious thoughts out of your head, it shuts off the brain alarm by allowing you to think through your thoughts and come to a place of clarity and insight which you can use as a jumping off point to plan.",
+      "description": "Your brain, trying to be helpful, will endlessly remind you of things it deems urgent. It's like a stubborn alarm clock that will only be snoozed, not silenced. Making a plan for how you will accomplish the urgent tasks is what will finally shut off the alarm. Once your brain is satisfied that it's done its job by making sure you accomplish the tasks it deems important for your survival, it will let you have some peace. Journaling helps by getting the looping, urgent, anxious thoughts out of your head. It empties your mind of clutter that can impede your ability to think clearly and gives you the perspective to analyze and plan effectively. A clear plan, increased perspective and the emptying of urgent mental clutter all lead to decreased anxiety and the switching off of your mental alarm.",
       "icon": "",
-      "instructions": "I find stream-of-consciousness writing to be a highly effective method of journaling because I am writing so quickly I do not have time to censor or judge myself, and that is good because those self-judgements fan the flames of anxiety. I have also written some prompts to help you think through some cognitive pitfalls and to come to a more constructive mode of thinking to alleviate your anxiety. Click on the button below to do some journaling."
+      "instructions": "Stream-of-consciousness writing is a highly effective method of journaling because you are writing so quickly that you do not have time to censor or judge yourself, and that is good because those self-judgements fan the flames of anxiety. I have written some prompts to help you think through some cognitive pitfalls and to come to a more constructive mode of thinking to alleviate your anxiety. Click on the button below to do some journaling."
     },
     {
       "id": 8,
       "name": "Meditation",
       "timestamp": "",
       "completed": "",
-      "description": "Much has been written about the efficacy of meditation for anxiety. It anchors you inside your body, allows you to unhook from distressing thoughts, and calms the mind.",
+      "description": "Much has been written about the efficacy of meditation for anxiety, and with good reason. Meditation anchors you inside your body, allows you to unhook from distressing thoughts, and promotes the ability to sit with and tolerate discomfort. By sitting with and allowing yourself to feel pain, you paradoxically reduce its effect on you, and by showing yourself you can tolerate something challenging, you strengthen your self-worth and reduce your anxiety.",
       "icon": "",
       "instructions": "Spend at least five minutes, ideally ten to twenty seated with your eyes slightly open gazing at a spot on the ground in front of you. Follow your breath as you allow your thoughts to come and go. If you notice yourself getting distracted, just bring your attention back to your breath with kindness. If you notice any dicomfort in the body, this is a good opportunity to practice acceptance. Though it is counterintuitive, if you consciously tell yourself that it is ok that you are feeling discomfort and try to lean into the sensation, it generally disspates."
     },
@@ -163,16 +172,16 @@
       "name": "Physical Touch",
       "timestamp": "",
       "completed": "",
-      "description": "Physical touch releases oxytocin, a bonding hormone that produces feelings of relaxation. It also lowers cortisol, which is a hormone produced by the body as a result of stress, and lowers blood pressure.",
+      "description": "Physical touch between people and animals releases oxytocin, a bonding hormone that produces feelings of relaxation. It also lowers cortisol, which is a hormone produced by the body as a result of stress, and lowers blood pressure.",
       "icon": "",
-      "instructions": "Pet or cuddle an animal, ask for hugs, go dancing, spend time with people who are both safe and physically affectionate"
+      "instructions": "Pet or cuddle an animal, ask for hugs, go dancing, spend time with people who are both safe and physically affectionate."
     },
     {
       "id": 10,
       "name": "Social Support",
       "timestamp": "",
       "completed": "",
-      "description": "Social support is incredibly powerful for supporting mental health. It is considered a protective factor which can mean the difference between developing a condition as serious and debilitating as PTSD and being able to integrate incredibly challenging experiences.",
+      "description": "Social support is incredibly powerful for supporting mental health. It is considered a protective factor that can mean the difference between developing a condition as serious and debilitating as PTSD and being able to integrate incredibly challenging experiences.",
       "icon": "",
       "instructions": "Take the time to spend with people who are supportive and make you feel like you belong when you are feeling anxious, especially if you can share how you are feeling and receive understanding and validation."
     }
@@ -513,6 +522,14 @@
       "description": "",
       "anxietyScore": "",
       "id": 46
+    },
+    {
+      "userId": 2,
+      "timestamp": "2019-12-24T01:15:45.708Z",
+      "interventionId": 6,
+      "description": "",
+      "anxietyScore": "",
+      "id": 47
     }
   ],
   "journals": [

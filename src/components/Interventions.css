@@ -41,3 +41,13 @@
     text-align: center;
     /* line-height: 10px; */
 }
+.uploadImage {
+    width: 250px;
+}
+.inner-child-image {
+    display: block;
+    width: 300px;
+    margin: 0 auto 35px;
+    background-size: cover;
+    background-repeat:no-repeat;
+}

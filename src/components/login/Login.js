@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
+import Button from '@material-ui/core/Button'
 
 export default class Login extends Component {
     state = {
@@ -22,7 +23,7 @@ export default class Login extends Component {
     handleFieldChange = event => {
         event.preventDefault()
         const stateToChange = {}
-        stateToChange[event.target.id] = event.target.value
+        stateToChange[event.currentTarget.id] = event.currentTarget.value
         this.setState(stateToChange)
         console.log("state", this.state)
     }
@@ -49,28 +50,27 @@ export default class Login extends Component {
     render() {
         console.log(this.props)
         return (
-            <>
+            <div className="main text-center">
                 <h2>Login</h2>
                 <form onSubmit={this.submitForm}>
                     <fieldset>
-                        <label>
-                            Username
-                        </label>
                         <input
                             id="username"
+                            placeholder="Username"
                             onChange={this.handleFieldChange}
                         />
-                        <label>
-                            Password
-                        </label>
+                        <div>
+
                         <input
+                            placeholder="Password"
                             id="password"
                             onChange={this.handleFieldChange}
                         />
-                        <button type="submit">Login</button>
+                        </div>
+                        <Button type="submit">Login</Button>
                     </fieldset>
                 </form>
-            </>
+            </div>
         )
     }
 }

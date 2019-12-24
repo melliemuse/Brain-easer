@@ -20,9 +20,13 @@ export default class JournalCard extends Component {
                     <p>{new Date(this.props.journals.timestamp).toString()}</p>
                     <div>
                     <Button
+                    color="primary"
+                    variant="contained"
                         onClick={() => this.props.handleDelete(this.props.journals.id)}
                     >Delete</Button>
                     <Button
+                    color="secondary"
+                    variant="contained"
                         onClick={() => this.props.history.push(`/journal/entries/${this.props.journals.id}`)}
                     >Edit</Button>
                     </div>
