@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import InterventionRerate from '../InterventionRerate'
 import './Journal.css'
 
 export default class JournalNewEntryForm extends Component {
@@ -9,7 +10,10 @@ export default class JournalNewEntryForm extends Component {
         prompts: [],
         entry: "",
         randomPrompt: {},
-        hidePrompt: true
+        hidePrompt: true,
+        displayRerate: false,
+        interventions: {},
+        intervention: []
     }
 
     componentDidMount() {
@@ -20,10 +24,14 @@ export default class JournalNewEntryForm extends Component {
                     prompts: prompts
                 })
             })
+            .then(() => APIManager.get("interventions", 7))
+            .then(intervention => {
+                console.log("INTERVENTIONS", intervention)
+                this.setState({intervention: intervention})
+            })
     }
 
     generatePrompt = event => {
-        console.log(this.state.prompts.length)
         event.preventDefault()
         const min = 0;
         const max = this.state.prompts.length;
@@ -54,9 +62,28 @@ export default class JournalNewEntryForm extends Component {
             }
             console.log(entry)
             APIManager.post("journals", entry)
-                .then(() => this.props.history.push("/journal/entries"))
+                .then(() => this.handleClick())
         }
-
+    }
+    handleClick = () => {
+        const currentUser = localStorage.getItem("activeUser")
+        const completedSelfCare = {
+            userId: parseInt(currentUser),
+            timestamp: new Date(),
+            interventionId: this.state.intervention.id,
+            description: "",
+            anxietyScore: ""
+        }
+        APIManager.post("userInterventions", completedSelfCare)
+            .then(intervention => APIManager.get("userInterventions", intervention.id)
+                .then(interventions => {
+                    this.setState({
+                        interventions: interventions
+                    })
+                }))
+            .then(this.setState({
+                displayRerate: !this.state.displayRerate
+            }))
     }
 
     render() {
@@ -82,7 +109,9 @@ export default class JournalNewEntryForm extends Component {
                         </div>
                     </fieldset>
                 </form>
-
+                {this.state.displayRerate &&
+                        <InterventionRerate intervention={this.state.intervention}
+                            interventions={[this.state.interventions]} {...this.props} />}
 
             </div>
         )

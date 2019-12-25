@@ -99,6 +99,69 @@
       "userId": 1,
       "description": "Stressing out about what to work on next",
       "id": 13
+    },
+    {
+      "anxietyScore": 9,
+      "timestamp": "2019-12-25T19:10:49.974Z",
+      "userId": 1,
+      "description": "",
+      "id": 14
+    },
+    {
+      "anxietyScore": 6,
+      "timestamp": "2019-12-25T19:11:42.932Z",
+      "userId": 1,
+      "description": "",
+      "id": 15
+    },
+    {
+      "anxietyScore": 5,
+      "timestamp": "2019-12-25T19:12:12.345Z",
+      "userId": 1,
+      "description": "",
+      "id": 16
+    },
+    {
+      "anxietyScore": 8,
+      "timestamp": "2019-12-25T19:13:47.518Z",
+      "userId": 1,
+      "description": "",
+      "id": 17
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2019-12-25T19:14:09.662Z",
+      "userId": 1,
+      "description": "",
+      "id": 18
+    },
+    {
+      "anxietyScore": 4,
+      "timestamp": "2019-12-25T19:15:01.101Z",
+      "userId": 1,
+      "description": "",
+      "id": 19
+    },
+    {
+      "anxietyScore": 5,
+      "timestamp": "2019-12-25T19:15:31.318Z",
+      "userId": 1,
+      "description": "",
+      "id": 20
+    },
+    {
+      "anxietyScore": 4,
+      "timestamp": "2019-12-25T19:16:13.973Z",
+      "userId": 1,
+      "description": "",
+      "id": 21
+    },
+    {
+      "anxietyScore": 7,
+      "timestamp": "2019-12-25T19:16:38.397Z",
+      "userId": 1,
+      "description": "",
+      "id": 22
     }
   ],
   "interventions": [
@@ -241,14 +304,6 @@
       "description": "",
       "anxietyScore": 3,
       "id": 6
-    },
-    {
-      "userId": 1,
-      "interventionId": 8,
-      "timestamp": "2019-12-11T02:02:15.573Z",
-      "anxietyScore": 4,
-      "description": "Just meditated",
-      "id": 7
     },
     {
       "userId": 1,
@@ -499,52 +554,92 @@
       "id": 42
     },
     {
-      "userId": 2,
-      "timestamp": "2019-12-23T22:38:33.921Z",
-      "interventionId": 6,
-      "description": "",
-      "anxietyScore": "",
-      "id": 43
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-25T18:38:47.019Z",
+      "anxietyScore": 2,
+      "description": "I just journaled and it made a drastic difference!! I feel 10 million times better now!",
+      "id": 58
     },
     {
-      "userId": 2,
-      "timestamp": "2019-12-23T23:16:21.914Z",
-      "interventionId": 6,
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-25T19:10:54.765Z",
+      "anxietyScore": 2,
       "description": "",
-      "anxietyScore": "",
-      "id": 44
+      "id": 59
     },
     {
-      "userId": 2,
-      "timestamp": "2019-12-23T23:18:02.233Z",
-      "interventionId": 6,
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-25T19:11:46.447Z",
+      "anxietyScore": 3,
       "description": "",
-      "anxietyScore": "",
-      "id": 45
+      "id": 60
     },
     {
-      "userId": 2,
-      "timestamp": "2019-12-23T23:18:36.450Z",
-      "interventionId": 6,
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-25T19:12:15.332Z",
+      "anxietyScore": 4,
       "description": "",
-      "anxietyScore": "",
-      "id": 46
+      "id": 61
     },
     {
-      "userId": 2,
-      "timestamp": "2019-12-24T01:15:45.708Z",
-      "interventionId": 6,
+      "userId": 1,
+      "interventionId": 2,
+      "timestamp": "2019-12-25T19:13:50.240Z",
+      "anxietyScore": 3,
       "description": "",
-      "anxietyScore": "",
-      "id": 47
+      "id": 62
+    },
+    {
+      "userId": 1,
+      "interventionId": 2,
+      "timestamp": "2019-12-25T19:14:12.308Z",
+      "anxietyScore": 2,
+      "description": "",
+      "id": 63
     },
     {
       "userId": 1,
       "interventionId": 3,
-      "timestamp": "2019-12-24T05:39:34.579Z",
-      "anxietyScore": 6,
+      "timestamp": "2019-12-25T19:15:05.352Z",
+      "anxietyScore": 2,
       "description": "",
-      "id": 48
+      "id": 64
+    },
+    {
+      "userId": 1,
+      "interventionId": 3,
+      "timestamp": "2019-12-25T19:15:34.093Z",
+      "anxietyScore": 4,
+      "description": "",
+      "id": 65
+    },
+    {
+      "userId": 1,
+      "interventionId": 8,
+      "timestamp": "2019-12-25T19:16:17.760Z",
+      "anxietyScore": 2,
+      "description": "",
+      "id": 66
+    },
+    {
+      "userId": 1,
+      "interventionId": 4,
+      "timestamp": "2019-12-25T19:16:43.901Z",
+      "anxietyScore": 4,
+      "description": "",
+      "id": 67
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-25T19:29:26.858Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 68
     }
   ],
   "journals": [
@@ -624,6 +719,48 @@
       "userId": 2,
       "promptId": 5,
       "id": 18
+    },
+    {
+      "entry": "OK, here goes. It's hard not to edit myself when I nkow that other people can see this I wodner how it's going to go when i actualy demo this i'm glad i took the time to journal and think things through earlier it really helped a lot i've been putting way too much pressure on myself and its no good for me it;s impiortant to remember why i'm doing this and just have fun with it and learn whaat I can",
+      "timestamp": "2019-12-25T17:40:01.176Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 19
+    },
+    {
+      "entry": "I'm actually feeling much better after hournaling and thinking through my perfectionism earlier ",
+      "timestamp": "2019-12-25T17:41:02.150Z",
+      "userId": 1,
+      "promptId": 1,
+      "id": 20
+    },
+    {
+      "entry": "ok here goes ahhhh its wierd it feels like im performing and its hard not to edit myslf when i know other people will see this but i can always delete them if i want to just relax and dont worry about it it will all work out",
+      "timestamp": "2019-12-25T17:46:38.003Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 21
+    },
+    {
+      "entry": "Keep on trucking",
+      "timestamp": "2019-12-25T17:47:11.768Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 22
+    },
+    {
+      "entry": "aggf",
+      "timestamp": "2019-12-25T17:48:08.680Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 23
+    },
+    {
+      "entry": "Yes, I will be ok.",
+      "timestamp": "2019-12-25T19:28:08.923Z",
+      "userId": 1,
+      "promptId": 2,
+      "id": 24
     }
   ],
   "prompts": [
@@ -649,7 +786,7 @@
     },
     {
       "id": 5,
-      "prompt": "Am I judging myself harshly? Do I think other people are judging me (generally this is self-judgement in diguise). Name at least one thing you like about yourself or that you are proud of."
+      "prompt": "Am I judging myself harshly? Do I think other people are judging me - generally this is self-judgement in diguise. Name at least one thing you like about yourself or that you are proud of."
     },
     {
       "id": 6,
