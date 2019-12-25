@@ -92,6 +92,13 @@
       "userId": 1,
       "description": "",
       "id": 12
+    },
+    {
+      "anxietyScore": 7,
+      "timestamp": "2019-12-25T15:55:58.324Z",
+      "userId": 1,
+      "description": "Stressing out about what to work on next",
+      "id": 13
     }
   ],
   "interventions": [

@@ -9,22 +9,22 @@ export default class InterventionChartCard extends Component {
         datasets: []
     }
     
-    // generateColor = () => {   
-    //     // debugger
-    //     const randomValue = Math.round(Math.random() * 255)
-    //     return `rbg(${randomValue}, ${randomValue} , ${randomValue})`  
-    // }
-    generateColor() {
-        const components = '0123456789ABCDEF'.split('');
-        let color = '#';
-        for (let i = 0; i < 6; i++ ) {
-            color += components[Math.floor(Math.random() * 16)];
-        }
-        return color;
+    generateColor = () => {   
+        // debugger
+        const randomValue = Math.floor(Math.random() * 255)
+        return `rbg(${randomValue}, ${randomValue} , ${randomValue})`  
     }
+    // generateColor() {
+    //     const components = '0123456789ABCDEF'.split('');
+    //     let color = '#';
+    //     for (let i = 0; i < 6; i++ ) {
+    //         color += components[Math.floor(Math.random() * 16)];
+    //     }
+    //     return color;
+    // }
     buildChartData = () => {
         let dates = this.props.interventionData.map(date => {
-            console.log("TIMESTAMPS", date.t)
+            // console.log("TIMESTAMPS", date.t)
             let dateObj = new Date(date.t)
             // let month = dateObj.getMonth()
             // let date = dateObj.getDate()
@@ -80,11 +80,13 @@ export default class InterventionChartCard extends Component {
                             fontSize: 20,
                             scales: {
                                 yAxes: [{
+                                    stacked: true,
                                     ticks: {
                                         source: 'data'
                                     },
                                 }],
                                 xAxes: [{
+                                    stacked: true,
                                     parser: "HH:mm",
                                     distribution: 'series',
                                     bounds: 'ticks',

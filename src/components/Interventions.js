@@ -17,7 +17,8 @@ export default class Interventions extends Component {
     }
     render() {
         return (
-            <>
+            <>  
+            <h1>Select to learn more or to try an intervention</h1>
                 <div className="interventionCardsContainer">
                     {this.state.interventions.map(intervention =>
                         <InterventionCard

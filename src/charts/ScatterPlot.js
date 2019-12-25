@@ -3,7 +3,7 @@ import React, { Component, useState, useEffect, useCallback } from 'react';
 import { Scatter } from 'react-chartjs-2';
 
 
-export default class MainChart extends Component {
+export default class ScatterPlot extends Component {
     state = {
         data: {},
         labels: [],
