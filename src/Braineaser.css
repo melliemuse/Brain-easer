@@ -55,8 +55,8 @@ Button.button {
     margin-bottom: 7.25em;
 }
 #anxiety-rating-welcome{
-    font-size: 2.8em;
-    font-weight: 550;
+    font-size: 3em;
+    font-weight: 600;
     background: -webkit-linear-gradient(#eee, rgb(203, 114, 231));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,7 +64,7 @@ Button.button {
     text-align: center;
     margin-bottom: 10px;
 }
-anxiety-rating-scale {
+.anxiety-rating-scale {
     font-size: 35px; 
 }
 .descriptionField {
@@ -76,4 +76,7 @@ anxiety-rating-scale {
     height: 85px; 
     margin: 0 auto;
     margin-bottom: 70px;
+}
+#submit-rating {
+    margin-top: 35px;
 }

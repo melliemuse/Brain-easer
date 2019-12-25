@@ -1,6 +1,14 @@
 #entry, .entryList {
     font-family: 'Roboto Slab', serif;
-
+    font-size: 1.2em;
+}
+.button-group {
+    margin-bottom: 30px;
+}
+.prompts {
+    font-weight: 400;
+    font-size: 1.4em;
+    margin: 0 0 20px;
 }
 /* .entryList {
     margin: 0 auto;

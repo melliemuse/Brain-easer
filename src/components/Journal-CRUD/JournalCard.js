@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
-
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 export default class JournalCard extends Component {
 
@@ -15,16 +15,19 @@ export default class JournalCard extends Component {
         return (
             <>
                 <div>
-                <h4>{this.props.journals.prompt.prompt}</h4>
+                <h4 className="prompts">{this.props.journals.prompt.prompt}</h4>
                     <p className="entryList">{this.props.journals.entry}</p>
                     <p>{new Date(this.props.journals.timestamp).toString()}</p>
                     <div>
+
+                    <ButtonGroup className="button-group" color="secondary" aria-label="outlined primary button group">
                     <Button
                         onClick={() => this.props.handleDelete(this.props.journals.id)}
                     >Delete</Button>
                     <Button
                         onClick={() => this.props.history.push(`/journal/entries/${this.props.journals.id}`)}
                     >Edit</Button>
+                    </ButtonGroup>
                     </div>
                 </div>
 

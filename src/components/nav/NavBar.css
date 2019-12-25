@@ -2,16 +2,14 @@
 .nav-container {
     display: flex;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
 }
-
-
-
-#logo-text {
+/* #logo-text {
     margin-left: 30px;
     height: 150px;
     width: auto;
-}
+    display: block;
+} */
 .nav-container a {
     max-width: 350px;
     height: 100px;
@@ -19,31 +17,42 @@
     font-weight: 500;
     font-size: 1.6em;
     color: grey;
-    padding: 30px;
+    padding: 5px 30px 30px;
+    margin-top: 1em;
 }
 .nav-container li {
-    vertical-align: middle;
     margin: 0;
 }  
 #logo {
-    margin: 0 auto;
-    width: auto;
-    height: 100px;
-    margin-bottom: 10px;
-    padding: 0px;
+    margin-top: 0;
+    height: 160px;
+    padding: 0 0 55px;
 }
 .logo a {
     padding-top: 0;
+    margin-top: 0em;
 }
 .navlink:link {
-    color: grey;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
   }
   
   /* visited link */
   .navlink:visited {
-    color: rgb(146, 157, 163);
+    color: rgb(85, 80, 80);
+    font-weight: 500;
   } 
 .navlink:hover {
-    color: rgba(51, 206, 255, 1);
+    /* background-image: repeating-radial-gradient(circle, rgb(9, 7, 148)  ,  lightblue 99%); */
+    background-color: rgb(106, 188, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 1.6em;
     text-decoration: none;
+}
+.navBar {
+    /* background-color: rgba(130, 150, 255, .7); */
+    border-radius: 40px;
+    height: 100px;
 }
