@@ -15,31 +15,31 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 4em;
+    margin-left: 6em;
 }
 #interventionCard {
-    border: none;
-    background-color: rgba(198, 13, 201, 0.03);
     flex-shrink: 0;
-    margin: 45px 60px;
+    margin: 70px 150px;
     justify-content: center;
-    /* height: 140px; */
-    border-radius: 40%;
-    padding: 10px 5px;
-    box-shadow: unset;
+    height: 17em;
+    width: 17em;
+    border-radius: 50%;
+    background-color: mediumturquoise;
 }
 .interventionLink {
     width: 25%;
-    
-    /* padding-bottom: 50px; */
 }
 .interventionName {
+
+    color: white;
+    font-size: 2.4em;
+    font-weight: 500;
     display: block;
-    width: 180px;
-    height: 90px;
-    text-decoration: none;
-    margin: 0 auto 40px;
+    padding-left: 45px;
+    padding-right: 50px;
+    padding-top: 90px;
+    height: 248px;
     text-align: center;
-    /* line-height: 10px; */
 }
 .uploadImage {
     width: 250px;

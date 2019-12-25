@@ -106,6 +106,18 @@ export default class ChartList extends Component {
                         />
                     )}
                 </div>
+                {/* <div className="card chart-card">
+                    {this.state.interventionData !== [] && 
+                    this.state.interventionData.map((miniArray, i) =>
+                        // console.log("HELLO", miniArray)
+                        <ScatterPlot
+                            position={i}
+                            // id={miniArray[0].interventionId}
+                            key={i}
+                            interventionData={miniArray}
+                        />
+                    )}
+                </div> */}
 
             </>
         )

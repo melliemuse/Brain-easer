@@ -43,7 +43,7 @@ export default class AnxietyRating extends Component {
         let buttons = []
         for (let i = 0; i < 10; i++) {
             buttons.push(
-                <Button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
+                <Button color="secondary" id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
             )
         }
         return buttons
@@ -85,35 +85,35 @@ export default class AnxietyRating extends Component {
         return (
             <div className="main text-center">
                 <h1 id="anxiety-rating-welcome">Welcome to Brain Easer!</h1>
+                <article id="anxiety-rate-container">
                 <h2 id="anxiety-rating-scale">How is your anxiety on a scale from 1 - 10?</h2>
                 <div className="rating-buttons">
                     {this.createbuttons()}
-                </div>
                 <div className="descriptionField" hidden={this.state.addDescriptionField}>
-                    <TextField variant="outlined"
+                    <TextField variant="outlined" color="secondary"
                         id="description"
                         hidden={this.state.addDescriptionField}
                         onChange={this.handleFieldChange}
-                    /> </div>
-                    <ButtonGroup color="primary" aria-label="outlined primary button group">
+                        /> </div>
+                    <ButtonGroup color="secondary" aria-label="outlined primary button group">
                 <Button
                     id="addDescriptionField"
                     name="addDescriptionField"
                     className="button"
                     onClick={this.setBoolean}
-                >Add Description</Button>
+                    >Add Description</Button>
                 <Button
                     id="addSelfCareField"
                     className="button"
                     onClick={this.setBoolean}
-                >Log Self-Care</Button>
+                    >Log Self-Care</Button>
                 </ButtonGroup>
                 <div hidden={this.state.addSelfCareField}>
                     <FormControl>
                         <Select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
                             {this.state.interventions.map(intervention =>
                                 <MenuItem key={intervention.id} value={intervention.id}>{intervention.name}</MenuItem>
-                            )}
+                                )}
                         </Select>
                     </FormControl>
                 </div>
@@ -124,9 +124,12 @@ export default class AnxietyRating extends Component {
                     id="submit-rating"
                     color="primary"
                     onClick={this.createAnxietyRating}
-                >Submit Rating
+                    >Submit Rating
                 </Button>
                 </div>
+                    </div>
+                    </article>
+                
             </div>
         )
     }
