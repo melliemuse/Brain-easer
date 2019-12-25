@@ -244,10 +244,10 @@
     },
     {
       "userId": 1,
-      "interventionId": 8,
-      "timestamp": "2019-12-11T02:02:15.573Z",
-      "anxietyScore": 4,
-      "description": "Just meditated",
+      "interventionId": 7,
+      "timestamp": "",
+      "anxietyScore": 1,
+      "description": "Hooray",
       "id": 7
     },
     {
@@ -499,52 +499,12 @@
       "id": 42
     },
     {
-      "userId": 2,
-      "timestamp": "2019-12-23T22:38:33.921Z",
-      "interventionId": 6,
-      "description": "",
-      "anxietyScore": "",
-      "id": 43
-    },
-    {
-      "userId": 2,
-      "timestamp": "2019-12-23T23:16:21.914Z",
-      "interventionId": 6,
-      "description": "",
-      "anxietyScore": "",
-      "id": 44
-    },
-    {
-      "userId": 2,
-      "timestamp": "2019-12-23T23:18:02.233Z",
-      "interventionId": 6,
-      "description": "",
-      "anxietyScore": "",
-      "id": 45
-    },
-    {
-      "userId": 2,
-      "timestamp": "2019-12-23T23:18:36.450Z",
-      "interventionId": 6,
-      "description": "",
-      "anxietyScore": "",
-      "id": 46
-    },
-    {
-      "userId": 2,
-      "timestamp": "2019-12-24T01:15:45.708Z",
-      "interventionId": 6,
-      "description": "",
-      "anxietyScore": "",
-      "id": 47
-    },
-    {
       "userId": 1,
-      "interventionId": 3,
-      "timestamp": "2019-12-24T05:39:34.579Z",
-      "anxietyScore": 6,
-      "description": "",
-      "id": 48
+      "interventionId": 7,
+      "timestamp": "2019-12-25T18:38:47.019Z",
+      "anxietyScore": 2,
+      "description": "I just journaled and it made a drastic difference!! I feel 10 million times better now!",
+      "id": 58
     }
   ],
   "journals": [
@@ -624,6 +584,82 @@
       "userId": 2,
       "promptId": 5,
       "id": 18
+    },
+    {
+      "entry": "OK, here goes. It's hard not to edit myself when I nkow that other people can see this I wodner how it's going to go when i actualy demo this i'm glad i took the time to journal and think things through earlier it really helped a lot i've been putting way too much pressure on myself and its no good for me it;s impiortant to remember why i'm doing this and just have fun with it and learn whaat I can",
+      "timestamp": "2019-12-25T17:40:01.176Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 19
+    },
+    {
+      "entry": "I'm actually feeling much better after hournaling and thinking through my perfectionism earlier ",
+      "timestamp": "2019-12-25T17:41:02.150Z",
+      "userId": 1,
+      "promptId": 1,
+      "id": 20
+    },
+    {
+      "entry": "ok here goes ahhhh its wierd it feels like im performing and its hard not to edit myslf when i know other people will see this but i can always delete them if i want to just relax and dont worry about it it will all work out",
+      "timestamp": "2019-12-25T17:46:38.003Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 21
+    },
+    {
+      "entry": "Keep on trucking",
+      "timestamp": "2019-12-25T17:47:11.768Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 22
+    },
+    {
+      "entry": "aggf",
+      "timestamp": "2019-12-25T17:48:08.680Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 23
+    },
+    {
+      "entry": "TEST",
+      "timestamp": "2019-12-25T18:15:42.877Z",
+      "userId": 1,
+      "id": 24
+    },
+    {
+      "entry": "Actually I'm feeling pretty good right now",
+      "timestamp": "2019-12-25T18:19:04.203Z",
+      "userId": 1,
+      "promptId": 1,
+      "id": 25
+    },
+    {
+      "entry": "I think I've got my head screwed on straight right now",
+      "timestamp": "2019-12-25T18:20:55.281Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 26
+    },
+    {
+      "entry": "blaahhh",
+      "timestamp": "2019-12-25T18:31:53.807Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 27
+    },
+    {
+      "entry": "dsgrvg",
+      "timestamp": "2019-12-25T18:34:58.013Z",
+      "userId": 1,
+      "promptId": 1,
+      "id": 28
+    },
+    {
+      "entry": "Keep calm and move forward with curiosity and joy",
+      "timestamp": "2019-12-25T18:38:46.968Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 29
     }
   ],
   "prompts": [
@@ -649,7 +685,7 @@
     },
     {
       "id": 5,
-      "prompt": "Am I judging myself harshly? Do I think other people are judging me (generally this is self-judgement in diguise). Name at least one thing you like about yourself or that you are proud of."
+      "prompt": "Am I judging myself harshly? Do I think other people are judging me - generally this is self-judgement in diguise. Name at least one thing you like about yourself or that you are proud of."
     },
     {
       "id": 6,

@@ -96,42 +96,42 @@ export default class InterventionDetails extends Component {
                         <img src={this.state.user.inner_child_image} alt="inner child picture" className="inner-child-image"></img>
                     }
                     <div>
-                    {this.state.intervention.description !== undefined &&
-                    <p>{this.state.intervention.description.split('\n').map(function (item, key) {
-                            return (
-                                <span className="new-line" key={key}>
-                                    {item}
-                                    <br />
-                                </span>
-                            )
-                            })}</p> }
+                        {this.state.intervention.description !== undefined &&
+                            <p>{this.state.intervention.description.split('\n').map(function (item, key) {
+                                return (
+                                    <span className="new-line" key={key}>
+                                        {item}
+                                        <br />
+                                    </span>
+                                )
+                            })}</p>}
                     </div>
                     <div>
                         <h3>Instructions</h3>
                         {this.state.intervention.instructions !== undefined &&
-                    <p>{this.state.intervention.instructions.split('\n').map(function (item, key) {
-                            return (
-                                <span className="new-line" key={key}>
-                                    {item}
-                                    <br />
-                                </span>
-                            )
-                            })}</p> }
+                            <p>{this.state.intervention.instructions.split('\n').map(function (item, key) {
+                                return (
+                                    <span className="new-line" key={key}>
+                                        {item}
+                                        <br />
+                                    </span>
+                                )
+                            })}</p>}
                     </div>
                     <ButtonGroup variant="text" className="button-group" color="secondary" aria-label="outlined button group">
-                    <Button
-                        onClick={() => {
-                            this.props.history.push("/interventions")
-                        }}> Back to Interventions
+                        <Button
+                            onClick={() => {
+                                this.props.history.push("/interventions")
+                            }}> Back to Interventions
                     </Button>
-                    <Button
-                        onClick={() => {
-                            if (this.state.intervention.id === 7) {
-                                this.props.history.push("/journal")
-                            } else {
-                                this.handleClick()
-                            }
-                        }}>Complete this intervention!
+                        <Button
+                            onClick={() => {
+                                if (this.state.intervention.id === 7) {
+                                    this.props.history.push("/journal")
+                                } else {
+                                    this.handleClick()
+                                }
+                            }}>Complete this intervention!
                         </Button> </ButtonGroup>
                     {this.state.intervention.id === 6 &&
                         <div>
@@ -144,7 +144,7 @@ export default class InterventionDetails extends Component {
                                 }}>Add Inner Child Image
                             </Button>
                         </div>}
-                        
+
 
                     {this.state.displayRerate &&
                         <InterventionRerate intervention={this.state.intervention}

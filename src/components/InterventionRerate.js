@@ -8,22 +8,22 @@ export default class InterventionRerate extends Component {
         description: "",
         interventionId: ""
     }
-    // componentDidMount() {
-    //     // http://localhost:5002/userInterventions?userId=1&interventionId=2
-    //     const currentUser = localStorage.getItem("activeUser")
-    //     APIManager.getUserInterventions("userInterventions", currentUser, this.props.intervention.id) 
-    //     .then(interventions => {
-    //         console.log("interventions data", interventions)
-    //         this.setState({
-    //             interventions: interventions
-    //         })
-    //     })
-    //     console.log(this.state.interventions)
-    // }
+    componentDidMount() {
+        // http://localhost:5002/userInterventions?userId=1&interventionId=2
+        // const currentUser = localStorage.getItem("activeUser")
+        // APIManager.getUserInterventions("userInterventions", currentUser, this.props.intervention.id) 
+        // .then(interventions => {
+        //     console.log("interventions data", interventions)
+        //     this.setState({
+        //         interventions: interventions
+        //     })
+        // })
+        // console.log(this.state.interventions)
+    }
     handleFieldChange = event => {
         event.preventDefault()
         const stateToChange = {}
-        stateToChange[event.currentTarget.id] = event.currentTarget.value
+        stateToChange[event.currentTarget.id] = event.currentTarget.value   
         this.setState(stateToChange)
     }
     createbuttons = () => {
@@ -60,7 +60,7 @@ export default class InterventionRerate extends Component {
         // console.log([this.state.interventions[length-1].id])
         return (
             <div className="main">
-                <h2>Congratulations! You have taken action to make yourself feel beter.</h2>
+                <h2>Congratulations! You have taken action to make yourself feel better.</h2>
                 <h4>Rerate your anxiety to track your progress</h4>
                 {this.createbuttons()}
                 <div>
