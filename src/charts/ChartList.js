@@ -90,11 +90,11 @@ export default class ChartList extends Component {
         return (
             <>
 
-                <div className="card chart-card">
+                {/* <div className="card chart-card">
                     <MainChart baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} interventionMap={this.state.interventionMap} megaArray={this.state.megaArray} />
-                </div>
+                </div> */}
 
-                <div className="card chart-card">
+                {/* <div className="card chart-card">
                     {this.state.interventionData !== [] && 
                     this.state.interventionData.map((miniArray, i) =>
                         // console.log("HELLO", miniArray)
@@ -105,8 +105,8 @@ export default class ChartList extends Component {
                             interventionData={miniArray}
                         />
                     )}
-                </div>
-                {/* <div className="card chart-card">
+                </div> */}
+                <div className="card chart-card">
                     {this.state.interventionData !== [] && 
                     this.state.interventionData.map((miniArray, i) =>
                         // console.log("HELLO", miniArray)
@@ -115,9 +115,10 @@ export default class ChartList extends Component {
                             // id={miniArray[0].interventionId}
                             key={i}
                             interventionData={miniArray}
+                            baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} 
                         />
                     )}
-                </div> */}
+                </div>
 
             </>
         )
