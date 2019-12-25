@@ -632,6 +632,14 @@
       "anxietyScore": 4,
       "description": "",
       "id": 67
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-25T19:29:26.858Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 68
     }
   ],
   "journals": [
@@ -748,45 +756,11 @@
       "id": 23
     },
     {
-      "entry": "TEST",
-      "timestamp": "2019-12-25T18:15:42.877Z",
+      "entry": "Yes, I will be ok.",
+      "timestamp": "2019-12-25T19:28:08.923Z",
       "userId": 1,
+      "promptId": 2,
       "id": 24
-    },
-    {
-      "entry": "Actually I'm feeling pretty good right now",
-      "timestamp": "2019-12-25T18:19:04.203Z",
-      "userId": 1,
-      "promptId": 1,
-      "id": 25
-    },
-    {
-      "entry": "I think I've got my head screwed on straight right now",
-      "timestamp": "2019-12-25T18:20:55.281Z",
-      "userId": 1,
-      "promptId": 5,
-      "id": 26
-    },
-    {
-      "entry": "blaahhh",
-      "timestamp": "2019-12-25T18:31:53.807Z",
-      "userId": 1,
-      "promptId": 6,
-      "id": 27
-    },
-    {
-      "entry": "dsgrvg",
-      "timestamp": "2019-12-25T18:34:58.013Z",
-      "userId": 1,
-      "promptId": 1,
-      "id": 28
-    },
-    {
-      "entry": "Keep calm and move forward with curiosity and joy",
-      "timestamp": "2019-12-25T18:38:46.968Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 29
     }
   ],
   "prompts": [
