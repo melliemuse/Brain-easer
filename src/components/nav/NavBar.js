@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import MaterialUIMenu from './MaterialUIMenu'
 
 
 
@@ -54,22 +55,27 @@ render() {
         </Toolbar>
       </AppBar>
     </div> */}
-            <ul> 
+              <MaterialUIMenu/>
+            {/* <ul> 
                 {this.props.user ?
                 <>
                 <div >
                 <Typography className="nav-container">
-                {/* <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logos/newLogo.png')}></img></Link></li> */}
+                <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logos/newLogo.png')}></img></Link></li>
                 <li className="nav"><Link className="navlink"  to='/'>Rate Anxiety</Link></li>
                 <li className="nav"><Link className="navlink"  to='/charts'>Anxiety Tracker</Link></li>
                 <li className="nav"><Link className="navlink"  to='/interventions'>Interventions</Link></li>
                 <li className="nav"><Link className="navlink"  to='/journal'>Create Journal Entry</Link></li>
                 <li className="nav"><Link className="navlink" to='/journal/entries'>My Journal Entries</Link></li>
+                <li className="nav"><IconButton edge="start" color="inherit" aria-controls="simple-menu" aria-haspopup="true" >
+            <MenuIcon />
+          </IconButton></li>
                 </Typography>
                 </div>
                 </>
                 : null}
             </ul>
+             */}
         </nav>
         </>
     )
