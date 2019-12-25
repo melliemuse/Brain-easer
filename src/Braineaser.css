@@ -23,13 +23,13 @@ h1, h2, h3 {
     color: slategray;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     padding: 55px 0;
     margin: 10px 0 15px 0;
 }
 h1 {
     font-size: 90px;
-    font-weight: 800;
+    font-weight: 700;
   background: -webkit-linear-gradient(#eee, rgb(203, 114, 231));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,7 +49,7 @@ canvas {
     height: auto !important ;
 }
 Button.button {
-    font-size: .8em;
+    font-size: 1em;
 }
 .rating-buttons {
     margin-bottom: 7.25em;
@@ -64,8 +64,10 @@ Button.button {
     text-align: center;
     margin-bottom: 10px;
 }
-.anxiety-rating-scale {
-    font-size: 35px; 
+#anxiety-rating-scale {
+    color: rgb(167, 226, 250);
+    font-size: 35px;
+    font-weight: 600; 
 }
 .descriptionField {
     height: 85px; 
@@ -79,4 +81,14 @@ Button.button {
 }
 #submit-rating {
     margin-top: 35px;
+}
+#anxietyScore {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+#anxiety-rate-container {
+    background-color: rgb(68, 68, 71);
+    width: 55em;
+    height: 26em;
+    margin: 80px 0 70px;
 }

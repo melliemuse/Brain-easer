@@ -96,7 +96,15 @@ export default class InterventionDetails extends Component {
                         <img src={this.state.user.inner_child_image} alt="inner child picture" className="inner-child-image"></img>
                     }
                     <div>
-                    <p>{this.state.intervention.description}</p>
+                    {this.state.intervention.description !== undefined &&
+                    <p>{this.state.intervention.description.split('\n').map(function (item, key) {
+                            return (
+                                <span className="new-line" key={key}>
+                                    {item}
+                                    <br />
+                                </span>
+                            )
+                            })}</p> }
                     </div>
                     <div>
                         <h3>Instructions</h3>

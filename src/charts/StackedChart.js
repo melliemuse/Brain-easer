@@ -14,14 +14,6 @@ export default class InterventionChartCard extends Component {
         const randomValue = Math.floor(Math.random() * 255)
         return `rbg(${randomValue}, ${randomValue} , ${randomValue})`  
     }
-    // generateColor() {
-    //     const components = '0123456789ABCDEF'.split('');
-    //     let color = '#';
-    //     for (let i = 0; i < 6; i++ ) {
-    //         color += components[Math.floor(Math.random() * 16)];
-    //     }
-    //     return color;
-    // }
     buildChartData = () => {
         let dates = this.props.interventionData.map(date => {
             // console.log("TIMESTAMPS", date.t)
