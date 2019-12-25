@@ -138,7 +138,7 @@
       "completed": "",
       "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses to acheive this result and loosen the grip of anxiety. Grounding techniques exist for all five senses, some may resonate more for you than others, so try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation",
       "icon": "",
-      "instructions": "• Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths • Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. • Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present • Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. • Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. • Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
+      "instructions": "Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths. \n Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. \n Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present \n Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. \n Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. \n Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
     },
     {
       "id": 6,
@@ -530,6 +530,14 @@
       "description": "",
       "anxietyScore": "",
       "id": 47
+    },
+    {
+      "userId": 1,
+      "interventionId": 3,
+      "timestamp": "2019-12-24T05:39:34.579Z",
+      "anxietyScore": 6,
+      "description": "",
+      "id": 48
     }
   ],
   "journals": [

@@ -1,47 +1,59 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import { Typography } from '@material-ui/core'
 import  '../../assets/logo_sm.png'
 import './NavBar.css'
-// import Navbar from 'react-bootstrap/Navbar'
-// import Nav from 'react-bootstrap/Navbar'
-// import NavDropdown from 'react-bootstrap/Navbar'
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
 
 
 class NavBar extends Component {
+  // SimpleMenu = () => {
+  //   const [anchorEl, setAnchorEl] = React.useState(null);
+  
+  //   const handleClick = event => {
+  //     setAnchorEl(event.currentTarget);
+  //   };
+  
+  //   const handleClose = () => {
+  //     setAnchorEl(null);
+  //   };
+  // }
 
 render() {
     return(
         <>
-        {/* <img id="logo" alt="logo" src={require('../../assets/logos/logo3.png')}></img> */}
-      {/* <img id="logo" alt="logo" src={require('../../assets/logos/logo2.png')}></img>  */}
-      {/* <div id="lockup"> */}
-                {/* <li><Link to='/'><img id="logo-text" alt="logo" src={require('../../assets/Braineaser_Logo.png')}></img></Link></li> */}
-                {/* </div> */}
-                {/* <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">Brain Easer</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar> */}
-        <nav>
+        <nav className="navBar">
+        {/* <div>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={this.SimpleMenu.handleClick}>
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6">
+            Rate
+          </Typography>
+          <Menu
+        id="simple-menu"
+        anchorEl={this.SimpleMenu.anchorEl}
+        keepMounted
+        open={Boolean(this.SimpleMenu.anchorEl)}
+        onClose={this.SimpleMenu.handleClose}
+      >
+        <MenuItem onClick={this.SimpleMenu.handleClose}>Profile</MenuItem>
+        <MenuItem onClick={this.SimpleMenu.handleClose}>My account</MenuItem>
+        <MenuItem onClick={this.SimpleMenu.handleClose}>Logout</MenuItem>
+      </Menu>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </div> */}
             <ul> 
                 {this.props.user ?
                 <>

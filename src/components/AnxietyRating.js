@@ -2,6 +2,15 @@ import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+
+
 
 
 export default class AnxietyRating extends Component {
@@ -74,46 +83,51 @@ export default class AnxietyRating extends Component {
 
     render() {
         return (
-                <div className="main text-center">
+            <div className="main text-center">
                 <h1 id="anxiety-rating-welcome">Welcome to Brain Easer!</h1>
                 <h2 id="anxiety-rating-scale">How is your anxiety on a scale from 1 - 10?</h2>
                 <div className="rating-buttons">
-                {this.createbuttons()}
+                    {this.createbuttons()}
                 </div>
-                 <div className="descriptionField" hidden={this.state.addDescriptionField}>
+                <div className="descriptionField" hidden={this.state.addDescriptionField}>
                     <TextField variant="outlined"
                         id="description"
                         hidden={this.state.addDescriptionField}
                         onChange={this.handleFieldChange}
                     /> </div>
-                    <Button
-                        id="addDescriptionField"
-                        name="addDescriptionField"
-                        className="button"
-                        onClick={this.setBoolean}
-                    >Add Description</Button>
-                    <Button
-                        color="secondary"
-                        id="addSelfCareField"
-                        className="button"
-                        onClick={this.setBoolean}
-                    >Log Self-Care</Button>
-                
-                    <div hidden={this.state.addSelfCareField}>
-                    <select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
-                        {this.state.interventions.map(intervention =>
-                            <option key={intervention.id} value={intervention.id}>{intervention.name}</option>
-                        )}
-                    </select>
-                    </div>
-                
+                    <ButtonGroup color="primary" aria-label="outlined primary button group">
                 <Button
-                className="button"
+                    id="addDescriptionField"
+                    name="addDescriptionField"
+                    className="button"
+                    onClick={this.setBoolean}
+                >Add Description</Button>
+                <Button
+                    id="addSelfCareField"
+                    className="button"
+                    onClick={this.setBoolean}
+                >Log Self-Care</Button>
+                </ButtonGroup>
+                <div hidden={this.state.addSelfCareField}>
+                    <FormControl>
+                        <Select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
+                            {this.state.interventions.map(intervention =>
+                                <MenuItem key={intervention.id} value={intervention.id}>{intervention.name}</MenuItem>
+                            )}
+                        </Select>
+                    </FormControl>
+                </div>
+                <div>
+                <Button
+                    variant="contained"
+                    className="button submit"
+                    id="submit-rating"
                     color="primary"
                     onClick={this.createAnxietyRating}
                 >Submit Rating
                 </Button>
                 </div>
+            </div>
         )
     }
 }
