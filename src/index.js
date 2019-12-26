@@ -6,7 +6,64 @@ import Braineaser from './Braineaser';
 import * as serviceWorker from './serviceWorker';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faWalking } from '@fortawesome/free-solid-svg-icons'
+import { faOm } from '@fortawesome/free-solid-svg-icons'
+import { faParagraph} from '@fortawesome/free-solid-svg-icons'
+import { faCat } from '@fortawesome/free-solid-svg-icons'
+import { faWind } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHiking } from '@fortawesome/free-solid-svg-icons'
+import { faFingerprint } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { faSpa } from '@fortawesome/free-solid-svg-icons'
+import { faMountain } from '@fortawesome/free-solid-svg-icons'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
+import { faComment } from '@fortawesome/free-solid-svg-icons'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
+import { faFeather } from '@fortawesome/free-solid-svg-icons'
+import { faFeatherAlt } from '@fortawesome/free-solid-svg-icons'
+import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHandsHelping } from '@fortawesome/free-solid-svg-icons'
+import { faChartLine } from '@fortawesome/free-solid-svg-icons'
+import { faIceCream } from '@fortawesome/free-solid-svg-icons'
+import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
+import { faHands } from '@fortawesome/free-solid-svg-icons'
+import { faFan } from '@fortawesome/free-solid-svg-icons'
+import { faVihara} from '@fortawesome/free-solid-svg-icons'
+import { faBiking} from '@fortawesome/free-solid-svg-icons'
 
+
+library.add(faBook)
+library.add(faWalking)
+library.add(faOm)
+library.add(faParagraph)
+library.add(faCat)
+library.add(faWind)
+library.add(faHeart)
+library.add(faHiking)
+library.add(faFingerprint)
+library.add(faEye)
+library.add(faSpa)
+library.add(faMountain)
+library.add(faComments)
+library.add(faComment)
+library.add(faEdit)
+library.add(faFeather)
+library.add(faFeatherAlt)
+library.add(faHandHoldingHeart)
+library.add(faHandsHelping)
+library.add(faChartLine)
+library.add(faIceCream)
+library.add(faBookOpen)
+library.add(faHands)
+library.add(faFan)
+library.add(faVihara)
+library.add(faBiking)
+// library.add()
 
 const theme = createMuiTheme({
     palette: {

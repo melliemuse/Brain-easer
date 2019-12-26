@@ -38,7 +38,8 @@
     padding-left: 45px;
     padding-right: 50px;
     padding-top: 90px;
-    height: 248px;
+    padding-bottom: 0;
+    height: auto;
     text-align: center;
 }
 .uploadImage {
@@ -54,4 +55,10 @@
 .new-line {
     margin: 15px 0;
     display: block;
+  }
+  .intervention-icon {
+      padding-left: 120px;
+  }
+  .intervention-icon svg path {
+      color: white;
   }
