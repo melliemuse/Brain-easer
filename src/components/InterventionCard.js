@@ -11,14 +11,14 @@ export default class InterventionCard extends Component {
     render() {
         return (
             <>
-                <Card id="interventionCard">
                     <Link className="interventionLink" to={`/interventions/${this.props.intervention.id}`}>
+                <Card id="interventionCard">
                         <h3 className="interventionName">{this.props.intervention.name}</h3>
-                    </Link>
                     <div className="intervention-icon">
                     <FontAwesomeIcon icon={this.props.intervention.icon} size='2x'/>
                     </div>
                 </Card>
+                    </Link>
             </>
         )
     }

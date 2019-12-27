@@ -162,6 +162,27 @@
       "userId": 1,
       "description": "",
       "id": 22
+    },
+    {
+      "anxietyScore": 7,
+      "timestamp": "2019-12-27T00:53:54.205Z",
+      "userId": 1,
+      "description": "",
+      "id": 23
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2019-12-27T04:40:00.477Z",
+      "userId": 1,
+      "description": "",
+      "id": 24
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2019-12-27T04:42:30.550Z",
+      "userId": 1,
+      "description": "I am anxious because my best friend is struggling and I am dealing with multiple sources of family loss.",
+      "id": 25
     }
   ],
   "interventions": [
@@ -188,9 +209,9 @@
       "name": "Feel Feelings",
       "timestamp": "",
       "completed": "",
-      "description": "There is a concept is Buddhism called 'the second arrow'- it's the idea that often when you are noticing an emotional reaction, it is not just one reaction but many. By resisting and not accepting the feeling you are having, you are making your suffering worse. There is an overlap between physical sensation and emotional feeling- locating the physical gives you something concrete to focus on that can impact the emotional.",
+      "description": "There is a concept is Buddhism called 'the second arrow'- it's the idea that often when you are noticing an emotional reaction, it is not just one reaction but many. The second arrow refers to your emotional reaction to you emotional reaction. If you are able to relax and consciously tell yourself that what you are feeling is ok and you will survive it, you lessen the secondary emotional reaction, giving yourself relief. \n There is an overlap between physical sensation and emotional feeling- locating the physical gives you something concrete to focus on that can impact the emotional. You will tap into that physical seat of the emotional in this practice.",
       "icon": "feather",
-      "instructions": "Close your eyes and tune into what you are feeling in your body. Try to locate where you feel feelings in your body. Tell yourself that it's ok that they are there and try to increase the sensation, leaning into it. Paradoxically, this will generally cause the sensation to disspate along with the difficult emotion."
+      "instructions": "Close your eyes and tune into what you are feeling in your body. Try to locate where you feel emotion in your body. This is generally where you feel the strongest send of discomfort, often in the chest. Tell yourself that it's ok that the sensations are there and try to increase the your awareness of the feeling, leaning into it. Paradoxically, trying to hold onto or increase the sensation this will generally cause it to disspate along with the difficult emotion."
     },
     {
       "id": 4,
@@ -640,15 +661,255 @@
       "description": "",
       "anxietyScore": "",
       "id": 68
+    },
+    {
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-27T00:54:00.086Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 69
+    },
+    {
+      "userId": 1,
+      "interventionId": 6,
+      "timestamp": "2019-12-27T04:44:31.618Z",
+      "anxietyScore": 8,
+      "description": "",
+      "id": 70
+    },
+    {
+      "userId": 1,
+      "interventionId": 4,
+      "timestamp": "2019-12-27T04:46:45.116Z",
+      "anxietyScore": 6,
+      "description": "",
+      "id": 71
+    },
+    {
+      "userId": 1,
+      "interventionId": 10,
+      "timestamp": "2019-12-27T04:48:07.720Z",
+      "anxietyScore": 1,
+      "description": "i am much better now!",
+      "id": 72
+    },
+    {
+      "userId": 1,
+      "interventionId": 5,
+      "timestamp": "2019-12-27T04:58:59.480Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 73
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T05:05:08.017Z",
+      "anxietyScore": 4,
+      "description": "",
+      "id": 74
+    },
+    {
+      "userId": 1,
+      "interventionId": 9,
+      "timestamp": "2019-12-27T05:08:27.576Z",
+      "anxietyScore": 2,
+      "description": "I just got physical touch and feel better!",
+      "id": 75
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T05:17:28.923Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 76
+    },
+    {
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-27T05:19:54.479Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 77
+    },
+    {
+      "userId": 1,
+      "interventionId": 8,
+      "timestamp": "2019-12-27T05:24:41.530Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 78
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T06:38:05.753Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 79
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T17:15:11.039Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 80
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T17:15:53.784Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 81
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T17:20:22.365Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 82
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T17:27:59.007Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 83
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T17:32:50.607Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 84
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T17:33:25.585Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 85
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T17:34:20.930Z",
+      "anxietyScore": 2,
+      "description": "",
+      "id": 86
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T17:41:45.936Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 87
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T17:42:33.838Z",
+      "interventionId": 3,
+      "description": "",
+      "anxietyScore": "",
+      "id": 88
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T18:04:16.817Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 89
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T18:19:58.352Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 90
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T18:23:11.023Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 91
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T18:49:17.370Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 92
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T18:51:40.048Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 93
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T18:55:38.777Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 94
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T18:57:52.122Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 95
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T18:59:03.017Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 96
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T19:05:17.887Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 97
+    },
+    {
+      "userId": 1,
+      "timestamp": "2019-12-27T19:11:37.523Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 98
     }
   ],
   "journals": [
     {
-      "entry": "It would feel good to let all that go",
-      "timestamp": "2019-12-11T21:14:14.530Z",
+      "id": 2,
       "userId": 1,
+      "entry": "It would feel good to let all that go...",
       "promptId": 2,
-      "id": 2
+      "timestamp": "2017-12-11T21:14:14.530Z"
     },
     {
       "id": 5,
@@ -686,13 +947,6 @@
       "id": 10
     },
     {
-      "entry": "Lucky and unhappy",
-      "timestamp": "2019-12-12T04:05:37.585Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 11
-    },
-    {
       "entry": "ok here goes it's wierd knowing that ppl are going to read this it's not the same as it would be but man it feels good just to write i love this yeah this feels great :) no eiditing myself thats the best feeling",
       "timestamp": "2019-12-14T03:36:23.080Z",
       "userId": 1,
@@ -721,11 +975,11 @@
       "id": 18
     },
     {
-      "entry": "OK, here goes. It's hard not to edit myself when I nkow that other people can see this I wodner how it's going to go when i actualy demo this i'm glad i took the time to journal and think things through earlier it really helped a lot i've been putting way too much pressure on myself and its no good for me it;s impiortant to remember why i'm doing this and just have fun with it and learn whaat I can",
-      "timestamp": "2019-12-25T17:40:01.176Z",
+      "id": 19,
       "userId": 1,
+      "entry": "OK, here goes. It's hard not to edit myself when I know that other people can see this I wodner how it's going to go when i actualy demo this i'm glad i took the time to journal and think things through earlier it really helped a lot i've been putting way too much pressure on myself and its no good for me it;s impiortant to remember why i'm doing this and just have fun with it and learn whaat I can",
       "promptId": 6,
-      "id": 19
+      "timestamp": "2019-12-25T17:40:01.176Z"
     },
     {
       "entry": "I'm actually feeling much better after hournaling and thinking through my perfectionism earlier ",
@@ -749,18 +1003,102 @@
       "id": 22
     },
     {
-      "entry": "aggf",
-      "timestamp": "2019-12-25T17:48:08.680Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 23
-    },
-    {
       "entry": "Yes, I will be ok.",
       "timestamp": "2019-12-25T19:28:08.923Z",
       "userId": 1,
       "promptId": 2,
       "id": 24
+    },
+    {
+      "entry": "I am empathic. I judge myself harshly and believe that other people are judging me as well.",
+      "timestamp": "2019-12-27T05:05:07.994Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 25
+    },
+    {
+      "entry": "TESTING",
+      "timestamp": "2019-12-27T05:17:28.903Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 26
+    },
+    {
+      "entry": "dasvf",
+      "timestamp": "2019-12-27T06:38:05.720Z",
+      "userId": 1,
+      "promptId": 2,
+      "id": 27
+    },
+    {
+      "entry": "I care ",
+      "timestamp": "2019-12-27T17:15:10.991Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 28
+    },
+    {
+      "entry": "I am hard working and curious",
+      "timestamp": "2019-12-27T17:15:53.760Z",
+      "userId": 1,
+      "promptId": 7,
+      "id": 29
+    },
+    {
+      "entry": "Troubleshoot the issues I am presently having and then figure out what makes the most sense to work on next",
+      "timestamp": "2019-12-27T17:20:22.337Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 30
+    },
+    {
+      "entry": "god i'm predictable so full of self judgement i just want this to be good i cant believe that everything is breaking there is so much to fix. its wierd taht it was working fine with the wrong fetch call but I guess thats why you test and test and test i'm learning and I made soemthing cool and useful it's helping me and my mother so I should be proud and ease up on myself yes i'm ambitious and I would love for it to make toast too but I'll get there it's not healhty to put this much pressure on myself",
+      "timestamp": "2019-12-27T17:27:58.946Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 31
+    },
+    {
+      "entry": "I can keep trucking",
+      "timestamp": "2019-12-27T17:32:50.567Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 32
+    },
+    {
+      "entry": "ckc",
+      "timestamp": "2019-12-27T17:33:25.556Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 33
+    },
+    {
+      "entry": "Yes, I will be ok.",
+      "timestamp": "2019-12-27T17:34:20.854Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 34
+    },
+    {
+      "entry": "It probably won't be as great or as terrible as I imagine, so I should probably just chill",
+      "timestamp": "2019-12-27T17:41:45.909Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 35
+    },
+    {
+      "entry": "fsdg",
+      "timestamp": "2019-12-27T18:23:10.997Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 37
+    },
+    {
+      "entry": "dsvb",
+      "timestamp": "2019-12-27T19:11:37.502Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 38
     }
   ],
   "prompts": [
@@ -785,12 +1123,12 @@
       "prompt": "Is my thinking realistic? Even if my fears are all accurate, could I accept those feared situations if I had to?"
     },
     {
-      "id": 5,
-      "prompt": "Am I judging myself harshly? Do I think other people are judging me - generally this is self-judgement in diguise. Name at least one thing you like about yourself or that you are proud of."
-    },
-    {
       "id": 6,
       "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation just to get it out."
+    },
+    {
+      "id": 7,
+      "prompt": "Am I judging myself harshly? Do I think other people are judging me - generally this is self-judgement in diguise. Name at least one thing you like about yourself or that you are proud of."
     }
   ]
 }

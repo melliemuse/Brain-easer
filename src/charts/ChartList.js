@@ -13,7 +13,8 @@ export default class ChartList extends Component {
         baseAnxietyId: [],
         baseAnxietyTimestamp: [],
         baseAnxietyScore: [],
-        interventionData: []
+        interventionData: [],
+        baselineData: []
     }
     componentDidMount() {
         const currentUser = localStorage.getItem("activeUser")
@@ -22,10 +23,18 @@ export default class ChartList extends Component {
                 const baseAnxietyId = baseAnxiety.map(anxiety => anxiety.id)
                 const baseAnxietyTimestamp = baseAnxiety.map(anxiety => anxiety.timestamp)
                 const baseAnxietyScore = baseAnxiety.map(anxiety => anxiety.anxietyScore)
+                const baselineData = baseAnxiety.map(anxiety => {
+                    const baselineData = {
+                    x: anxiety.timestamp,
+                    y: anxiety.anxietyScore,
+                }
+                    return baselineData
+                })
                 this.setState({
                     baseAnxietyId: baseAnxietyId,
                     baseAnxietyTimestamp: baseAnxietyTimestamp,
                     baseAnxietyScore: baseAnxietyScore,
+                    baselineData: baselineData
                 })
             })
         APIManager.getAllUserInterventionsWithInterventions("userInterventions", currentUser)
@@ -45,8 +54,6 @@ export default class ChartList extends Component {
                     megaArray.push(element)
                 });
                 console.log("MEGA ARRAY", megaArray)
-
-
                 this.setState({
                     interventionMap: interventionMap,
                     megaArray: megaArray
@@ -59,8 +66,6 @@ export default class ChartList extends Component {
                 for (let i = 0; i < this.state.megaArray.length; i++) {
                     interventionData.push([])
                 }
-
-                
                 if (this.state.megaArray !== []) {
                     for (let i = 0; i < this.state.megaArray.length; i++) {
                         if (this.state.megaArray[i] !== undefined) {
@@ -72,21 +77,18 @@ export default class ChartList extends Component {
                                 const dataObject =
                                     { t: intervention.timestamp, y: intervention.anxietyScore, name: interventionName }
                                 interventionData[i].push(dataObject)
-                            }
-
-                        }
+                            }}
                     }
                 }
                 console.log("interventionData", interventionData)
                 this.setState({
                     interventionData: interventionData
                 })
-
             })
     }
     render() {
 
-
+console.log("state", this.state)
         return (
             <>
 
@@ -115,7 +117,8 @@ export default class ChartList extends Component {
                             // id={miniArray[0].interventionId}
                             key={i}
                             interventionData={miniArray}
-                            baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} 
+                            baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} 
+                            baseAnxietyScore={this.state.baseAnxietyScore} baselineData={this.state.baselineData}
                         />
                     )}
                 </div>

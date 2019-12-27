@@ -23,6 +23,10 @@ export default class ScatterPlot extends Component {
         return color;
     }
     buildChartData = () => {
+            console.log("Intervention data", this.props.interventionData)
+            console.log("Baseline data", this.props.baseAnxietyScore)
+            console.log("Baseline data", this.props.baseAnxietyTimestamp)
+           
         let dates = this.props.interventionData.map(date => {
             console.log("TIMESTAMPS", date.t)
             let dateObj = new Date(date.t)
@@ -31,6 +35,26 @@ export default class ScatterPlot extends Component {
             // let day = dateObj.getDay()
             return dateObj.toDateString()
         })
+        // let day = this.props.interventionData.map(day => {
+        //     console.log("TIMESTAMPS", day.t)
+        //     let dateObj = new Date(day.t)
+        //     // let month = dateObj.getMonth()
+        //     // let date = dateObj.getDate()
+        //     let byDay = dateObj.getDay()
+        //     return byDay
+        // })
+        // console.log("day", day)
+        let intDates = this.props.interventionData.map(date => {
+            return date.t.split("T")
+        })
+        console.log(intDates)
+        console.log("p", this.props.baselineData)
+
+        let baseDates = this.props.baselineData.map(date => {
+            return date.x.split("T")
+        })
+        console.log(baseDates)
+
         let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
         
         

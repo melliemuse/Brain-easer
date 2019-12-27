@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
+import Button from '@material-ui/core/Button';
 
 export default class JournalEditForm extends Component {
     state = {
         prompt: "",
         entry: "",
-        promptId: ""
+        promptId: "", 
+        timestamp: ""
     }
     componentDidMount() {
         APIManager.getWith("journals", this.props.match.params.journalId, "prompt")
@@ -13,14 +15,15 @@ export default class JournalEditForm extends Component {
                 this.setState({
                     entry: journal.entry,
                     prompt: journal.prompt.prompt,
-                    promptId: journal.prompt.id
+                    promptId: journal.prompt.id,
+                    timestamp: journal.timestamp
                 })
             })
     }
     handleFieldChange = event => {
         event.preventDefault()
         const stateToChange = {}
-        stateToChange[event.target.id] = event.target.value
+        stateToChange[event.currentTarget.id] = event.currentTarget.value
         this.setState(stateToChange)
     }
     createUpdatedEntry = event => {
@@ -32,7 +35,8 @@ export default class JournalEditForm extends Component {
                 id: Number(this.props.match.params.journalId),
                 userId: parseInt(localStorage.getItem("activeUser")),
                 entry: this.state.entry,
-                promptId: this.state.promptId
+                promptId: this.state.promptId,
+                timestamp: this.state.timestamp
             }
             APIManager.update("journals", entry)
             .then(() => this.props.history.push("/journal/entries"))
@@ -42,7 +46,8 @@ export default class JournalEditForm extends Component {
     render() {
         console.log("this.state", this.state)
         return (
-            <>
+            <div className="main">
+                <h1>Edit Journal Entry</h1>
                 <h3>{this.state.prompt}</h3>
                 <form>
                     <fieldset>
@@ -53,13 +58,14 @@ export default class JournalEditForm extends Component {
                             onChange={this.handleFieldChange}
                         />
                         <div>
-                            <button
+                            <Button
+                            color="primary"
                             onClick={this.createUpdatedEntry}
-                            >Submit</button>
+                            >Submit</Button>
                         </div>
                     </fieldset>
                 </form>
-            </>
+            </div>
         )
     }
 }

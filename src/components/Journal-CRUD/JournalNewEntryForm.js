@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import TextareaAutosize from '@material-ui/core/TextareaAutosize'
 import InterventionRerate from '../InterventionRerate'
 import './Journal.css'
 
@@ -19,14 +20,12 @@ export default class JournalNewEntryForm extends Component {
     componentDidMount() {
         APIManager.getAll("prompts")
             .then(prompts => {
-                console.log(prompts)
                 this.setState({
                     prompts: prompts
                 })
             })
             .then(() => APIManager.get("interventions", 7))
             .then(intervention => {
-                console.log("INTERVENTIONS", intervention)
                 this.setState({intervention: intervention})
             })
     }
@@ -51,19 +50,31 @@ export default class JournalNewEntryForm extends Component {
         event.preventDefault()
         if (this.state.entry === "") {
             window.alert("Please complete entry field before submitting")
-        } else if (this.state.randomPrompt === {}) {
+        } else if (this.state.randomPrompt.id === undefined) {
             window.alert("Please generate a prompt before submitting")
-        } else {
+        }
+        else {
+            let nonBreakingEntry = []
+            if (this.state.entry) {
+                this.state.entry.split('\n').forEach(function (item) {
+                    nonBreakingEntry.push(item)
+                })
+            }
+            let oneLineEntry = nonBreakingEntry.join('')
             const entry = {
-                entry: this.state.entry,
+                entry: oneLineEntry,
                 timestamp: new Date(),
                 userId: parseInt(localStorage.getItem("activeUser")),
                 promptId: this.state.randomPrompt.id
             }
-            console.log(entry)
             APIManager.post("journals", entry)
                 .then(() => this.handleClick())
         }
+    }
+    MinHeightTextarea = () => {
+        return<TextareaAutosize variant="outlined"
+        id="entry"
+        onChange={this.handleFieldChange}/>
     }
     handleClick = () => {
         const currentUser = localStorage.getItem("activeUser")
@@ -96,11 +107,7 @@ export default class JournalNewEntryForm extends Component {
                         <header
                             className="prompt"
                             >{this.state.randomPrompt.prompt}</header>
-
-                        <TextField variant="outlined"
-                            id="entry"
-                            onChange={this.handleFieldChange}
-                        />
+                        {this.MinHeightTextarea()}
                         <div>
                             <Button
                             className="button"
