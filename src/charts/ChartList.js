@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
-import MainChart from './MainChart'
 import ScatterPlot from './ScatterPlot'
-import InterventionChartCard from './InterventionChartCard'
 
 export default class ChartList extends Component {
     state = {
@@ -48,12 +46,10 @@ export default class ChartList extends Component {
                         interventionMap[interventionType] = [intervention]
                     }
                 })
-                console.log("INTERVENTION map", interventionMap)
                 let megaArray = []
                 Object.values(interventionMap).forEach(element => {
                     megaArray.push(element)
                 });
-                console.log("MEGA ARRAY", megaArray)
                 this.setState({
                     interventionMap: interventionMap,
                     megaArray: megaArray
@@ -72,23 +68,20 @@ export default class ChartList extends Component {
                             for (let j = 0; j < this.state.megaArray[i].length; j++) {
                                 const intervention = this.state.megaArray[i][j]
                                 const interventionName = this.state.megaArray[i][j].intervention.name
-                                console.log("MEGA ARRAY ITERATION", this.state.megaArray[i][j])
-                                console.log("MEGA ARRAY ITERATION .name",this.state.megaArray[i][j].name)
+                                // console.log("MEGA ARRAY ITERATION", this.state.megaArray[i][j])
+                                // console.log("MEGA ARRAY ITERATION .name",this.state.megaArray[i][j].name)
                                 const dataObject =
-                                    { t: intervention.timestamp, y: intervention.anxietyScore, name: interventionName }
+                                    { x: intervention.timestamp, y: intervention.anxietyScore, name: interventionName }
                                 interventionData[i].push(dataObject)
                             }}
                     }
                 }
-                console.log("interventionData", interventionData)
                 this.setState({
                     interventionData: interventionData
                 })
             })
     }
     render() {
-
-console.log("state", this.state)
         return (
             <>
 

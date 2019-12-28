@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize'
 import InterventionRerate from '../InterventionRerate'
 import './Journal.css'
