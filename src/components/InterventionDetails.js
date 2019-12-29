@@ -95,9 +95,9 @@ export default class InterventionDetails extends Component {
                         this.state.intervention.id === 6 &&
                         <img src={this.state.user.inner_child_image} alt="inner child picture" className="inner-child-image"></img>
                     }
-                    <div>
+                    <div className="intervention-description">
                         {this.state.intervention.description !== undefined &&
-                            <p>{this.state.intervention.description.split('\n').map(function (item, key) {
+                            <p className="intervention-description">{this.state.intervention.description.split('\n').map(function (item, key) {
                                 return (
                                     <span className="new-line" key={key}>
                                         {item}
@@ -106,10 +106,10 @@ export default class InterventionDetails extends Component {
                                 )
                             })}</p>}
                     </div>
-                    <div>
+                    <div className="intervention-instructions">
                         <h3>Instructions</h3>
                         {this.state.intervention.instructions !== undefined &&
-                            <p>{this.state.intervention.instructions.split('\n').map(function (item, key) {
+                            <p className="intervention-instructions">{this.state.intervention.instructions.split('\n').map(function (item, key) {
                                 return (
                                     <span className="new-line" key={key}>
                                         {item}

@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
-import MainChart from './MainChart'
 import ScatterPlot from './ScatterPlot'
-import InterventionChartCard from './InterventionChartCard'
 
 export default class ChartList extends Component {
     state = {
@@ -13,7 +11,8 @@ export default class ChartList extends Component {
         baseAnxietyId: [],
         baseAnxietyTimestamp: [],
         baseAnxietyScore: [],
-        interventionData: []
+        interventionData: [],
+        baselineData: []
     }
     componentDidMount() {
         const currentUser = localStorage.getItem("activeUser")
@@ -22,10 +21,18 @@ export default class ChartList extends Component {
                 const baseAnxietyId = baseAnxiety.map(anxiety => anxiety.id)
                 const baseAnxietyTimestamp = baseAnxiety.map(anxiety => anxiety.timestamp)
                 const baseAnxietyScore = baseAnxiety.map(anxiety => anxiety.anxietyScore)
+                const baselineData = baseAnxiety.map(anxiety => {
+                    const baselineData = {
+                    x: anxiety.timestamp,
+                    y: anxiety.anxietyScore,
+                }
+                    return baselineData
+                })
                 this.setState({
                     baseAnxietyId: baseAnxietyId,
                     baseAnxietyTimestamp: baseAnxietyTimestamp,
                     baseAnxietyScore: baseAnxietyScore,
+                    baselineData: baselineData
                 })
             })
         APIManager.getAllUserInterventionsWithInterventions("userInterventions", currentUser)
@@ -39,14 +46,10 @@ export default class ChartList extends Component {
                         interventionMap[interventionType] = [intervention]
                     }
                 })
-                console.log("INTERVENTION map", interventionMap)
                 let megaArray = []
                 Object.values(interventionMap).forEach(element => {
                     megaArray.push(element)
                 });
-                console.log("MEGA ARRAY", megaArray)
-
-
                 this.setState({
                     interventionMap: interventionMap,
                     megaArray: megaArray
@@ -59,34 +62,26 @@ export default class ChartList extends Component {
                 for (let i = 0; i < this.state.megaArray.length; i++) {
                     interventionData.push([])
                 }
-
-                
                 if (this.state.megaArray !== []) {
                     for (let i = 0; i < this.state.megaArray.length; i++) {
                         if (this.state.megaArray[i] !== undefined) {
                             for (let j = 0; j < this.state.megaArray[i].length; j++) {
                                 const intervention = this.state.megaArray[i][j]
                                 const interventionName = this.state.megaArray[i][j].intervention.name
-                                console.log("MEGA ARRAY ITERATION", this.state.megaArray[i][j])
-                                console.log("MEGA ARRAY ITERATION .name",this.state.megaArray[i][j].name)
+                                // console.log("MEGA ARRAY ITERATION", this.state.megaArray[i][j])
+                                // console.log("MEGA ARRAY ITERATION .name",this.state.megaArray[i][j].name)
                                 const dataObject =
-                                    { t: intervention.timestamp, y: intervention.anxietyScore, name: interventionName }
+                                    { x: intervention.timestamp, y: intervention.anxietyScore, name: interventionName }
                                 interventionData[i].push(dataObject)
-                            }
-
-                        }
+                            }}
                     }
                 }
-                console.log("interventionData", interventionData)
                 this.setState({
                     interventionData: interventionData
                 })
-
             })
     }
     render() {
-
-
         return (
             <>
 
@@ -106,7 +101,7 @@ export default class ChartList extends Component {
                         />
                     )}
                 </div> */}
-                <div className="card chart-card">
+                {/* <div className="card chart-card"> */}
                     {this.state.interventionData !== [] && 
                     this.state.interventionData.map((miniArray, i) =>
                         // console.log("HELLO", miniArray)
@@ -115,10 +110,11 @@ export default class ChartList extends Component {
                             // id={miniArray[0].interventionId}
                             key={i}
                             interventionData={miniArray}
-                            baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} 
+                            baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} 
+                            baseAnxietyScore={this.state.baseAnxietyScore} baselineData={this.state.baselineData}
                         />
                     )}
-                </div>
+                {/* </div> */}
 
             </>
         )

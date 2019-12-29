@@ -1,16 +1,62 @@
-#entry, .entryList {
+.entry-list-heading {
+    margin: 0 auto 0px;
+    padding: 10px 0;
+    width: 70%;
+    font-weight: 500;
+    font-size: 3.2em;
+}
+.entryList {
     font-family: 'Roboto Slab', serif;
     font-size: 1.2em;
 }
+#entry {
+    font-family: 'Sriracha', cursive;
+    color: rgb(125, 125, 125);
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    min-height: 500px;
+    overflow: auto;
+}
 .button-group {
-    margin-bottom: 30px;
+    margin: 10px 0 0;
+    padding-bottom: 0px;
 }
 .prompts {
-    font-weight: 400;
-    font-size: 1.4em;
-    margin: 0 0 20px;
+    font-weight: 600;
+    font-size: 1.7em;
+    margin: 0 0 40px;
+    line-height: 40px;
+    padding: 30px 30px 0;
+    color: rgb(155, 153, 153);
 }
-/* .entryList {
-    margin: 0 auto;
+#card-container {
+    padding: 30px;
+    /* background-color: rgba(0, 0 , 0, .5); */
+    /* box-shadow: 2px 3px 3px rgb(64, 5, 128); */
+}
+.card {
+    padding: 40px 70px 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    /* background-color: rgba(0, 0 , 0, .5); */
+    /* box-shadow: 5px 5px 10px darkslategrey; */
+}
+.entryList {
+    font-family: 'Sriracha', cursive;
+    margin: 0 auto 60px;
     width: 70%;
-} */
+    color: rgb(253, 152, 93);
+    font-weight: 500;
+    font-size: 1.6em;
+}
+.entryDate {
+    color: rgb(155, 153, 153);
+    padding: 0 30px 0;
+}
+.button-group .MuiButtonGroup-groupedContainedPrimary:not(:last-child) {
+    border-right: none;
+}
+#button-group {
+    margin: 0 220px;
+}

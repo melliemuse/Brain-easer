@@ -9,7 +9,9 @@
     margin: 20px auto;
     max-width: 1700px;
     width: 900px;
+    /* width: 100%; */
     text-align: left;
+    padding-top: 80px;
 }
 .text-center {
     text-align: left;
@@ -45,29 +47,38 @@ h1 {
     margin: 65px 0;
 }
 canvas {
-    width: 95% !important ;
+    width: 85em !important ;
     height: auto !important ;
+    margin: 100px auto 180px;
 }
 Button.button {
     font-size: 1em;
 }
 .rating-buttons {
     margin-bottom: 7.25em;
+    padding-bottom: 20px;
 }
 #anxiety-rating-welcome{
-    font-size: 3em;
-    font-weight: 600;
-    background: -webkit-linear-gradient(#eee, rgb(203, 114, 231));
+    font-size: 3.2em;
+    font-weight: 500;
+    background: -webkit-linear-gradient(rgb(37, 155, 223), rgb(241, 114, 165, 10%));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 55px 0;
+    padding: 0 0 35px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0px 0 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .03);
+    /* animation: cssAnimation 0s ease-in 5s forwards;
+    -o-animation: cssAnimation 0s ease-in 5s forwards; */
+    
 }
+
+
 #anxiety-rating-scale {
-    color: rgb(167, 226, 250);
+    color: rgb(22, 174, 235);
     font-size: 35px;
-    font-weight: 600; 
+    font-weight: 500; 
 }
 .descriptionField {
     height: 85px; 
@@ -80,15 +91,41 @@ Button.button {
     margin-bottom: 70px;
 }
 #submit-rating {
-    margin-top: 35px;
+    margin-top: 65px;
 }
 #anxietyScore {
     font-size: 1.3em;
     font-weight: 400;
+    padding: 20px 0 80px;
 }
 #anxiety-rate-container {
-    background-color: rgb(68, 68, 71);
+    /* background-color: rgba(68, 68, 71, .1); */
     width: 55em;
     height: 26em;
     margin: 80px 0 70px;
+    /* animation: cssShow 0s ease-in 5s forwards;
+    -o-animation: cssShow 0s ease-in 5s forwards;
+    visibility: hidden; */
 }
+/* @keyframes cssShow {
+    to   { visibility: visible; };
+} */
+#main-logo {
+    width: 20%;
+    /* animation: cssAnimation 0s ease-in 5s forwards;
+    -o-animation: cssAnimation 0s ease-in 5s forwards; */
+}
+/* @keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+} */
+
+/* .footer-buttons {
+    padding-top: 50px;
+    height: 400px;
+    background-color: rgba(68, 68, 71);
+
+} */

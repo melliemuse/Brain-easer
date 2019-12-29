@@ -162,6 +162,34 @@
       "userId": 1,
       "description": "",
       "id": 22
+    },
+    {
+      "anxietyScore": 7,
+      "timestamp": "2019-12-27T00:53:54.205Z",
+      "userId": 1,
+      "description": "",
+      "id": 23
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2019-12-27T04:40:00.477Z",
+      "userId": 1,
+      "description": "",
+      "id": 24
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2019-12-27T04:42:30.550Z",
+      "userId": 1,
+      "description": "I am anxious because my best friend is struggling and I am dealing with multiple sources of family loss.",
+      "id": 25
+    },
+    {
+      "anxietyScore": 4,
+      "timestamp": "2019-12-28T07:52:36.420Z",
+      "userId": 1,
+      "description": "",
+      "id": 26
     }
   ],
   "interventions": [
@@ -171,7 +199,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Practicing deep breathing, where you take a deep breath in and exhale for longer than your inhale calms the parasympathetic nervous system, which is what controls your fight or flight response. This response is triggered in moments of high stress or panic - this technique relieves that response.",
-      "icon": "",
+      "icon": "wind",
       "instructions": "Breathe in for 10 seconds, and breathe out for longer, approximately 15 seconds. Repeat until you feel some relief."
     },
     {
@@ -180,7 +208,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Exercise has been shown to relieve stress even in cases of extreme trauma which are notoriously hard to treat. The fight or flight response triggered by a perceived threat produces anxiety, and renowned somatic researcher Peter Levine found through original research that through physical activity such as shaking and running, the traumatic response of extreme stress is releived. This holds true for lesser anxiety as well but the impact is demostrated by its efficacy in very hard to treat panic.",
-      "icon": "",
+      "icon": "biking",
       "instructions": "Even mild exercise produces endorphins and will have a positive impact on mood- this is really dealer's choice. If this is a difficult activity for you, start small and keep praciticing as often as you can stomach it to reduce resistance and form a habit."
     },
     {
@@ -188,9 +216,9 @@
       "name": "Feel Feelings",
       "timestamp": "",
       "completed": "",
-      "description": "There is a concept is Buddhism called 'the second arrow'- it's the idea that often when you are noticing an emotional reaction, it is not just one reaction but many. By resisting and not accepting the feeling you are having, you are making your suffering worse. There is an overlap between physical sensation and emotional feeling- locating the physical gives you something concrete to focus on that can impact the emotional.",
-      "icon": "",
-      "instructions": "Close your eyes and tune into what you are feeling in your body. Try to locate where you feel feelings in your body. Tell yourself that it's ok that they are there and try to increase the sensation, leaning into it. Paradoxically, this will generally cause the sensation to disspate along with the difficult emotion."
+      "description": "There is a concept is Buddhism called 'the second arrow'- it's the idea that often when you are noticing an emotional reaction, it is not just one reaction but many. The second arrow refers to your emotional reaction to you emotional reaction. If you are able to relax and consciously tell yourself that what you are feeling is ok and you will survive it, you lessen the secondary emotional reaction, giving yourself relief. \n There is an overlap between physical sensation and emotional feeling- locating the physical gives you something concrete to focus on that can impact the emotional. You will tap into that physical seat of the emotional in this practice.",
+      "icon": "feather",
+      "instructions": "Close your eyes and tune into what you are feeling in your body. Try to locate where you feel emotion in your body. This is generally where you feel the strongest send of discomfort, often in the chest. Tell yourself that it's ok that the sensations are there and try to increase the your awareness of the feeling, leaning into it. Paradoxically, trying to hold onto or increase the sensation this will generally cause it to disspate along with the difficult emotion."
     },
     {
       "id": 4,
@@ -198,7 +226,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Practicing gratitude can help get you out of the headspace you find yourself in when you're experiencing anxiety. One of the challenges with anxiety and depression is something called state-dependant memory. It means that while you are in a certain frame of mind, it takes more effort to retrieve memories that were formed in another frame of mind, meaning, when you are anxious or depressed, your brain makes it hard to remember a time when you weren't feeling that way, and you have a harder time accessing the happy thoughts that could help pull you out. But the bleak thoughts you have when it the throes of anxiety are not the whole picture, and praticing gratitude can help remind you of the balance that exists.",
-      "icon": "",
+      "icon": "heart",
       "instructions": "Make out a list or write stream-of-consciousness about all of the things you are grateful for (or if not all, shoot for 10)"
     },
     {
@@ -207,7 +235,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses to acheive this result and loosen the grip of anxiety. Grounding techniques exist for all five senses, some may resonate more for you than others, so try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation",
-      "icon": "",
+      "icon": "spa",
       "instructions": "Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths. \n Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. \n Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present \n Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. \n Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. \n Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
     },
     {
@@ -216,7 +244,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. If your parents, like, most people, did not possess this skill, then you do not either. That is why it is necessary for many people to go through the process of consciously developing the ability to self-soothe later in life. The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way which might otherwise be difficult. Many times, emotional upset is tied to self-judgement, and often this has its roots in childhood. When we experience adverse experiences as children, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations.",
-      "icon": "",
+      "icon": "fan",
       "instructions": "Grab your journal and write whatever comes to mind about the situations which are sparking distress and the thoughts you are having. Try to drill down into the beliefs you are carrying about yourself. Now find a picture of yourself as a small child- the cuter you looked, the better. Stare at it for a while. See how sweet and innocent you were. That is you. Do the thoughts and beliefs you are having match up with what you see when you look at that picture? Now imagine yourself at your current age giving the smaller, hurting version of yourself a hug and telling them that you are there to protect them and everything is going to be alright."
     },
     {
@@ -225,7 +253,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Your brain, trying to be helpful, will endlessly remind you of things it deems urgent. It's like an alarm clock that will only be snoozed, not silenced. \n Making a plan for how you will accomplish these tasks will allow you to shut off the alarm. This will allow your brain satisfaction that it's done its job by making sure you accomplish the tasks it deems important for your survival, and then it will let you have some peace. \n Journaling is an important precursor to planning. It helps by getting the looping, urgent, anxious thoughts out of your head. It empties your mind of clutter that can impede your ability to think clearly and gives you the perspective to analyze and plan effectively. A clear plan, increased perspective and the emptying of urgent mental clutter all lead to decreased anxiety and the switching off of your mental alarm.",
-      "icon": "",
+      "icon": "book",
       "instructions": "Stream-of-consciousness writing is a highly effective method of journaling because you are writing so quickly that you do not have time to censor or judge yourself, and that is good because those self-judgements fan the flames of anxiety. I have written some prompts to help you think through some cognitive pitfalls and to come to a more constructive mode of thinking to alleviate your anxiety. Click on the button below to do some journaling."
     },
     {
@@ -234,7 +262,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Much has been written about the efficacy of meditation for anxiety, and with good reason. Meditation anchors you inside your body, allows you to unhook from distressing thoughts, and promotes the ability to sit with and tolerate discomfort. By sitting with and allowing yourself to feel pain, you paradoxically reduce its effect on you, and by showing yourself you can tolerate something challenging, you strengthen your self-worth and reduce your anxiety.",
-      "icon": "",
+      "icon": "vihara",
       "instructions": "Spend at least five minutes, ideally ten to twenty seated with your eyes slightly open gazing at a spot on the ground in front of you. Follow your breath as you allow your thoughts to come and go. If you notice yourself getting distracted, just bring your attention back to your breath with kindness. If you notice any dicomfort in the body, this is a good opportunity to practice acceptance. Though it is counterintuitive, if you consciously tell yourself that it is ok that you are feeling discomfort and try to lean into the sensation, it generally disspates."
     },
     {
@@ -243,7 +271,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Physical touch between people and animals releases oxytocin, a bonding hormone that produces feelings of relaxation. It also lowers cortisol, which is a hormone produced by the body as a result of stress, and lowers blood pressure.",
-      "icon": "",
+      "icon": "hands",
       "instructions": "Pet or cuddle an animal, ask for hugs, go dancing, spend time with people who are both safe and physically affectionate."
     },
     {
@@ -252,7 +280,7 @@
       "timestamp": "",
       "completed": "",
       "description": "Social support is incredibly powerful for supporting mental health. It is considered a protective factor that can mean the difference between developing a condition as serious and debilitating as PTSD and being able to integrate incredibly challenging experiences.",
-      "icon": "",
+      "icon": "comments",
       "instructions": "Take the time to spend with people who are supportive and make you feel like you belong when you are feeling anxious, especially if you can share how you are feeling and receive understanding and validation."
     }
   ],
@@ -640,15 +668,143 @@
       "description": "",
       "anxietyScore": "",
       "id": 68
+    },
+    {
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-27T00:54:00.086Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 69
+    },
+    {
+      "userId": 1,
+      "interventionId": 6,
+      "timestamp": "2019-12-27T04:44:31.618Z",
+      "anxietyScore": 8,
+      "description": "",
+      "id": 70
+    },
+    {
+      "userId": 1,
+      "interventionId": 4,
+      "timestamp": "2019-12-27T04:46:45.116Z",
+      "anxietyScore": 6,
+      "description": "",
+      "id": 71
+    },
+    {
+      "userId": 1,
+      "interventionId": 10,
+      "timestamp": "2019-12-27T04:48:07.720Z",
+      "anxietyScore": 1,
+      "description": "i am much better now!",
+      "id": 72
+    },
+    {
+      "userId": 1,
+      "interventionId": 5,
+      "timestamp": "2019-12-27T04:58:59.480Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 73
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T05:05:08.017Z",
+      "anxietyScore": 4,
+      "description": "",
+      "id": 74
+    },
+    {
+      "userId": 1,
+      "interventionId": 9,
+      "timestamp": "2019-12-27T05:08:27.576Z",
+      "anxietyScore": 2,
+      "description": "I just got physical touch and feel better!",
+      "id": 75
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T05:17:28.923Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 76
+    },
+    {
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-27T05:19:54.479Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 77
+    },
+    {
+      "userId": 1,
+      "interventionId": 8,
+      "timestamp": "2019-12-27T05:24:41.530Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 78
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T17:34:20.930Z",
+      "anxietyScore": 2,
+      "description": "",
+      "id": 86
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T17:41:45.936Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 87
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2019-12-27T18:23:11.023Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 91
+    },
+    {
+      "userId": 1,
+      "interventionId": 3,
+      "timestamp": "2019-12-28T07:53:05.159Z",
+      "anxietyScore": 2,
+      "description": "",
+      "id": 99
+    },
+    {
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2019-12-28T07:54:04.277Z",
+      "anxietyScore": 3,
+      "description": "",
+      "id": 100
+    },
+    {
+      "userId": 1,
+      "interventionId": 2,
+      "timestamp": "2019-12-28T07:55:36.593Z",
+      "anxietyScore": 2,
+      "description": "",
+      "id": 101
     }
   ],
   "journals": [
     {
-      "entry": "It would feel good to let all that go",
-      "timestamp": "2019-12-11T21:14:14.530Z",
+      "id": 2,
       "userId": 1,
+      "entry": "It would feel good to let all that go...",
       "promptId": 2,
-      "id": 2
+      "timestamp": "2017-12-11T21:14:14.530Z"
     },
     {
       "id": 5,
@@ -686,13 +842,6 @@
       "id": 10
     },
     {
-      "entry": "Lucky and unhappy",
-      "timestamp": "2019-12-12T04:05:37.585Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 11
-    },
-    {
       "entry": "ok here goes it's wierd knowing that ppl are going to read this it's not the same as it would be but man it feels good just to write i love this yeah this feels great :) no eiditing myself thats the best feeling",
       "timestamp": "2019-12-14T03:36:23.080Z",
       "userId": 1,
@@ -721,11 +870,11 @@
       "id": 18
     },
     {
-      "entry": "OK, here goes. It's hard not to edit myself when I nkow that other people can see this I wodner how it's going to go when i actualy demo this i'm glad i took the time to journal and think things through earlier it really helped a lot i've been putting way too much pressure on myself and its no good for me it;s impiortant to remember why i'm doing this and just have fun with it and learn whaat I can",
-      "timestamp": "2019-12-25T17:40:01.176Z",
+      "id": 19,
       "userId": 1,
+      "entry": "OK, here goes. It's hard not to edit myself when I know that other people can see this I wodner how it's going to go when i actualy demo this i'm glad i took the time to journal and think things through earlier it really helped a lot i've been putting way too much pressure on myself and its no good for me it;s impiortant to remember why i'm doing this and just have fun with it and learn whaat I can",
       "promptId": 6,
-      "id": 19
+      "timestamp": "2019-12-25T17:40:01.176Z"
     },
     {
       "entry": "I'm actually feeling much better after hournaling and thinking through my perfectionism earlier ",
@@ -749,18 +898,102 @@
       "id": 22
     },
     {
-      "entry": "aggf",
-      "timestamp": "2019-12-25T17:48:08.680Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 23
-    },
-    {
       "entry": "Yes, I will be ok.",
       "timestamp": "2019-12-25T19:28:08.923Z",
       "userId": 1,
       "promptId": 2,
       "id": 24
+    },
+    {
+      "entry": "I am empathic. I judge myself harshly and believe that other people are judging me as well.",
+      "timestamp": "2019-12-27T05:05:07.994Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 25
+    },
+    {
+      "entry": "TESTING",
+      "timestamp": "2019-12-27T05:17:28.903Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 26
+    },
+    {
+      "entry": "dasvf",
+      "timestamp": "2019-12-27T06:38:05.720Z",
+      "userId": 1,
+      "promptId": 2,
+      "id": 27
+    },
+    {
+      "entry": "I care ",
+      "timestamp": "2019-12-27T17:15:10.991Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 28
+    },
+    {
+      "entry": "I am hard working and curious",
+      "timestamp": "2019-12-27T17:15:53.760Z",
+      "userId": 1,
+      "promptId": 7,
+      "id": 29
+    },
+    {
+      "entry": "Troubleshoot the issues I am presently having and then figure out what makes the most sense to work on next",
+      "timestamp": "2019-12-27T17:20:22.337Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 30
+    },
+    {
+      "entry": "god i'm predictable so full of self judgement i just want this to be good i cant believe that everything is breaking there is so much to fix. its wierd taht it was working fine with the wrong fetch call but I guess thats why you test and test and test i'm learning and I made soemthing cool and useful it's helping me and my mother so I should be proud and ease up on myself yes i'm ambitious and I would love for it to make toast too but I'll get there it's not healhty to put this much pressure on myself",
+      "timestamp": "2019-12-27T17:27:58.946Z",
+      "userId": 1,
+      "promptId": 6,
+      "id": 31
+    },
+    {
+      "entry": "I can keep trucking",
+      "timestamp": "2019-12-27T17:32:50.567Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 32
+    },
+    {
+      "entry": "ckc",
+      "timestamp": "2019-12-27T17:33:25.556Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 33
+    },
+    {
+      "entry": "Yes, I will be ok.",
+      "timestamp": "2019-12-27T17:34:20.854Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 34
+    },
+    {
+      "entry": "It probably won't be as great or as terrible as I imagine, so I should probably just chill",
+      "timestamp": "2019-12-27T17:41:45.909Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 35
+    },
+    {
+      "entry": "fsdg",
+      "timestamp": "2019-12-27T18:23:10.997Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 37
+    },
+    {
+      "entry": "dsvb",
+      "timestamp": "2019-12-27T19:11:37.502Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 38
     }
   ],
   "prompts": [
@@ -785,12 +1018,12 @@
       "prompt": "Is my thinking realistic? Even if my fears are all accurate, could I accept those feared situations if I had to?"
     },
     {
-      "id": 5,
-      "prompt": "Am I judging myself harshly? Do I think other people are judging me - generally this is self-judgement in diguise. Name at least one thing you like about yourself or that you are proud of."
-    },
-    {
       "id": 6,
       "prompt": "Write without thinking, without worrying about spelling, grammar or punctuation just to get it out."
+    },
+    {
+      "id": 7,
+      "prompt": "Am I judging myself harshly? Do I think other people are judging me - generally this is self-judgement in diguise. Name at least one thing you like about yourself or that you are proud of."
     }
   ]
 }

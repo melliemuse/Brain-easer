@@ -17,10 +17,10 @@ export default class JournalCard extends Component {
                 <div>
                 <h4 className="prompts">{this.props.journals.prompt.prompt}</h4>
                     <p className="entryList">{this.props.journals.entry}</p>
-                    <p>{new Date(this.props.journals.timestamp).toString()}</p>
+                    <p className="entryDate">{new Date(this.props.journals.timestamp).toString()}</p>
                     <div>
 
-                    <ButtonGroup className="button-group" color="secondary" aria-label="outlined primary button group">
+                    <ButtonGroup variant="contained" id="button-group" className="button-group" color="primary" aria-label="outlined primary button group">
                     <Button
                         onClick={() => this.props.handleDelete(this.props.journals.id)}
                     >Delete</Button>

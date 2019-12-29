@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import JournalCard from './JournalCard'
-
+import Card from '@material-ui/core/Card';
 
 export default class JournalList extends Component {
     state = {
@@ -32,15 +32,19 @@ export default class JournalList extends Component {
         console.log(this.state.journals[0])
         return (
             <>
-                <h1>My Journal Entries</h1>
+                <h1 className="entry-list-heading">My Journal Entries</h1>
                 <div className="main">
+                    <Card id="card-container">
                     {this.state.journals.map(journal =>
+                        <Card className="card journal-card" key={journal.id}>
                         <JournalCard
-                            key={journal.id}
+                            
                             journals={journal}
                             handleDelete={this.handleDelete}
-                            {...this.props}
-                        />)}
+                            {...this.props}/>
+                        </Card>
+                        )}
+                    </Card>
                 </div>
             </>
         )

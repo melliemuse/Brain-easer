@@ -60,8 +60,8 @@ export default class InterventionRerate extends Component {
         // console.log([this.state.interventions[length-1].id])
         return (
             <div className="main">
-                <h2>Congratulations! You have taken action to make yourself feel better.</h2>
-                <h4>Rerate your anxiety to track your progress</h4>
+    <h2>Congratulations! You have completed the {this.props.intervention.name} intervention!</h2>
+                <h4>How is your anxiety now?</h4>
                 {this.createbuttons()}
                 <div>
                     <input
