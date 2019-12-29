@@ -19,9 +19,7 @@ export default class ScatterPlot extends Component {
     }
     buildChartData = () => {
         let toSortBaseline = this.props.baselineData.slice().sort()
-        console.log("toSortBaseline", toSortBaseline)
         let toSortInt = this.props.interventionData.slice().sort()
-        console.log("toSortInt", toSortInt)
         let simplifiedDates = []
         let simplifiedDatesInt = []
         let simplifiedObj = {}
@@ -61,9 +59,7 @@ export default class ScatterPlot extends Component {
         const intArray = [...intSet];
         for (let i = 0; i < intArray.length; i++) {
             let data = simplifiedArrayInt.find(array => array.x === intArray[i])
-            console.log("int Data", data)
             sortedIntData.push(data)
-            console.log("sorted Int Data", sortedIntData)
 
         }
         let finalBaselineArray = []
@@ -73,7 +69,6 @@ export default class ScatterPlot extends Component {
             if (data !== undefined) {
                 finalBaselineArray.push(data)
             }
-            console.log("Final Baseline Array", finalBaselineArray)
         }
         finalBaselineArray.forEach(baselineItem => finalBaselineDates.push(baselineItem.x))
         let finalIntArray = []
@@ -83,17 +78,8 @@ export default class ScatterPlot extends Component {
             if (data !== undefined) {
                 finalIntArray.push(data)
             }
-            console.log("Final Int Array", finalIntArray)
         }
         finalIntArray.forEach(intItem => finalIntDates.push(intItem.x))
-
-        console.log("Final Int Dates", finalIntDates)
-
-    // console.log("Final Baseline Dates", finalBaselineDates)
-    // 
-
-    // let colors = ['rgba(50, 133, 168,1)', 'rgba(75,192,192,1)', 'rgba(179, 55, 168)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)', 'rgba(224, 47, 80)']
-
 
 
     const datasets =
