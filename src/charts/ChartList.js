@@ -101,7 +101,7 @@ export default class ChartList extends Component {
                         />
                     )}
                 </div> */}
-                <div className="card chart-card">
+                {/* <div className="card chart-card"> */}
                     {this.state.interventionData !== [] && 
                     this.state.interventionData.map((miniArray, i) =>
                         // console.log("HELLO", miniArray)
@@ -114,7 +114,7 @@ export default class ChartList extends Component {
                             baseAnxietyScore={this.state.baseAnxietyScore} baselineData={this.state.baselineData}
                         />
                     )}
-                </div>
+                {/* </div> */}
 
             </>
         )

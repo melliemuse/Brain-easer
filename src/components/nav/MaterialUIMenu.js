@@ -26,7 +26,7 @@ export default function SimpleMenu() {
         <Toolbar>
         
           {/* <Button color="inherit">Login</Button> */}
-          <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/logos/newLogo.png')}></img></Link></li>
+          <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/Logo.png')}></img></Link></li>
           
           <IconButton id="nav-menu-button" className="nav" edge="end" color="inherit" aria-controls="simple-menu" aria-label="menu" aria-haspopup="true" onClick={handleClick}>
             <MenuIcon />

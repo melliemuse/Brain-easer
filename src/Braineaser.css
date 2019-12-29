@@ -47,8 +47,9 @@ h1 {
     margin: 65px 0;
 }
 canvas {
-    width: 95% !important ;
+    width: 85em !important ;
     height: auto !important ;
+    margin: 100px auto 180px;
 }
 Button.button {
     font-size: 1em;
