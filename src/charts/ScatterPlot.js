@@ -145,15 +145,22 @@ render() {
                             ticks: {
                                 source: 'data',
                                 beginAtZero: true,
+                                fontSize: 80
                             }
                         }],
                         yAxes: [{
                             ticks: {
-                                fontSize: 80
+                                fontSize: 30
+                            }
+                        }],
+
+                        xAxes: [{
+                            ticks: {
+                                fontSize: 30,
+                                fontColor: '#666',
                             }
                         }],
                     },
-                    scales: {
                         xAxes: [{
                             stacked: true,
                             ticks: {
@@ -161,13 +168,6 @@ render() {
                                 beginAtZero: true,
                             }
                         }],
-                        xAxes: [{
-                            ticks: {
-                                fontSize: 35,
-                                fontColor: '#666',
-                            }
-                        }],
-                    },
                     legend: {
                         display: true,
                         position: 'top',

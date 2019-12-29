@@ -26,7 +26,6 @@ export default function SimpleMenu() {
         <Toolbar>
         
           {/* <Button color="inherit">Login</Button> */}
-          {/* /Users/nss4/workspace/brain-easer-front-end-capstone/src/assets/Logo.png */}
           <li className="nav logo"><Link to='/'><img id="logo" alt="logo" src={require('../../assets/Logo.png')}></img></Link></li>
           
           <IconButton id="nav-menu-button" className="nav" edge="end" color="inherit" aria-controls="simple-menu" aria-label="menu" aria-haspopup="true" onClick={handleClick}>
