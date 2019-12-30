@@ -84,9 +84,8 @@ export default class AnxietyRating extends Component {
                 <h1 id="anxiety-rating-welcome">Welcome to Brain Easer!</h1>
                 <img id="main-logo" alt="logo" src={require('../assets/Logo.png')}></img>
                 </header>
-                    <h2 id="anxiety-rating-scale">Please rate your anxiety to get started</h2>
                 <article id="anxiety-rate-container">
-                    {/* <h2 className="anxiety-rating-scale">On a scale from 1 - 10:</h2> */}
+                    <h2 id="anxiety-rating-scale">How is your anxiety on a scale from 1 - 10?</h2>
                     <div className="rating-buttons">
                         {this.createbuttons()}
                         </div>
@@ -98,7 +97,7 @@ export default class AnxietyRating extends Component {
                                 hidden={this.state.addDescriptionField}
                                 onChange={this.handleFieldChange}
                             /> </div>
-                            <ButtonGroup color="primary" variant="contained" aria-label="outlined primary button group">
+                            <ButtonGroup className="button-group" color="primary" variant="contained" aria-label="outlined primary button group">
                                 <Button
                                     id="addDescriptionField"
                                     name="addDescriptionField"
@@ -121,7 +120,7 @@ export default class AnxietyRating extends Component {
                                     </Select>
                                 </FormControl>
                             </div>
-                            </footer>
+                            
                             <div>
                                 <Button
                                     variant="contained"
@@ -132,6 +131,7 @@ export default class AnxietyRating extends Component {
                                 >Submit Rating
                 </Button>
                             </div>
+                            </footer>
                 </article>
                      
                     </div>

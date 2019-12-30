@@ -54,9 +54,9 @@
     color: rgb(155, 153, 153);
     padding: 0 30px 0;
 }
-.button-group .MuiButtonGroup-groupedContainedPrimary:not(:last-child) {
+/* .button-group .MuiButtonGroup-groupedContainedPrimary:not(:last-child) {
     border-right: none;
-}
+} */
 #button-group {
     margin: 0 220px;
 }
