@@ -37,24 +37,136 @@ h1 {
     width: 1920px;
     /* background: radial-gradient(circle at top,rgba(37, 155, 223, .01),rgb(122, 38, 80), rgba(61, 1, 11, .8),  rgba(37, 155, 223, .01));  */
     /* background: radial-gradient(circle at top, rgb(230, 100, 208, .5) 4%, rgba(37, 155, 223, .3), rgb(201, 137, 253) 30%, rgba(37, 155, 223, .3));  */
-    background: repeating-conic-gradient(from 90deg at 35% -20%, white, rgba(37, 155, 223, .3), white,  rgb(37, 223, 223) ,  rgb(65, 2, 51) 35%, purple 60%, rgba(37, 155, 223, .3)); 
+    /* background: repeating-conic-gradient(from 90deg at 35% -20%, white, rgba(37, 155, 223, .3), white,  rgb(37, 223, 223) ,  rgb(65, 2, 51) 35%, purple 60%, rgba(37, 155, 223, .3));  */
     /* background: linear-gradient(to top, white, rgba(37, 155, 223, .3), white,  rgba(37, 155, 223, 1) ,  rgb(2, 48, 75) 45%, purple 90%, rgba(37, 155, 223, .3));  */
-    /* background: radial-gradient(circle at top,   white, rgba(37, 155, 223, .6),   rgb(2, 48, 75)40%,   rgb(2, 48, 75) 70%, rgba(37, 155, 223, .3));  */
+    background: radial-gradient(circle at top,   white, rgba(37, 155, 223, .6),   rgb(2, 48, 75)40%,   rgb(2, 48, 75) 90%, rgba(37, 155, 223, .3)); 
     
 }
 .main-container {
     background-color: rgba(0, 0, 0, 0.05);
     box-shadow: inset -4px -4px 30px rgba(0, 0, 0, 0.5);
     /* background: radial-gradient(ellipse at top , white, rgba(37, 155, 223, .3),   rgba(37, 155, 223, 1) ,  rgb(2, 48, 75) 60%, rgba(37, 155, 223, .3));  */
-    background: radial-gradient(ellipse at top , white, rgba(37, 155, 223, .3),   rgba(37, 155, 223, 1) ,  rgb(2, 48, 75) 60%, rgba(37, 155, 223, .3)); 
+    /* background: radial-gradient(ellipse at top , white, rgba(37, 155, 223, .3),   rgba(37, 155, 223, 1) ,  rgb(2, 48, 75)80%, rgba(37, 155, 223, .3));  */
+    background: radial-gradient(ellipse at top , white, rgba(37, 211, 223, 0.3),   rgba(37, 155, 223, 1) ,  rgb(2, 66, 75)80%, rgba(37, 201, 223, 0.3)); 
     border-radius: 30%;
-    width: 75%;
+    width: 90%;
     margin: 0 auto 0;
-    padding: 1em;
+    padding: 1.5em;
     height: 2100px;
 }
+
+#anxiety-rating-welcome{
+    font-size: 4.3em;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    color: rgb(9, 120, 172);
+    padding: 0em 0 .4em;
+    text-align: center;
+    margin: 50px 15px 0px;
+    text-shadow: 2px 2px 2px rgb(22, 122, 204);
+}
 .header {
-    padding: 0px 0 20px;
+    padding: 0em .2em;
+    text-shadow: inset 2px 4px 8px rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* background-color: rgba(92, 110, 131, 0.1); */
+    /* border-radius: 10%; */
+    width: 50%;
+    margin: 0 auto;
+}
+#divider {
+    background-color: rgba(32, 93, 161, 1);
+    /* height: 1em; */
+    width: 50%;
+    margin: 0 auto 3em;
+}
+#anxiety-rate-container {
+    border-radius: 0%;
+    width: 50%;
+    height: 175em;
+    padding: 2em .25em 1em;
+    margin: 1em auto;
+    /* border: 50px black; */
+    /* border-radius: 20%; */
+    background-color: rgba(255, 255, 255, 0.234);
+    /* background-color: rgba(255, 255, 255, 0.479); */
+    /* box-shadow:  0px 0px 30px rgba(250, 250, 250, 0.5);  */
+}
+
+#anxiety-rating-scale {
+    padding: 1.8em .2em .02em;
+    margin: 0 auto;
+    font-size: 50px;
+}
+#scale-subhead {
+    font-size: 35px;
+    margin: 0em 0 1em;
+}
+#anxiety-rating-scale,
+#scale-subhead {
+    /* color: rgb(185, 224, 247); */
+    color: rgb(255, 255, 255, .8);
+    /* background-color: rgba(3, 43, 88, 0.01); */
+    /* width: 11em; */
+    font-weight: 600;
+    /* line-height: 1.7em;  */
+    /* text-shadow: 2px 4px 8px rgba(255, 255, 255, .5); */
+    text-shadow: 2px 4px 8px rgba(3, 43, 88, 0.7);
+    
+}
+#anxietyScore {
+    /* color: rgb(255, 255, 255, .8); */
+    background-color: rgba(3, 43, 88, 0.1);
+    font-size: 1.7em;
+    font-weight: 400;
+    border-radius: 20%;
+    padding: .5em 1em .5em;
+    margin: 1em 1em 1em;
+    color: white;
+    width: 3.5em;
+    height: 3.5em;
+    /* text-shadow: 2px 2px 8px rgba(255, 255, 255, 1); */
+    /* box-shadow: 2px 2px 8px rgba(255, 255, 255, .5); */
+}
+#rating-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2em;
+}
+#main-logo {
+    width: 16%;
+    margin: 1em 0 .3em;
+    padding: .5em 0;
+    border-radius: 50%;
+    /* box-shadow: 2px 2px 50px rgb(4, 47, 82, .3); */
+    /* background-color: rgba(27, 100, 143, 0.701); */
+    /* box-shadow:  0px 0px 30px rgba(250, 250, 250, 0.5); */
+}
+.descriptionField {
+    height: 85px; 
+    margin: 0 auto 120px;
+}
+#description {
+    width: 400px;
+    height: 85px; 
+    margin: 0 auto;
+    margin-bottom: 70px;
+    color: white;
+    font-family: 'Sriracha', cursive;
+    font-size: 1.5em;
+}
+#submit-rating {
+    margin-top: 10px;
+}
+.button-group {
+    padding: 0;
+    margin: 0;
+}
+.footer-buttons {
+    margin: 70px 0;
+    padding-top: 90px;
+    height: 90px;
 }
 #entry {
     width: 750px;
@@ -75,73 +187,4 @@ Button.button > span {
 #anxietyScore > span {
     font-size: 1.2em;
     padding: 0 .5em 0;
-}
-#anxiety-rating-welcome{
-    font-size: 4.3em;
-    font-weight: 800;
-    color: rgba(255, 255, 255, 1);
-    color: rgb(9, 107, 172);
-    padding: 150px 0 20px;
-    text-align: center;
-    margin: 50px 15px 0px;
-    text-shadow: 2px 2px 30px rgb(79, 172, 248);
-}
-#anxiety-rating-scale {
-    color: rgb(185, 224, 247);
-    color: rgb(255, 255, 255, .8);
-    width: 11em;
-    margin: 0 auto;
-    font-size: 50px;
-    font-weight: 600; 
-    /* text-shadow: 2px 4px 8px rgba(255, 255, 255, .5); */
-    text-shadow: 2px 4px 8px rgba(104, 105, 105, 0.5);
-    padding: 0px 0 50px;
-}
-.descriptionField {
-    height: 85px; 
-    margin: 0 auto 120px;
-}
-#description {
-    width: 400px;
-    height: 85px; 
-    margin: 0 auto;
-    margin-bottom: 70px;
-}
-#submit-rating {
-    margin-top: 10px;
-}
-#anxietyScore {
-    color: white;
-    font-size: 3em;
-    font-weight: 400;
-    border-radius: 40px;
-    padding: 0 2em;
-    margin: 1em .5em 0;
-    text-shadow: 5px 2px 8px rgba(255, 255, 255, 1);
-}
-#anxiety-rate-container {
-    width: 70%;
-    height: 175em;
-    padding: 90px 5px 200px;
-    margin: 0 auto;
-    border: 50px black;
-    border-radius: 35%;
-    box-shadow:  0px 0px 30px rgba(250, 250, 250, 0.5); 
-}
-#main-logo {
-    width: 11%;
-    margin: 30px 0 0px;
-    padding: .5em 0;
-    border-radius: 50%;
-    /* background-color: rgba(216, 238, 251, 0.701);
-    box-shadow:  0px 0px 30px rgba(250, 250, 250, 0.5); */
-}
-.button-group {
-    padding: 0;
-    margin: 0;
-}
-.footer-buttons {
-    margin: 70px 0;
-    padding-top: 90px;
-    height: 90px;
 }

@@ -197,6 +197,27 @@
       "userId": 1,
       "description": "",
       "id": 27
+    },
+    {
+      "anxietyScore": 8,
+      "timestamp": "2020-01-01T16:38:55.111Z",
+      "userId": 1,
+      "description": "Feeling nervous about everything I need to get done",
+      "id": 28
+    },
+    {
+      "anxietyScore": 8,
+      "timestamp": "2020-01-01T21:04:00.949Z",
+      "userId": 1,
+      "description": "",
+      "id": 29
+    },
+    {
+      "anxietyScore": 7,
+      "timestamp": "2020-01-01T21:39:56.326Z",
+      "userId": 1,
+      "description": "Drank too much coffee and now I am jittery",
+      "id": 30
     }
   ],
   "interventions": [

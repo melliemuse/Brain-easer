@@ -6,7 +6,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
-
+import Divider from '@material-ui/core/Divider';
 
 
 
@@ -82,15 +82,18 @@ export default class AnxietyRating extends Component {
             <div className="main text-center homeMain">
                 <div  className="main-container">
                 <header className="header">
-                <h1 id="anxiety-rating-welcome">Welcome to Brain Easer!</h1>
+                <h1 id="anxiety-rating-welcome">Welcome to Braineaser!</h1>
+                {/* <Divider className="divider" variant="middle" /> */}
                 <img id="main-logo" alt="logo" src={require('../assets/Logo.png')}></img>
                 </header>
                 <article id="anxiety-rate-container">
-                    <h2 id="anxiety-rating-scale">How is Your Anxiety on a Scale from 1 - 10?</h2>
+                    <h2 id="anxiety-rating-scale">How is Your Anxiety</h2> 
+                    <h3 id="scale-subhead"> On a Scale from 1 - 10?</h3>
+                <Divider id="divider" variant="middle" />
                     <div className="rating-buttons">
-                        {/* <ButtonGroup variant="text" color="primary"> */}
+                        <ButtonGroup id="rating-button-group" variant="outlined" color="primary">
                         {this.createbuttons()}
-                        {/* </ButtonGroup> */}
+                        </ButtonGroup>
                         </div>
                         
                         <footer className="footer-buttons">
@@ -100,7 +103,7 @@ export default class AnxietyRating extends Component {
                                 hidden={this.state.addDescriptionField}
                                 onChange={this.handleFieldChange}
                             /> </div>
-                            <ButtonGroup className="button-group" color="primary" variant="contained" aria-label="outlined primary button group">
+                            <ButtonGroup className="button-group" color="secondary" variant="contained" aria-label="outlined secondary button group">
                                 <Button
                                     id="addDescriptionField"
                                     name="addDescriptionField"
