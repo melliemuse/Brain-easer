@@ -1,36 +1,12 @@
 
-.nav-container {
-    display: flex;
-    justify-content: center;
-    /* align-content: center; */
-}
-/* #logo-text {
-    margin-left: 30px;
-    height: 150px;
-    width: auto;
-    display: block;
-} */
-.nav-container a {
-    max-width: 350px;
-    height: 100px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.6em;
-    color: grey;
-    padding: 5px 30px 0px;
-    margin-top: 1em;
-}
-.nav-container li {
-    margin: 0;
-}  
 #navMenu li {
     margin: 0;
-    background-color: rgba(243, 150, 122, .2);
+    background-color: rgba(117, 227, 246, 0.2);
     color: white;
 }
 #navMenu a {
     margin: 0;
-    color: rgb(88, 88, 88);
+    color: rgb(138, 136, 136);
     font-size: 22px;
     font-weight: 900;
 }
@@ -38,7 +14,7 @@
 #navMenu a:hover {
     margin: 0;
     background-color: rgb(37, 231, 245);
-    color: white;
+    color: rgb(138, 136, 136);
 }  
 #logo {
     margin: auto;
@@ -52,10 +28,7 @@
 .navlink:link {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 20px rgb(65, 64, 64, .1);
-    
   }
-  
-  /* visited link */
   .navlink:visited {
     color: rgb(85, 80, 80);
     font-weight: 500;
@@ -63,12 +36,6 @@
 .navlink:hover {
     width: 100%;
     text-decoration: none;
-}
-.navBar {
-    /* background-color: rgba(130, 150, 255, .7); */
-    border-radius: 40px;
-    /* height: 100px; */
-    margin: 0;
 }
 #nav-menu-button {
     margin-left: auto;

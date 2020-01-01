@@ -6,8 +6,9 @@
 }
 .main {
     margin: 0px auto;
-    max-width: 1920px;
+    width: 900px;
     text-align: left;
+    background: linear-gradient(to bottom, rgba(8, 241, 191, .1) 10%,  rgba(8, 241, 191, .01) 90%);  
 }
 .text-center {
     text-align: left;
@@ -16,7 +17,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     font-size: 1.4em;
-    background: linear-gradient(to bottom, rgba(8, 241, 191, .1) 10%,  rgba(8, 241, 191, .01) 90%);  
 }
 h1, h2, h3 {
     color: slategray;
@@ -29,23 +29,39 @@ h1, h2, h3 {
 h1 {
     font-size: 90px;
     font-weight: 700;
-    /* background: -webkit-linear-gradient(#eee, rgb(203, 114, 231));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     padding: 55px 0;
     text-align: center;
 }
 .homeMain {
-    height: 1600px;
+    height: 2000px;
+    width: 1920px;
     /* background: radial-gradient(circle at top,rgba(37, 155, 223, .01),rgb(122, 38, 80), rgba(61, 1, 11, .8),  rgba(37, 155, 223, .01));  */
     /* background: radial-gradient(circle at top, rgb(230, 100, 208, .5) 4%, rgba(37, 155, 223, .3), rgb(201, 137, 253) 30%, rgba(37, 155, 223, .3));  */
-    background: conic-gradient(from 90deg at 40% -3%, white, purple, teal 35%, white,  rgba(37, 155, 223, 1) , rgba(37, 155, 223, .3)); 
+    background: repeating-conic-gradient(from 90deg at 35% -20%, white, rgba(37, 155, 223, .3), white,  rgb(37, 223, 223) ,  rgb(65, 2, 51) 35%, purple 60%, rgba(37, 155, 223, .3)); 
+    /* background: linear-gradient(to top, white, rgba(37, 155, 223, .3), white,  rgba(37, 155, 223, 1) ,  rgb(2, 48, 75) 45%, purple 90%, rgba(37, 155, 223, .3));  */
+    /* background: radial-gradient(circle at top,   white, rgba(37, 155, 223, .6),   rgb(2, 48, 75)40%,   rgb(2, 48, 75) 70%, rgba(37, 155, 223, .3));  */
+    z-index: 4;
+    position: relative;
+    
+}
+.main-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: inset -4px -4px 30px rgba(0, 0, 0, 0.5);
+    /* background: radial-gradient(ellipse at top , white, rgba(37, 155, 223, .3),   rgba(37, 155, 223, 1) ,  rgb(2, 48, 75) 60%, rgba(37, 155, 223, .3));  */
+    background: radial-gradient(ellipse at top , white, rgba(37, 155, 223, .3),   rgba(37, 155, 223, 1) ,  rgb(2, 48, 75) 60%, rgba(37, 155, 223, .3)); 
+    border-radius: 30%;
+    width: 70%;
+    margin: 0 auto 0;
+    padding: 1em;
+    /* position: relative; */
+    z-index: 1;
+    /* opacity: 40%; */
 }
 .header {
     padding: 0px 0 20px;
-    /* display: flex;
-    justify-content: center; */
-    margin: 0 30px;
+    margin: 50px auto 20px;
+    /* width: 50%; */
+    /* box-shadow: inset 20px 20px 30px rgba(253, 253, 253, 0.2); */
 }
 #entry {
     width: 750px;
@@ -64,29 +80,27 @@ Button.button > span {
     font-size: 1.5em;
 }
 #anxietyScore > span {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
-    font-size: 2em;
-    padding: 0 1em 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    padding: 0 .02em 0;
 }
 #anxiety-rating-welcome{
-    font-size: 3.8em;
+    font-size: 4.3em;
     font-weight: 800;
-    color: rgb(255, 255, 255);
-    padding: 20px 0 35px;
+    color: rgb(0, 0, 0, .7);
+    /* color: rgb(83, 6, 119); */
+    padding: 150px 0 20px;
     text-align: center;
-    margin: 0px 0 0px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, .3);
-    /* animation: cssAnimation 0s ease-in 5s forwards;
-    -o-animation: cssAnimation 0s ease-in 5s forwards; */
-    
+    margin: 50px 15px 0px;
+    text-shadow: 2px 1px 4px rgba(255, 255, 255, 1);
 }
 #anxiety-rating-scale {
     /* color: rgb(59, 243, 255); */
-    color: rgb(241, 238, 238);
-    font-size: 32px;
+    color: rgb(24, 24, 24);
+    font-size: 50px;
     font-weight: 600; 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, .3);
-    padding: 10px 0 0px;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.3);
+    padding: 0px 0 50px;
 }
 .descriptionField {
     height: 85px; 
@@ -99,69 +113,34 @@ Button.button > span {
     margin-bottom: 70px;
 }
 #submit-rating {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #anxietyScore {
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 400;
-    padding: 20px 0 80px;
+    border-radius: 40px;
 }
 #anxiety-rate-container {
-    box-shadow:  -4px 4px 30px rgba(15, 0, 0, 0.2);
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    box-shadow: inset 4px -4px 30px rgba(255, 255, 255, 1);
-    width: 50%;
-    height: 45em;
-    padding: 100px 55px 200px;
+    width: 70%;
+    max-height: 95em;
+    padding: 30px 5px 200px;
     margin: 0 auto;
     border: 50px black;
     border-radius: 35%;
-    /* background-color: rgba(3, 139, 139, 0.2); */
-    /* background: radial-gradient(to bottom , rgba(61, 1, 11, .9) 30%, rgba(37, 155, 223, 0.3) 50%, rgba(114, 7, 60, 0.01) 90%); 
-    /* background: conic-gradient( rgba(61, 1, 11, .9) 30%, rgba(37, 155, 223, 0.3) 50%, rgba(114, 7, 60, 0.01) 90%);  */
-    /* box-shadow: inset -20px -20px 30px rgba(253, 253, 253, 0.3); */
-    /* box-shadow: inset 20px 20px 30px rgba(253, 253, 253, 0.4); */
-    /* border: 2px slateblue; */
-    /* height: 26em; */
-    /* margin: 80px 0 20px; */
-    /* animation: cssShow 0s ease-in 5s forwards;
-    -o-animation: cssShow 0s ease-in 5s forwards;
-    visibility: hidden; */
 }
-/* @keyframes cssShow {
-    to   { visibility: visible; };
-} */
 #main-logo {
-    width: 8%;
-    /* padding: 30px 1px 30px; */
-    margin: 10px 0 10px;
-    /* background-color: rgba(75, 5, 48, 0.1); */
-    box-shadow: inset -4px -4px 30px rgba(253, 253, 253, 0.3);
-    /* box-shadow: -4px -4px 30px rgba(31, 30, 30, 0.4); */
+    width: 12%;
+    margin: 20px 0 30px;
     border-radius: 50%;
-    /* animation: cssAnimation 0s ease-in 5s forwards;
-    -o-animation: cssAnimation 0s ease-in 5s forwards; */
 }
 .footer-buttons {
-    
-    /* background: conic-gradient(from -180deg, rgba(61, 1, 11, 1), rgba(37, 155, 223, 1) , rgba(114, 7, 60, 1));  */
+    margin: 70px 0;
 }
 .button-group {
-    
     padding: 0;
     margin: 0;
 }
-/* @keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
-} */
-
-/* .footer-buttons {
+.footer-buttons {
     padding-top: 50px;
-    height: 400px;
-    background-color: rgba(68, 68, 71);
-
-} */
+    height: 50px;
+}

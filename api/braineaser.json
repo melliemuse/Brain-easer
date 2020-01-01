@@ -190,6 +190,13 @@
       "userId": 1,
       "description": "",
       "id": 26
+    },
+    {
+      "anxietyScore": 9,
+      "timestamp": "2019-12-31T03:07:34.269Z",
+      "userId": 1,
+      "description": "",
+      "id": 27
     }
   ],
   "interventions": [
@@ -796,6 +803,14 @@
       "anxietyScore": 2,
       "description": "",
       "id": 101
+    },
+    {
+      "userId": 1,
+      "interventionId": 3,
+      "timestamp": "2019-12-31T03:09:27.902Z",
+      "anxietyScore": 3,
+      "description": "",
+      "id": 102
     }
   ],
   "journals": [
@@ -919,13 +934,6 @@
       "id": 26
     },
     {
-      "entry": "dasvf",
-      "timestamp": "2019-12-27T06:38:05.720Z",
-      "userId": 1,
-      "promptId": 2,
-      "id": 27
-    },
-    {
       "entry": "I care ",
       "timestamp": "2019-12-27T17:15:10.991Z",
       "userId": 1,
@@ -945,13 +953,6 @@
       "userId": 1,
       "promptId": 4,
       "id": 30
-    },
-    {
-      "entry": "god i'm predictable so full of self judgement i just want this to be good i cant believe that everything is breaking there is so much to fix. its wierd taht it was working fine with the wrong fetch call but I guess thats why you test and test and test i'm learning and I made soemthing cool and useful it's helping me and my mother so I should be proud and ease up on myself yes i'm ambitious and I would love for it to make toast too but I'll get there it's not healhty to put this much pressure on myself",
-      "timestamp": "2019-12-27T17:27:58.946Z",
-      "userId": 1,
-      "promptId": 6,
-      "id": 31
     },
     {
       "entry": "I can keep trucking",

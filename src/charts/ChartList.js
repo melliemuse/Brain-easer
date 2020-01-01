@@ -23,9 +23,9 @@ export default class ChartList extends Component {
                 const baseAnxietyScore = baseAnxiety.map(anxiety => anxiety.anxietyScore)
                 const baselineData = baseAnxiety.map(anxiety => {
                     const baselineData = {
-                    x: anxiety.timestamp,
-                    y: anxiety.anxietyScore,
-                }
+                        x: anxiety.timestamp,
+                        y: anxiety.anxietyScore,
+                    }
                     return baselineData
                 })
                 this.setState({
@@ -56,7 +56,6 @@ export default class ChartList extends Component {
                 })
             })
             .then(() => {
-
                 // create a container array with nested empty arrays- one per array in megaArray
                 const interventionData = []
                 for (let i = 0; i < this.state.megaArray.length; i++) {
@@ -68,12 +67,11 @@ export default class ChartList extends Component {
                             for (let j = 0; j < this.state.megaArray[i].length; j++) {
                                 const intervention = this.state.megaArray[i][j]
                                 const interventionName = this.state.megaArray[i][j].intervention.name
-                                // console.log("MEGA ARRAY ITERATION", this.state.megaArray[i][j])
-                                // console.log("MEGA ARRAY ITERATION .name",this.state.megaArray[i][j].name)
                                 const dataObject =
                                     { x: intervention.timestamp, y: intervention.anxietyScore, name: interventionName }
                                 interventionData[i].push(dataObject)
-                            }}
+                            }
+                        }
                     }
                 }
                 this.setState({
@@ -84,38 +82,16 @@ export default class ChartList extends Component {
     render() {
         return (
             <>
-
-                {/* <div className="card chart-card">
-                    <MainChart baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} baseAnxietyScore={this.state.baseAnxietyScore} interventionMap={this.state.interventionMap} megaArray={this.state.megaArray} />
-                </div> */}
-
-                {/* <div className="card chart-card">
-                    {this.state.interventionData !== [] && 
+                {this.state.interventionData !== [] &&
                     this.state.interventionData.map((miniArray, i) =>
-                        // console.log("HELLO", miniArray)
-                        <InterventionChartCard
-                            position={i}
-                            // id={miniArray[0].interventionId}
-                            key={i}
-                            interventionData={miniArray}
-                        />
-                    )}
-                </div> */}
-                {/* <div className="card chart-card"> */}
-                    {this.state.interventionData !== [] && 
-                    this.state.interventionData.map((miniArray, i) =>
-                        // console.log("HELLO", miniArray)
                         <ScatterPlot
                             position={i}
-                            // id={miniArray[0].interventionId}
                             key={i}
                             interventionData={miniArray}
-                            baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp} 
+                            baseAnxietyId={this.state.baseAnxietyId} baseAnxietyTimestamp={this.state.baseAnxietyTimestamp}
                             baseAnxietyScore={this.state.baseAnxietyScore} baselineData={this.state.baselineData}
                         />
                     )}
-                {/* </div> */}
-
             </>
         )
     }
