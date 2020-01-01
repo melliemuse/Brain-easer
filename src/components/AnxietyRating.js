@@ -86,7 +86,7 @@ export default class AnxietyRating extends Component {
                 <img id="main-logo" alt="logo" src={require('../assets/Logo.png')}></img>
                 </header>
                 <article id="anxiety-rate-container">
-                    <h2 id="anxiety-rating-scale">How is your anxiety on a scale from 1 - 10?</h2>
+                    <h2 id="anxiety-rating-scale">How is Your Anxiety on a Scale from 1 - 10?</h2>
                     <div className="rating-buttons">
                         {/* <ButtonGroup variant="text" color="primary"> */}
                         {this.createbuttons()}
@@ -100,7 +100,7 @@ export default class AnxietyRating extends Component {
                                 hidden={this.state.addDescriptionField}
                                 onChange={this.handleFieldChange}
                             /> </div>
-                            <ButtonGroup className="button-group" variant="contained" aria-label="outlined primary button group">
+                            <ButtonGroup className="button-group" color="primary" variant="contained" aria-label="outlined primary button group">
                                 <Button
                                     id="addDescriptionField"
                                     name="addDescriptionField"
