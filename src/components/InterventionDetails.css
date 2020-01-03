@@ -1,0 +1,27 @@
+.intervention-description, 
+.intervention-instructions {
+   font-family: 'Sriracha', cursive;
+   margin: 0 auto 60px;
+   width: 90%; 
+   color: rgb(125, 125, 125);
+   font-weight: 400;
+   font-size: 1.2em;
+   line-height: 1.6em;
+}
+.center-text {
+    text-align: center;
+}
+.uploadImage {
+   width: 250px;
+}
+.inner-child-image {
+   display: block;
+   width: 300px;
+   margin: 0 auto 35px;
+   background-size: cover;
+   background-repeat:no-repeat;
+}
+.new-line {
+   margin: 35px 0 3em;
+   display: block;
+ }

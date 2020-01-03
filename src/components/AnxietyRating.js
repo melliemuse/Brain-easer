@@ -82,20 +82,22 @@ export default class AnxietyRating extends Component {
             <div className="main text-center homeMain">
                 <div  className="main-container">
                 <header className="header">
-                <h1 id="anxiety-rating-welcome">Welcome to Braineaser!</h1>
-                {/* <Divider className="divider" variant="middle" /> */}
+                <h1 id="anxiety-rating-welcome">Welcome to Braineaser</h1>
+                {/* <Divider id="divider" variant="middle" /> */}
+                
                 <img id="main-logo" alt="logo" src={require('../assets/Logo.png')}></img>
                 </header>
                 <article id="anxiety-rate-container">
-                    <h2 id="anxiety-rating-scale">How is Your Anxiety</h2> 
-                    <h3 id="scale-subhead"> On a Scale from 1 - 10?</h3>
-                <Divider id="divider" variant="middle" />
+                    <div id="subhead" className="subhead center"> 
+                    <h2 id="anxiety-rating-scale">How is Your Anxiety?</h2> 
+                    <h3 id="scale-subhead">(on a scale from one to ten)</h3>
+                    </div>
+                {/* <Divider id="divider" variant="middle" /> */}
                     <div className="rating-buttons">
-                        <ButtonGroup id="rating-button-group" variant="outlined" color="primary">
+                        <div id="rating-button-group">
                         {this.createbuttons()}
-                        </ButtonGroup>
                         </div>
-                        
+                        </div>
                         <footer className="footer-buttons">
                         <div className="descriptionField" hidden={this.state.addDescriptionField}>
                             <TextField variant="outlined" color="secondary"
@@ -103,22 +105,23 @@ export default class AnxietyRating extends Component {
                                 hidden={this.state.addDescriptionField}
                                 onChange={this.handleFieldChange}
                             /> </div>
-                            <ButtonGroup className="button-group" color="secondary" variant="contained" aria-label="outlined secondary button group">
+                            <ButtonGroup className="button-group" variant="contained" aria-label="outlined secondary button group">
                                 <Button
                                     id="addDescriptionField"
                                     name="addDescriptionField"
                                     className="button"
-                                    // color="secondary"
+                                    color="secondary"
                                     onClick={this.setBoolean}
                                 >Add Description</Button>
                                 <Button
+                                color="primary"
                                     id="addSelfCareField"
                                     className="button"
                                     onClick={this.setBoolean}
                                 >Log Self-Care</Button>
                             </ButtonGroup>
                             <div hidden={this.state.addSelfCareField}>
-                                <FormControl>
+                                <FormControl id="dropdown">
                                     <Select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
                                         {this.state.interventions.map(intervention =>
                                             <MenuItem key={intervention.id} value={intervention.id}>{intervention.name}</MenuItem>
@@ -132,7 +135,7 @@ export default class AnxietyRating extends Component {
                                     variant="contained"
                                     className="button submit"
                                     id="submit-rating"
-                                    color="secondary"
+                                    color="primary"
                                     onClick={this.createAnxietyRating}
                                 >Submit Rating
                 </Button>

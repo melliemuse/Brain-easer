@@ -218,6 +218,20 @@
       "userId": 1,
       "description": "Drank too much coffee and now I am jittery",
       "id": 30
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-01-02T00:02:42.788Z",
+      "userId": 1,
+      "description": "Ahhh!",
+      "id": 31
+    },
+    {
+      "anxietyScore": 1,
+      "timestamp": "2020-01-02T00:03:32.928Z",
+      "userId": 1,
+      "description": "",
+      "id": 32
     }
   ],
   "interventions": [
