@@ -89,14 +89,14 @@ export default class ScatterPlot extends Component {
         [
             {
                 label: this.props.interventionData[0].name,
-                backgroundColor: 'rgba(59, 243, 255,.6)',
+                backgroundColor: 'rgba(59, 243, 255, 0)',
                 borderColor: 'rgba(59, 196, 255 )',
                 borderWidth: 5,
                 data: finalIntArray
             },
             {
                 label: 'Base Anxiety',
-                backgroundColor: 'rgba(210, 100, 200 , .6)',
+                backgroundColor: 'rgba(210, 100, 200 , 0)',
                 borderColor: 'rgba(179, 55, 168)',
                 borderWidth: 5,
                 data: finalBaselineArray
