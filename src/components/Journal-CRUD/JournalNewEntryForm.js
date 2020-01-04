@@ -10,10 +10,11 @@ export default class JournalNewEntryForm extends Component {
         prompts: [],
         entry: "",
         randomPrompt: {},
-        hidePrompt: true,
+        display: false,
         displayRerate: false,
         interventions: {},
-        intervention: []
+        intervention: [],
+
     }
 
     componentDidMount() {
@@ -35,7 +36,7 @@ export default class JournalNewEntryForm extends Component {
         const max = this.state.prompts.length;
         const random = Math.floor(min + Math.random() * (max - min));
         this.setState({
-            hidePrompt: false,
+            display: true,
             randomPrompt: this.state.prompts[random],
         });
     }
@@ -73,6 +74,7 @@ export default class JournalNewEntryForm extends Component {
     MinHeightTextarea = () => {
         return<TextareaAutosize variant="outlined"
         id="entry"
+        className="center"
         onChange={this.handleFieldChange}/>
     }
     handleClick = () => {
@@ -93,23 +95,24 @@ export default class JournalNewEntryForm extends Component {
                 }))
             .then(this.setState({
                 displayRerate: !this.state.displayRerate
-            }))
+            })
+            )
     }
 
     render() {
         return (
             <div className="main">
-                <form>
+                <form >
                     <h1>New Journal Entry</h1>
                     <fieldset>
-                        <Button className="button" onClick={this.generatePrompt}>Generate Prompt</Button>
+                        <Button className="button align-left" onClick={this.generatePrompt}>Generate Prompt</Button>
                         <header
-                            className="prompt"
+                            className={`prompt center ${this.state.display && "display"}`}
                             >{this.state.randomPrompt.prompt}</header>
                         {this.MinHeightTextarea()}
                         <div>
                             <Button
-                            className="button"
+                            className="button align-left"
                                 onClick={this.createEntry}>
                                 Submit Entry</Button>
                         </div>

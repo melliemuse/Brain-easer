@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Line } from 'react-chartjs-2';
-import { Bar } from 'react-chartjs-2';
 
 
 export default class ScatterPlot extends Component {
@@ -9,14 +8,14 @@ export default class ScatterPlot extends Component {
         labels: [],
         datasets: []
     }
-    generateColor() {
-        const components = '0123456789ABCDEF'.split('');
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += components[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
+    // generateColor() {
+    //     const components = '0123456789ABCDEF'.split('');
+    //     let color = '#';
+    //     for (let i = 0; i < 6; i++) {
+    //         color += components[Math.floor(Math.random() * 16)];
+    //     }
+    //     return color;
+    // }
     buildChartData = () => {
         let toSortBaseline = this.props.baselineData.slice().sort()
         let toSortInt = this.props.interventionData.slice().sort()
@@ -81,19 +80,19 @@ export default class ScatterPlot extends Component {
         }
         finalIntArray.forEach(intItem => finalIntDates.push(intItem.x))
 
-
+        console.log(finalIntArray)
     const datasets =
         [
             {
                 label: this.props.interventionData[0].name,
-                backgroundColor: 'rgba(59, 243, 255,.2)',
-                borderColor: this.generateColor(),
+                backgroundColor: 'rgba(59, 243, 255,.6)',
+                borderColor: 'rgba(59, 196, 255 )',
                 borderWidth: 10,
                 data: finalIntArray
             },
             {
                 label: 'Base Anxiety',
-                backgroundColor: 'rgba(59, 216, 255 ,.2)',
+                backgroundColor: 'rgba(210, 100, 200 , .6)',
                 borderColor: 'rgba(179, 55, 168)',
                 borderWidth: 10,
                 data: finalBaselineArray
@@ -116,6 +115,7 @@ render() {
                 : null}
         >
             <Line
+                id="chart"
                 data={this.state}
                 options={{
                     responsive: true,

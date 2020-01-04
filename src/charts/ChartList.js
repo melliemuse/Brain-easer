@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import ScatterPlot from './ScatterPlot'
+import Charts from './Charts.css'
 
 export default class ChartList extends Component {
     state = {

@@ -232,6 +232,20 @@
       "userId": 1,
       "description": "",
       "id": 32
+    },
+    {
+      "anxietyScore": 8,
+      "timestamp": "2020-01-03T20:09:36.642Z",
+      "userId": 1,
+      "description": "Woke up worried",
+      "id": 33
+    },
+    {
+      "anxietyScore": 8,
+      "timestamp": "2020-01-04T03:30:00.286Z",
+      "userId": 1,
+      "description": "",
+      "id": 34
     }
   ],
   "interventions": [
@@ -846,6 +860,222 @@
       "anxietyScore": 3,
       "description": "",
       "id": 102
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-03T20:11:43.329Z",
+      "interventionId": 5,
+      "description": "",
+      "anxietyScore": "",
+      "id": 103
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-03T20:13:49.368Z",
+      "interventionId": 5,
+      "description": "",
+      "anxietyScore": "",
+      "id": 104
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-03T20:16:16.604Z",
+      "interventionId": 5,
+      "description": "",
+      "anxietyScore": "",
+      "id": 105
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-03T20:16:49.788Z",
+      "interventionId": 5,
+      "description": "",
+      "anxietyScore": "",
+      "id": 106
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-03T20:17:27.560Z",
+      "interventionId": 5,
+      "description": "",
+      "anxietyScore": "",
+      "id": 107
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-03T23:59:00.426Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 108
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:01:21.396Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 109
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:01:46.984Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 110
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:02:19.876Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 111
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:02:35.726Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 112
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:04:35.227Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 113
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:04:57.073Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 114
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:05:59.260Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 115
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:09:52.572Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 116
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:11:19.115Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 117
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:11:42.994Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 118
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:14:21.292Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 119
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:20:06.153Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 120
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T00:20:20.851Z",
+      "interventionId": 8,
+      "description": "",
+      "anxietyScore": "",
+      "id": 121
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T02:56:15.430Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 122
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T02:59:54.157Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 123
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T03:08:16.214Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 124
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T03:09:51.354Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 125
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T03:21:11.647Z",
+      "interventionId": 7,
+      "description": "",
+      "anxietyScore": "",
+      "id": 126
+    },
+    {
+      "userId": 1,
+      "interventionId": 7,
+      "timestamp": "2020-01-04T03:25:30.901Z",
+      "anxietyScore": 1,
+      "description": "That really helped! Yay for journaling!",
+      "id": 127
+    },
+    {
+      "userId": 1,
+      "interventionId": 1,
+      "timestamp": "2020-01-04T03:31:37.692Z",
+      "anxietyScore": 2,
+      "description": "",
+      "id": 128
+    },
+    {
+      "userId": 1,
+      "interventionId": 2,
+      "timestamp": "2020-01-04T03:32:49.600Z",
+      "anxietyScore": 1,
+      "description": "I feel so much better now! <3",
+      "id": 129
     }
   ],
   "journals": [
@@ -1030,6 +1260,48 @@
       "userId": 1,
       "promptId": 4,
       "id": 38
+    },
+    {
+      "entry": "Always and always. I am very talented, driven , and intelligent. I don't give myself enough credit. ",
+      "timestamp": "2020-01-04T02:56:15.391Z",
+      "userId": 1,
+      "promptId": 7,
+      "id": 39
+    },
+    {
+      "entry": "Public speaking is no fun",
+      "timestamp": "2020-01-04T02:59:54.087Z",
+      "userId": 1,
+      "promptId": 1,
+      "id": 40
+    },
+    {
+      "entry": "I am anticipating being afraid in the future, I have a lot to do, and I am running out of time.",
+      "timestamp": "2020-01-04T03:08:16.125Z",
+      "userId": 1,
+      "promptId": 1,
+      "id": 41
+    },
+    {
+      "entry": "Even if I get really nervous, I know that I will do alright and the fate of the world isn't riding on whether or not I feel anxious when speaking in front of people. I will be ok.",
+      "timestamp": "2020-01-04T03:09:51.314Z",
+      "userId": 1,
+      "promptId": 5,
+      "id": 42
+    },
+    {
+      "entry": "Making small strides on things which are scary will reduce the fear and increase my sense of competence. ",
+      "timestamp": "2020-01-04T03:21:11.626Z",
+      "userId": 1,
+      "promptId": 4,
+      "id": 43
+    },
+    {
+      "entry": "I would be ok. Things would work out even if it might not seem like it at the time.",
+      "timestamp": "2020-01-04T03:25:30.755Z",
+      "userId": 1,
+      "promptId": 3,
+      "id": 44
     }
   ],
   "prompts": [
