@@ -3,6 +3,7 @@ import APIManager from '../modules/APIManager'
 import InterventionRerate from './InterventionRerate'
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
+import './InterventionDetails.css'
 
 export default class InterventionDetails extends Component {
     state = {
@@ -107,7 +108,7 @@ export default class InterventionDetails extends Component {
                             })}</p>}
                     </div>
                     <div className="intervention-instructions">
-                        <h3>Instructions</h3>
+                        <h3 className="center-text">Instructions</h3>
                         {this.state.intervention.instructions !== undefined &&
                             <p className="intervention-instructions">{this.state.intervention.instructions.split('\n').map(function (item, key) {
                                 return (
@@ -118,7 +119,7 @@ export default class InterventionDetails extends Component {
                                 )
                             })}</p>}
                     </div>
-                    <ButtonGroup variant="text" className="button-group" color="secondary" aria-label="outlined button group">
+                    <ButtonGroup variant="contained" className="button-group" id="button-group" color="secondary" aria-label="outlined button group">
                         <Button
                             onClick={() => {
                                 this.props.history.push("/interventions")

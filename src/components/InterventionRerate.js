@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import APIManager from '../modules/APIManager'
 import Button from '@material-ui/core/Button';
+import "./InterventionRerate.css"
 
 export default class InterventionRerate extends Component {
     state = {
@@ -30,7 +31,7 @@ export default class InterventionRerate extends Component {
         let buttons = []
         for (let i = 0; i < 10; i++) {
             buttons.push(
-                <Button id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
+                <Button className="rerateAnxietyScore" id="anxietyScore" value={i + 1} onClick={this.handleFieldChange} key={i + 1}>{i + 1}</Button>
             )
         }
         return buttons
@@ -59,11 +60,13 @@ export default class InterventionRerate extends Component {
         console.log("last completed int of type", this.props.interventions[this.props.interventions.length-1])
         // console.log([this.state.interventions[length-1].id])
         return (
-            <div className="main">
-    <h2>Congratulations! You have completed the {this.props.intervention.name} intervention!</h2>
-                <h4>How is your anxiety now?</h4>
+            <div className="center">
+    <h2 className="center-text">You have completed {this.props.intervention.name}!</h2>
+                <h3 className="center-text">How is your anxiety now?</h3>
+                <div id="rerating-button-group">
                 {this.createbuttons()}
-                <div>
+                </div>
+                <div className="description center">
                     <input
                         id="description"
                         hidden={this.state.addDescriptionField}

@@ -5,18 +5,15 @@
     font-weight: 500;
     font-size: 3.2em;
 }
-.entryList {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.2em;
-}
 #entry {
     font-family: 'Sriracha', cursive;
     color: rgb(125, 125, 125);
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.7em;
     line-height: 1.4em;
     min-height: 500px;
     overflow: auto;
+    padding: 1em;
 }
 .button-group {
     margin: 10px 0 0;
@@ -32,21 +29,20 @@
 }
 #card-container {
     padding: 30px;
+    border: none;
     /* background-color: rgba(0, 0 , 0, .5); */
-    /* box-shadow: 2px 3px 3px rgb(64, 5, 128); */
+    box-shadow: none;
 }
 .card {
     padding: 40px 70px 20px;
     margin: 0 20px;
-    border-radius: 20px;
-    /* background-color: rgba(0, 0 , 0, .5); */
-    /* box-shadow: 5px 5px 10px darkslategrey; */
+    border-radius: 20px; 
 }
 .entryList {
     font-family: 'Sriracha', cursive;
     margin: 0 auto 60px;
     width: 70%;
-    color: rgb(253, 152, 93);
+    color: rgb(9, 226, 197);
     font-weight: 500;
     font-size: 1.6em;
 }
@@ -54,9 +50,31 @@
     color: rgb(155, 153, 153);
     padding: 0 30px 0;
 }
-.button-group .MuiButtonGroup-groupedContainedPrimary:not(:last-child) {
-    border-right: none;
-}
 #button-group {
     margin: 0 220px;
+}
+.journal-card {
+    background: linear-gradient(to bottom, rgba(8, 241, 191, .1) 10%,  rgba(8, 241, 191, .01) 90%);
+}
+.center{
+    display: block;
+    margin: 0 auto;
+}
+.align-left,
+button.align-left {
+    margin-left: 4.687em;
+}
+header.prompt.display {
+    color: slategray;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.7em;
+    padding: 1.6em 2.5em 2em;
+    margin: 0 auto;
+    line-height: 1.6em;
+}
+div.description > #description {
+    color: rgb(14, 73, 139);
+    font-size: 1.25em;
 }

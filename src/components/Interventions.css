@@ -2,19 +2,33 @@
 .interventionLink:link {
     color: grey;
   }
-  
-  /* visited link */
   .interventionLink:visited {
     color: rgb(146, 157, 163);
   }
 .interventionLink:hover {
     text-decoration: none;
-    color: rgba(51, 206, 255, 1);
 }
+.interventionLink:hover > #interventionCard {
+    background-image: repeating-conic-gradient(from 360deg at 15% 0%, white, rgba(150, 206, 238, 0.3), white,  rgb(37, 223, 223) ,  rgb(65, 2, 51) 35%, purple 60%, white, rgba(37, 155, 223, .3)); 
+    /* background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: white; */
+    box-shadow: inset 5px -30px 30px rgb(14, 233, 233) ;
+    position: relative;
+    z-index: 4;
+}
+.interventionLink:hover .intervention-icon svg path,
+.interventionLink:hover #interventionName
+ {
+    color: white;
+  }
+  /* .interventionLink:hover #interventionName {
+      display: none;
+  } */
 .interventionCardsContainer {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 4em;
     margin: 0 6em 20em;
 }
 #interventionCard {
@@ -22,55 +36,41 @@
     margin: 70px 70px;
     height: 17em;
     width: 17em;
-    /* border-radius: 50%; */
-    background-color: rgb(48, 226, 220);
+    border-radius: 50%;
+    
+    background: repeating-conic-gradient(from -250deg at 15% -20%, white, rgba(150, 206, 238, 0.3), white,  rgb(37, 223, 223) ,  rgb(65, 2, 51) 35%, purple 60%, rgba(37, 155, 223, .3)); 
     align-items: center;
     flex-wrap: wrap;
+    z-index: 1;
 }
 .interventionLink {
     display: block;
 }
-.interventionName {
-    color: white;
+#interventionName {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color:rgba(45, 5, 97, 1);
     font-size: 2.2em;
-    font-weight: 500;
-    width: 272px;
-    height: 130px;
+    font-weight: 900;
+    width: 8em;
+    height: 4.5em;
     text-align: center;
-    padding: 70px 30px 30px;
+    padding: 0px 30px 0px;
+    margin: 00px 0 20px;
+    /* background-color:rgba(149, 165, 182, 0.5); */
+    z-index: 1;
 }
-.uploadImage {
-    width: 250px;
-}
-.inner-child-image {
-    display: block;
-    width: 300px;
-    margin: 0 auto 35px;
-    background-size: cover;
-    background-repeat:no-repeat;
-}
-.new-line {
-    margin: 35px 0 3em;
-    display: block;
-  }
-  .intervention-icon {
+
+.intervention-icon {
       position: relative;
-      top: 2em;
+      padding: 2em 0;
+      top: .5em;
       display: flex;
       justify-content: center;
+      
   }
   .intervention-icon svg path {
-      color: white;
+    color:rgba(45, 5, 97, 1);
+    z-index: 1;
   }
- .intervention-instructions{
-
- }
- .intervention-description {
-    font-family: 'Sriracha', cursive;
-    /* margin: 0 auto 60px; */
-    width: 90%; 
-    color: rgb(125, 125, 125);
-    font-weight: 400;
-    font-size: 1.2em;
-    line-height: 1.4em;
- }
+ 

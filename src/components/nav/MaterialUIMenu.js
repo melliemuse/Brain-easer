@@ -38,11 +38,13 @@ export default function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
+        <div id="navMenu">
         <MenuItem onClick={handleClose} className="nav"><Link className="navlink"  to='/'>Rate Anxiety</Link></MenuItem>
         <MenuItem onClick={handleClose} className="nav"><Link className="navlink"  to='/charts'>Anxiety Tracker</Link></MenuItem>
         <MenuItem onClick={handleClose} className="nav"><Link className="navlink"  to='/interventions'>Interventions</Link></MenuItem>
         <MenuItem onClick={handleClose} className="nav"><Link className="navlink"  to='/journal'>Create Journal Entry</Link></MenuItem>
         <MenuItem onClick={handleClose} className="nav"><Link className="navlink" to='/journal/entries'>My Journal Entries</Link></MenuItem>
+        </div>
       </Menu>
           
         </Toolbar>

@@ -4,17 +4,17 @@
     font-size: 100%;
     box-sizing: border-box;
 }
-
 .main {
-    margin: 20px auto;
-    max-width: 1700px;
+    margin: 0px auto 5em;
     width: 900px;
-    /* width: 100%; */
     text-align: left;
-    padding-top: 80px;
+    background: linear-gradient(to bottom, rgba(8, 241, 191, .1) 10%,  rgba(8, 241, 191, .01) 90%);  
 }
 .text-center {
     text-align: left;
+}
+.center {
+    margin: 0 auto;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -25,60 +25,117 @@ h1, h2, h3 {
     color: slategray;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     padding: 55px 0;
     margin: 10px 0 15px 0;
 }
 h1 {
     font-size: 90px;
     font-weight: 700;
-  background: -webkit-linear-gradient(#eee, rgb(203, 114, 231));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 55px 0;
-  text-align: center;
-}
-#entry {
-    width: 750px;
-    height: 350px;
-    margin: 0 auto;
-}
-.prompt {
-    margin: 65px 0;
-}
-canvas {
-    width: 85em !important ;
-    height: auto !important ;
-    margin: 100px auto 180px;
-}
-Button.button {
-    font-size: 1em;
-}
-.rating-buttons {
-    margin-bottom: 7.25em;
-    padding-bottom: 20px;
-}
-#anxiety-rating-welcome{
-    font-size: 3.2em;
-    font-weight: 500;
-    background: -webkit-linear-gradient(rgb(37, 155, 223), rgb(241, 114, 165, 10%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0 0 35px;
+    padding: 55px 0;
     text-align: center;
-    margin: 0px 0 10px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, .03);
-    /* animation: cssAnimation 0s ease-in 5s forwards;
-    -o-animation: cssAnimation 0s ease-in 5s forwards; */
+}
+.homeMain {
+    height: 2300px;
+    width: 1920px;
+    background: radial-gradient(circle at top,   white, rgba(37, 155, 223, .6) 40%,   rgb(2, 48, 75)70%,   rgb(2, 48, 75) 100%, rgba(37, 155, 223, .3)); 
     
 }
-
-
+.main-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: inset -4px -4px 30px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(ellipse at top left , white, rgba(37, 211, 223, 0.3),   rgba(37, 155, 223, 1) ,  rgb(2, 66, 75)80%, rgba(37, 201, 223, 0.3)); 
+    border-radius: 2em;
+    width: 80%;
+    margin: 0 auto 0;
+    padding: 1.5em 0 0;
+    height: 2100px;
+}
+#anxiety-rating-welcome{
+    font-size: 4.3em;
+    font-weight: 800;
+    color: rgba(27, 100, 143, 0.701);
+    padding: 0em 0 .4em;
+    text-align: center;
+    margin: 50px 15px 0px;
+}
+.header {
+    padding: 3em .2em;
+    text-shadow: inset 2px 4px 8px rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: 0 auto;
+}
+#divider {
+    background-color: rgba(32, 93, 161, 1);
+    width: 50%;
+    margin: 0 auto 3em;
+}
+#anxiety-rate-container {
+    width: 58%;
+    min-height: 80em;
+    padding: 0em 10em;
+    margin: 0em auto;
+    border-radius: 2em;
+    background-color: rgba(1, 37, 83, 0.07);
+}
+#subhead {
+    border: 10px rgb(0, 0, 0);
+    border-radius: 25%;
+    width: 90%; 
+}
 #anxiety-rating-scale {
-    color: rgb(22, 174, 235);
-    font-size: 35px;
-    font-weight: 500; 
+    color: rgb(255, 255, 255, .8);
+    padding: 1.8em .2em .02em;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 600;
+}
+#scale-subhead {
+    color: rgba(59, 59, 59, 0.5);
+    font-size: 1.5em;
+    padding: .5em 0 1em;
+    margin: 0em 0 1em;
+    font-weight: 500;
+}
+#anxiety-rating-scale,
+#scale-subhead {
+    font-weight: 600;
+}
+#rating-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 0em;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.603), rgba(0, 0, 0, 0.04));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+#anxietyScore {
+    font-size: 2.3em;
+    font-weight: 400;
+    padding: 0 1em;
+    margin: 1em .3em 1em; 
+    width: 2em;
+    height: 2em;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(219, 74, 17) 10%, rgba(4, 76, 78, 0.87) 60%);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+}
+#anxietyScore > span {
+    font-size: 1.1em;
+    padding: 0 .5em 0;
+}
+#main-logo {
+    width: 15%;
+    margin: 0em 0 0em;
+    padding: 0em 0;
+    border-radius: 50%;
 }
 .descriptionField {
     height: 85px; 
@@ -89,43 +146,40 @@ Button.button {
     height: 85px; 
     margin: 0 auto;
     margin-bottom: 70px;
+    color: white;
+    font-family: 'Sriracha', cursive;
+    font-size: 1.5em;
 }
 #submit-rating {
-    margin-top: 65px;
+    margin-top: 10px;
 }
-#anxietyScore {
-    font-size: 1.3em;
-    font-weight: 400;
-    padding: 20px 0 80px;
+.button-group {
+    padding: 0;
+    margin: 0;
 }
-#anxiety-rate-container {
-    /* background-color: rgba(68, 68, 71, .1); */
-    width: 55em;
-    height: 26em;
-    margin: 80px 0 70px;
-    /* animation: cssShow 0s ease-in 5s forwards;
-    -o-animation: cssShow 0s ease-in 5s forwards;
-    visibility: hidden; */
+.footer-buttons {
+    margin: 70px 0;
+    padding-top: 90px;
+    height: 90px;
 }
-/* @keyframes cssShow {
-    to   { visibility: visible; };
-} */
-#main-logo {
-    width: 20%;
-    /* animation: cssAnimation 0s ease-in 5s forwards;
-    -o-animation: cssAnimation 0s ease-in 5s forwards; */
+#entry {
+    width: 750px;
+    height: 350px;
+    margin: 0 auto;
 }
-/* @keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
-} */
-
-/* .footer-buttons {
-    padding-top: 50px;
-    height: 400px;
-    background-color: rgba(68, 68, 71);
-
-} */
+.prompt {
+    margin: 65px 0;
+}
+Button.button > span {
+    font-size: 1.5em;
+}
+#interventionId {
+    color: white;
+    font-size: 1.5em;
+    padding: 1.8em 0;
+    margin: 0em 1em;
+}
+#dropdown svg
+{
+    color: white;
+}

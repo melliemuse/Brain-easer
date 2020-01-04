@@ -1,30 +1,19 @@
 
-.nav-container {
-    display: flex;
-    justify-content: center;
-    /* align-content: center; */
-}
-/* #logo-text {
-    margin-left: 30px;
-    height: 150px;
-    width: auto;
-    display: block;
-} */
-.nav-container a {
-    max-width: 350px;
-    height: 100px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.6em;
-    color: grey;
-    padding: 5px 30px 30px;
-    margin-top: 1em;
-}
-.nav-container li {
+#navMenu li {
     margin: 0;
-}  
-.nav-container li:hover {
+    background-color: rgb(22, 174, 235);
+    color: white;
+}
+#navMenu a {
     margin: 0;
+    color: rgb(255, 250, 250);
+    font-size: 22px;
+    font-weight: 900;
+}
+#navMenu li:hover,
+#navMenu a:hover {
+    margin: 0;
+    background-color: rgb(37, 231, 245);
 }  
 #logo {
     margin: auto;
@@ -37,23 +26,15 @@
 }
 .navlink:link {
     color: rgb(255, 255, 255);
-    font-weight: 500;
+    text-shadow: 1px 1px 20px rgb(65, 64, 64, .1);
   }
-  
-  /* visited link */
   .navlink:visited {
     color: rgb(85, 80, 80);
     font-weight: 500;
   } 
 .navlink:hover {
     width: 100%;
-    color:  white;
     text-decoration: none;
-}
-.navBar {
-    /* background-color: rgba(130, 150, 255, .7); */
-    border-radius: 40px;
-    height: 100px;
 }
 #nav-menu-button {
     margin-left: auto;
