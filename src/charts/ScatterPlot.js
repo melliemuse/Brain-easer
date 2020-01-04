@@ -17,8 +17,8 @@ export default class ScatterPlot extends Component {
     //     return color;
     // }
     buildChartData = () => {
-        let toSortBaseline = this.props.baselineData.slice().sort()
-        let toSortInt = this.props.interventionData.slice().sort()
+        let toSortBaseline = this.props.baselineData.sort()
+        let toSortInt = this.props.interventionData.sort()
         let simplifiedDates = []
         let simplifiedDatesInt = []
         let simplifiedObj = {}
@@ -38,12 +38,16 @@ export default class ScatterPlot extends Component {
         for (let i = 0; i < toSortInt.length; i++) {
             let simplifiedDateInt = toSortInt[i].x.split("T")[0]
             let score = toSortInt[i].y
-            simplifiedDatesInt.push(simplifiedDateInt)
-            simplifiedObjInt = {
-                x: simplifiedDateInt,
-                y: score
+            if(score !== "") {
+                simplifiedDatesInt.push(simplifiedDateInt)
+                simplifiedObjInt = {
+                    x: simplifiedDateInt,
+                    y: score
+                }
             }
-            simplifiedArrayInt.push(simplifiedObjInt)
+             simplifiedArrayInt.push(simplifiedObjInt)
+            
+            console.log(simplifiedArrayInt)
         }
 
         let sortedData = []
@@ -65,7 +69,7 @@ export default class ScatterPlot extends Component {
         let finalBaselineDates = []
         for (let i = 0; i < intArray.length; i++) {
             let data = sortedData.find(array => array.x === intArray[i])
-            if (data !== undefined) {
+            if (data !== undefined && data.y !== "") {
                 finalBaselineArray.push(data)
             }
         }
@@ -74,7 +78,7 @@ export default class ScatterPlot extends Component {
         let finalIntDates = []
         for (let i = 0; i < finalBaselineDates.length; i++) {
             let data = sortedIntData.find(array => array.x === finalBaselineDates[i])
-            if (data !== undefined) {
+            if (data !== undefined && data.y !== "") {
                 finalIntArray.push(data)
             }
         }
@@ -87,14 +91,14 @@ export default class ScatterPlot extends Component {
                 label: this.props.interventionData[0].name,
                 backgroundColor: 'rgba(59, 243, 255,.6)',
                 borderColor: 'rgba(59, 196, 255 )',
-                borderWidth: 10,
+                borderWidth: 5,
                 data: finalIntArray
             },
             {
                 label: 'Base Anxiety',
                 backgroundColor: 'rgba(210, 100, 200 , .6)',
                 borderColor: 'rgba(179, 55, 168)',
-                borderWidth: 10,
+                borderWidth: 5,
                 data: finalBaselineArray
             }
         ]

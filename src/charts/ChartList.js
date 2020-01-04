@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import ScatterPlot from './ScatterPlot'
-import Charts from './Charts.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChartLine } from '@fortawesome/free-solid-svg-icons'
+import { lightBlue, red } from '@material-ui/core/colors'
+import Charts from "./Charts.css"
 
 export default class ChartList extends Component {
     state = {
@@ -82,7 +85,12 @@ export default class ChartList extends Component {
     }
     render() {
         return (
-            <>
+            <>  
+            <header id="tracker-heading">
+            <h1 id="tracker-title">Anxiety Tracker</h1>
+            <FontAwesomeIcon id="chart-line-icon"  icon={faChartLine} size='3x' style={{color:red}}/>
+            </header>
+            <div className="chart-container">
                 {this.state.interventionData !== [] &&
                     this.state.interventionData.map((miniArray, i) =>
                         <ScatterPlot
@@ -93,6 +101,7 @@ export default class ChartList extends Component {
                             baseAnxietyScore={this.state.baseAnxietyScore} baselineData={this.state.baselineData}
                         />
                     )}
+            </div>
             </>
         )
     }
