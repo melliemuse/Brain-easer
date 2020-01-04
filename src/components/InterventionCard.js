@@ -11,12 +11,12 @@ export default class InterventionCard extends Component {
         return (
             <>
                     <Link className="interventionLink" to={`/interventions/${this.props.intervention.id}`}>
-                <Card id="interventionCard">
+                <div id="interventionCard">
                     <div className="intervention-icon">
-                    <FontAwesomeIcon icon={this.props.intervention.icon} size='4x'/>
+                    <FontAwesomeIcon icon={this.props.intervention.icon} className="fill-gradient-linear" size='3x'/>
                     </div>
                         <h3 id="interventionName">{this.props.intervention.name}</h3>
-                </Card>
+                </div>
                     </Link>
             </>
         )

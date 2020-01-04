@@ -246,6 +246,13 @@
       "userId": 1,
       "description": "",
       "id": 34
+    },
+    {
+      "anxietyScore": 8,
+      "timestamp": "2020-01-04T15:40:23.250Z",
+      "userId": 1,
+      "description": "",
+      "id": 35
     }
   ],
   "interventions": [
@@ -1276,20 +1283,6 @@
       "id": 30
     },
     {
-      "entry": "I can keep trucking",
-      "timestamp": "2019-12-27T17:32:50.567Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 32
-    },
-    {
-      "entry": "ckc",
-      "timestamp": "2019-12-27T17:33:25.556Z",
-      "userId": 1,
-      "promptId": 3,
-      "id": 33
-    },
-    {
       "entry": "Yes, I will be ok.",
       "timestamp": "2019-12-27T17:34:20.854Z",
       "userId": 1,
@@ -1302,20 +1295,6 @@
       "userId": 1,
       "promptId": 3,
       "id": 35
-    },
-    {
-      "entry": "fsdg",
-      "timestamp": "2019-12-27T18:23:10.997Z",
-      "userId": 1,
-      "promptId": 5,
-      "id": 37
-    },
-    {
-      "entry": "dsvb",
-      "timestamp": "2019-12-27T19:11:37.502Z",
-      "userId": 1,
-      "promptId": 4,
-      "id": 38
     },
     {
       "entry": "Always and always. I am very talented, driven , and intelligent. I don't give myself enough credit. ",

@@ -105,12 +105,12 @@ export default class AnxietyRating extends Component {
                                 hidden={this.state.addDescriptionField}
                                 onChange={this.handleFieldChange}
                             /> </div>
-                            <ButtonGroup className="button-group" variant="contained" aria-label="outlined secondary button group">
+                            <ButtonGroup className="button-group" variant="contained" >
                                 <Button
                                     id="addDescriptionField"
                                     name="addDescriptionField"
                                     className="button"
-                                    color="secondary"
+                                    color="primary"
                                     onClick={this.setBoolean}
                                 >Add Description</Button>
                                 <Button

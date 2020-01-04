@@ -109,7 +109,7 @@ h1 {
     background-image: linear-gradient(rgba(255, 255, 255, 0.603), rgba(0, 0, 0, 0.04));
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;  
 }
 #anxietyScore {
     font-size: 2.3em;
@@ -118,14 +118,16 @@ h1 {
     margin: 1em .3em 1em; 
     width: 2em;
     height: 2em;
-    color: white;
-    background-image: linear-gradient(to bottom, rgb(219, 74, 17) 10%, rgba(4, 76, 78, 0.87) 60%);
+    color: rgba(4, 76, 78, 0.87);
+    /* background-image: linear-gradient(to bottom, rgb(219, 74, 17) 10%, rgba(4, 76, 78, 0.87) 60%);
     background-size: contain;
     background-position: center;
     background-attachment: fixed; 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     overflow: hidden;
+    position: relative;
+    clip: rect(0, auto, auto, 0) */
 }
 #anxietyScore > span {
     font-size: 1.1em;
@@ -139,7 +141,7 @@ h1 {
 }
 .descriptionField {
     height: 85px; 
-    margin: 0 auto 120px;
+    margin: 20px auto 120px;
 }
 #description {
     width: 400px;
@@ -158,8 +160,8 @@ h1 {
     margin: 0;
 }
 .footer-buttons {
-    margin: 70px 0;
-    padding-top: 90px;
+    margin: 100px 0;
+    /* padding-top: 90px;  */
     height: 90px;
 }
 #entry {
