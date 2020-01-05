@@ -85,7 +85,7 @@ export default class AnxietyRating extends Component {
                 <h1 id="anxiety-rating-welcome">Welcome to Braineaser</h1>
                 {/* <Divider id="divider" variant="middle" /> */}
                 
-                <img id="main-logo" alt="logo" src={require('../assets/Logo.png')}></img>
+                <img id="main-logo" alt="logo" src={require('../assets/logo.png')}></img>
                 </header>
                 <article id="anxiety-rate-container">
                     <div id="subhead" className="subhead center"> 
