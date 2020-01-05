@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import APIManager from '../modules/APIManager'
 import Button from '@material-ui/core/Button';
 import "./InterventionRerate.css"
@@ -9,22 +9,10 @@ export default class InterventionRerate extends Component {
         description: "",
         interventionId: ""
     }
-    componentDidMount() {
-        // http://localhost:5002/userInterventions?userId=1&interventionId=2
-        // const currentUser = localStorage.getItem("activeUser")
-        // APIManager.getUserInterventions("userInterventions", currentUser, this.props.intervention.id) 
-        // .then(interventions => {
-        //     console.log("interventions data", interventions)
-        //     this.setState({
-        //         interventions: interventions
-        //     })
-        // })
-        // console.log(this.state.interventions)
-    }
     handleFieldChange = event => {
         event.preventDefault()
         const stateToChange = {}
-        stateToChange[event.currentTarget.id] = event.currentTarget.value   
+        stateToChange[event.currentTarget.id] = event.currentTarget.value
         this.setState(stateToChange)
     }
     createbuttons = () => {
@@ -37,17 +25,17 @@ export default class InterventionRerate extends Component {
         return buttons
     }
     createAnxietyRating = () => {
-        console.log(this.props.interventions[this.props.interventions.length-1].id)
+        console.log(this.props.interventions[this.props.interventions.length - 1].id)
         if (this.state.anxietyScore === "") {
             alert("Please select an anxiety score")
-        }  else {
+        } else {
             const anxiety = {
                 "userId": parseInt(localStorage.getItem("activeUser")),
                 "interventionId": parseInt(this.props.intervention.id),
-                "timestamp": this.props.interventions[this.props.interventions.length-1].timestamp,
+                "timestamp": this.props.interventions[this.props.interventions.length - 1].timestamp,
                 "anxietyScore": parseInt(this.state.anxietyScore),
                 "description": this.state.description,
-                "id": Number(this.props.interventions[this.props.interventions.length-1].id)
+                "id": Number(this.props.interventions[this.props.interventions.length - 1].id)
             }
             console.log("anxiety rerate object", anxiety)
             APIManager.update("userInterventions", anxiety)
@@ -57,14 +45,14 @@ export default class InterventionRerate extends Component {
 
     render() {
         console.log("all returned ints of type", this.props.interventions)
-        console.log("last completed int of type", this.props.interventions[this.props.interventions.length-1])
+        console.log("last completed int of type", this.props.interventions[this.props.interventions.length - 1])
         // console.log([this.state.interventions[length-1].id])
         return (
             <div className="center">
-    <h2 className="center-text">You have completed {this.props.intervention.name}!</h2>
+                <h2 className="heading center-text">You have completed {this.props.intervention.name.toLowerCase()}!</h2>
                 <h3 className="center-text">How is your anxiety now?</h3>
                 <div id="rerating-button-group">
-                {this.createbuttons()}
+                    {this.createbuttons()}
                 </div>
                 <div className="description center">
                     <input
@@ -73,13 +61,15 @@ export default class InterventionRerate extends Component {
                         onChange={this.handleFieldChange}
                     />
                 </div>
+                <div className="center-button">
                 <Button
-                color="secondary"
-                variant="contained"
+                    color="secondary"
+                    variant="contained"
                     onClick={this.createAnxietyRating}
                 >Submit Rating
                 </Button>
-            </div> 
+                </div>
+            </div>
         )
     }
 }
