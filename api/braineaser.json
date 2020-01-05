@@ -327,9 +327,9 @@
       "name": "Comforting Inner Child",
       "timestamp": "",
       "completed": "",
-      "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. If your parents, like, most people, did not possess this skill, then you do not either. That is why it is necessary for many people to go through the process of consciously developing the ability to self-soothe later in life. The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way which might otherwise be difficult. Many times, emotional upset is tied to self-judgement, and often this has its roots in childhood. When we experience adverse experiences as children, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations.",
+      "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. \n If your parents, like, most people, did not possess this skill, then you do not either. That is why it is necessary for many people to go through the process of consciously developing the ability to self-soothe later in life. \n The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way which might otherwise be difficult. \n Many times, emotional upset is tied to self-judgement, and often this has its roots in childhood. When we experience adversity as children, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations.",
       "icon": "fan",
-      "instructions": "Grab your journal and write whatever comes to mind about the situations which are sparking distress and the thoughts you are having. Try to drill down into the beliefs you are carrying about yourself. Now find a picture of yourself as a small child- the cuter you looked, the better. Stare at it for a while. See how sweet and innocent you were. That is you. Do the thoughts and beliefs you are having match up with what you see when you look at that picture? Now imagine yourself at your current age giving the smaller, hurting version of yourself a hug and telling them that you are there to protect them and everything is going to be alright."
+      "instructions": "Grab your journal and write whatever comes to mind about the situations which are sparking distress and the thoughts you are having. \n Try to drill down into the beliefs you are carrying about yourself. Now find a picture of yourself as a small child (you can upload one below). The cuter you looked, the better. Stare at it for a while. See how sweet and innocent you were. That is you. \n Do the thoughts and beliefs you are having match up with what you see when you look at that picture? \n Now imagine yourself at your current age giving the smaller, hurting version of yourself a hug and telling them that you are there to protect them and everything is going to be alright."
     },
     {
       "id": 7,
@@ -1304,6 +1304,54 @@
       "description": "",
       "anxietyScore": "",
       "id": 154
+    },
+    {
+      "userId": 2,
+      "timestamp": "2020-01-05T21:36:05.151Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 155
+    },
+    {
+      "userId": 2,
+      "timestamp": "2020-01-05T21:39:11.457Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 156
+    },
+    {
+      "userId": 2,
+      "timestamp": "2020-01-05T21:39:41.468Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 157
+    },
+    {
+      "userId": 2,
+      "timestamp": "2020-01-05T21:41:29.164Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 158
+    },
+    {
+      "userId": 2,
+      "timestamp": "2020-01-05T21:41:32.233Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 159
+    },
+    {
+      "userId": 2,
+      "interventionId": 1,
+      "timestamp": "2020-01-05T21:58:33.198Z",
+      "anxietyScore": 3,
+      "description": "That helped!",
+      "id": 160
     }
   ],
   "journals": [

@@ -139,10 +139,6 @@ h1 {
     padding: 0em 0;
     border-radius: 50%;
 }
-/* .descriptionField {
-    height: 85px; 
-    margin: 20px auto 120px;
-} */
 #description {
     width: 400px;
     height: 85px; 
@@ -151,6 +147,10 @@ h1 {
     color: white;
     font-family: 'Sriracha', cursive;
     font-size: 1.5em;
+}
+.descriptionField #description {
+    height: 45px; 
+    margin: 20px auto 120px;
 }
 #submit-rating {
     margin-top: 10px;
