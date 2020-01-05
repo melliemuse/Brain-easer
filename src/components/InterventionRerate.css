@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 1em;
+    padding: 3em 1em 4em;
     height: 3em;
     /* background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 0.87) 60%);
     background-size: cover;
@@ -17,7 +17,7 @@
     margin: 1em .3em 1em; 
     width: 1em;
     height: 1em;
-    background-image: linear-gradient(to left,rgb(219, 74, 17) 30%, rgba(10, 196, 202, 0.87) 60%);
+    background-image: linear-gradient(to left,rgb(255, 190, 210) 35%, rgba(115, 181, 223, 0.959) 65%);
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -30,3 +30,11 @@ h3.center-text {
 .description {
     margin: 4em 0 0;
 }
+#description {
+    margin: 8em auto 7em;
+    display: block;
+    height: 7em;
+ }
+ .heading {
+     padding: 4em .2em 0;
+ }

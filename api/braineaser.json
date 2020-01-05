@@ -5,7 +5,7 @@
       "username": "Melody",
       "email": "melliemuse@gmail.com",
       "password": "None-ya'bizness",
-      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/rtfhuxpko85aejfj7ycw"
+      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/g2w8tn6ey6p0grjx3lbb"
     },
     {
       "id": 2,
@@ -253,6 +253,13 @@
       "userId": 1,
       "description": "",
       "id": 35
+    },
+    {
+      "anxietyScore": 6,
+      "timestamp": "2020-01-04T23:06:25.255Z",
+      "userId": 1,
+      "description": "",
+      "id": 36
     }
   ],
   "interventions": [
@@ -1139,6 +1146,102 @@
       "anxietyScore": 3,
       "description": "",
       "id": 136
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T23:10:35.624Z",
+      "interventionId": 6,
+      "description": "",
+      "anxietyScore": "",
+      "id": 137
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-04T23:27:52.297Z",
+      "interventionId": 6,
+      "description": "",
+      "anxietyScore": "",
+      "id": 138
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:01:46.301Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 139
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:02:25.766Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 140
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:05:44.293Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 141
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:09:59.084Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 142
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:10:43.456Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 143
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:13:26.455Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 144
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:16:43.951Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 145
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:17:47.258Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 146
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:17:51.005Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 147
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-05T00:25:38.831Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 148
     }
   ],
   "journals": [

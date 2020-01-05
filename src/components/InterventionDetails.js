@@ -54,14 +54,11 @@ export default class InterventionDetails extends Component {
 
     // Uploading images to Cloudinary: https://cloudinary.com/blog/how_to_build_an_image_library_with_react_cloudinary#uploading_images
 
-    //I wrote this as a fat arrow function because I wanted to use this.state()
     uploadWidget = () => {
         window.cloudinary.openUploadWidget({ cloud_name: "dwjgfd51f", upload_preset: "yt2dp2iy", tags: ['inner_child'] },
             (error, result) => {
-                // See what cloudinary returns
                 if (result) {
                     console.log("result", result);
-                    // Building the entire URL for the uploaded image using the data cloudinary returns
                     console.log("https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/" + result[0].public_id)
                     this.setState({
                         imageUrl: `https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/${result[0].public_id}`
@@ -136,17 +133,18 @@ export default class InterventionDetails extends Component {
                         </Button> </ButtonGroup>
                     {this.state.intervention.id === 6 &&
                         <div>
-                            <img className="uploadImage" src={this.state.imageUrl} alt="" />
+                            <img className="uploadImage center spacing" src={this.state.imageUrl} alt="" />
+                            <div className="center-button">
                             <Button
+                            variant="contained"
                                 color="primary"
                                 onClick={() => {
                                     this.uploadWidget()
                                     { this.state.imageUrl && this.updateImage() }
                                 }}>Add Inner Child Image
                             </Button>
+                            </div>
                         </div>}
-
-
                     {this.state.displayRerate &&
                         <InterventionRerate intervention={this.state.intervention}
                             interventions={[this.state.interventions]} {...this.props} />}
