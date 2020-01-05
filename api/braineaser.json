@@ -282,7 +282,7 @@
       "name": "Deep Breathing",
       "timestamp": "",
       "completed": "",
-      "description": "Practicing deep breathing, where you take a deep breath in and exhale for longer than your inhale calms the parasympathetic nervous system, which is what controls your fight or flight response. This response is triggered in moments of high stress or panic - this technique relieves that response.",
+      "description": "Practicing deep breathing - where you take a deep breath in and exhale for longer than your inhale - calms the parasympathetic nervous system. This controls your fight or flight response (your body's survival response to threats responsible for producing anxiety).",
       "icon": "wind",
       "instructions": "Breathe in for 10 seconds, and breathe out for longer, approximately 15 seconds. Repeat until you feel some relief."
     },
@@ -291,9 +291,9 @@
       "name": "Exercise",
       "timestamp": "",
       "completed": "",
-      "description": "Exercise has been shown to relieve stress even in cases of extreme trauma which are notoriously hard to treat. The fight or flight response triggered by a perceived threat produces anxiety, and renowned somatic researcher Peter Levine found through original research that through physical activity such as shaking and running, the traumatic response of extreme stress is releived. This holds true for lesser anxiety as well but the impact is demostrated by its efficacy in very hard to treat panic.",
+      "description": "Exercise has been shown be highly effective for relieving stress. Renowned somatic researcher Peter Levine found that through physical activity such as shaking and running, the body is able to dispell panic even in extreme cases brought on by PTSD.",
       "icon": "biking",
-      "instructions": "Even mild exercise produces endorphins and will have a positive impact on mood- this is really dealer's choice. If this is a difficult activity for you, start small and keep praciticing as often as you can stomach it to reduce resistance and form a habit."
+      "instructions": "Even mild exercise produces endorphins and will have a positive impact on mood- this is really dealer's choice. If this is a difficult activity for you, start small and keep praciticing as often as you can stomach it to reduce resistance and form a habit. Here are a few low-commitment ideas to get you started: \n 1. Desk yoga \n 2. Short walk \n 3. Lift weights  "
     },
     {
       "id": 3,
@@ -318,9 +318,9 @@
       "name": "Grounding",
       "timestamp": "",
       "completed": "",
-      "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses to acheive this result and loosen the grip of anxiety. Grounding techniques exist for all five senses, some may resonate more for you than others, so try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation",
+      "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses to acheive this result and loosen the grip of anxiety. Grounding techniques exist for all five senses, some may resonate more for you than others, so try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation.",
       "icon": "spa",
-      "instructions": "Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths. \n Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. \n Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present \n Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. \n Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. \n Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
+      "instructions": "Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths. \n Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. \n Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present \n Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. \n Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. \n Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go."
     },
     {
       "id": 6,
@@ -1288,6 +1288,22 @@
       "anxietyScore": 3,
       "description": "That helped a lot",
       "id": 152
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-01-05T19:53:54.276Z",
+      "anxietyScore": 3,
+      "description": ":) ",
+      "id": 153
+    },
+    {
+      "userId": 2,
+      "timestamp": "2020-01-05T19:59:40.554Z",
+      "interventionId": 2,
+      "description": "",
+      "anxietyScore": "",
+      "id": 154
     }
   ],
   "journals": [
@@ -1493,6 +1509,13 @@
       "userId": 2,
       "promptId": 4,
       "id": 46
+    },
+    {
+      "entry": "Napping all day is stressful",
+      "timestamp": "2020-01-05T19:53:54.158Z",
+      "userId": 2,
+      "promptId": 1,
+      "id": 47
     }
   ],
   "prompts": [

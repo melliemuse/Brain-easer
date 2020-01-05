@@ -54,7 +54,7 @@ export default class InterventionRerate extends Component {
                 <div id="rerating-button-group">
                     {this.createbuttons()}
                 </div>
-                <div className="description center">
+                <div className="description-rerate center">
                     <input
                         id="description"
                         hidden={this.state.addDescriptionField}
