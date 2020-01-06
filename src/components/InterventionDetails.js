@@ -133,7 +133,7 @@ export default class InterventionDetails extends Component {
                         </Button> </ButtonGroup>
                     {this.state.intervention.id === 6 &&
                         <div>
-                            <img className="uploadImage center spacing" src={this.state.imageUrl} alt="" />
+                            <img className="uploadImage center" src={this.state.imageUrl} alt="" />
                             <div className="center-button">
                             <Button
                             variant="contained"

@@ -92,7 +92,6 @@ export default class AnxietyRating extends Component {
                     <h2 id="anxiety-rating-scale">How is Your Anxiety?</h2> 
                     <h3 id="scale-subhead">(on a scale from one to ten)</h3>
                     </div>
-                {/* <Divider id="divider" variant="middle" /> */}
                     <div className="rating-buttons">
                         <div id="rating-button-group">
                         {this.createbuttons()}

@@ -48,7 +48,7 @@ export default class JournalEditForm extends Component {
         return (
             <div className="main">
                 <h1>Edit Journal Entry</h1>
-                <h3>{this.state.prompt}</h3>
+                <h3 className="center-text">{this.state.prompt}</h3>
                 <form>
                     <fieldset>
                         <input 
