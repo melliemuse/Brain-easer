@@ -52,14 +52,16 @@ export default class JournalEditForm extends Component {
                 <form>
                     <fieldset>
                         <input 
+                        className="center"
                             id="entry"
                             type="text"
                             value={this.state.entry}
                             onChange={this.handleFieldChange}
                         />
-                        <div>
+                        <div className="button align-left">
                             <Button
                             color="primary"
+                            variant="contained"
                             onClick={this.createUpdatedEntry}
                             >Submit</Button>
                         </div>

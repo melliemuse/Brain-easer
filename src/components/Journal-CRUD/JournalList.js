@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
 import JournalCard from './JournalCard'
 import Card from '@material-ui/core/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
 
 export default class JournalList extends Component {
     state = {
@@ -31,8 +33,11 @@ export default class JournalList extends Component {
         console.log(this.state.journals)
         console.log(this.state.journals[0])
         return (
-            <>
-                <h1 className="entry-list-heading">My Journal Entries</h1>
+            <>  
+                <header className="flex"  id="journal-heading">
+                <h1 id="journal-title" className="entry-list-heading">My Journal Entries</h1>
+                <FontAwesomeIcon icon={faBookOpen} className="fill-gradient-linear" size='3x'/>
+                </header>
                 <div className="main">
                     <Card id="card-container">
                     {this.state.journals.map(journal =>

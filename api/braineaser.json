@@ -5,14 +5,14 @@
       "username": "Melody",
       "email": "melliemuse@gmail.com",
       "password": "None-ya'bizness",
-      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/z7336iqbforigywa14f7"
+      "inner_child_image": ""
     },
     {
       "id": 2,
       "username": "Midzie",
       "email": "cuddlebug@gmail.com",
       "password": "Kitty-High-Five",
-      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/hp8zh8ija5p7de1s7ox1"
+      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/hmxj9apj13dtg3pexqki"
     }
   ],
   "baselineAnxietyScores": [
@@ -330,6 +330,34 @@
       "userId": 2,
       "description": "",
       "id": 46
+    },
+    {
+      "anxietyScore": 9,
+      "timestamp": "2020-01-06T19:28:56.601Z",
+      "userId": 1,
+      "description": "",
+      "id": 47
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-01-06T20:09:52.871Z",
+      "userId": 2,
+      "description": "Ahh",
+      "id": 48
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-01-06T23:07:13.100Z",
+      "userId": 2,
+      "description": "",
+      "id": 49
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-01-07T00:15:56.391Z",
+      "userId": 2,
+      "description": "Public speaking sucks",
+      "id": 50
     }
   ],
   "interventions": [
@@ -1616,6 +1644,54 @@
       "anxietyScore": 2,
       "description": "",
       "id": 185
+    },
+    {
+      "userId": 1,
+      "timestamp": "2020-01-06T19:29:26.205Z",
+      "interventionId": 1,
+      "description": "",
+      "anxietyScore": "",
+      "id": 186
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-01-06T20:11:26.156Z",
+      "anxietyScore": 2,
+      "description": "That helped a lot",
+      "id": 187
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-01-06T20:12:37.246Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 188
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-01-06T23:09:08.802Z",
+      "anxietyScore": 6,
+      "description": "So effective!",
+      "id": 189
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-01-07T00:16:39.368Z",
+      "anxietyScore": 7,
+      "description": "",
+      "id": 190
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-01-07T00:17:21.604Z",
+      "anxietyScore": 6,
+      "description": "",
+      "id": 191
     }
   ],
   "journals": [
@@ -1674,13 +1750,6 @@
       "userId": 1,
       "promptId": 3,
       "id": 14
-    },
-    {
-      "entry": "I am being very hard on myself. I am telling myself all sorts of terrible things about myself that aren't true. I am very hard-working there is hope.",
-      "timestamp": "2019-12-21T19:33:14.841Z",
-      "userId": 2,
-      "promptId": 5,
-      "id": 18
     },
     {
       "id": 19,
@@ -1809,25 +1878,11 @@
       "id": 45
     },
     {
-      "id": 46,
+      "id": 47,
       "userId": 2,
-      "entry": "Baby steps towards completing app until they add up to completion",
-      "promptId": 4,
-      "timestamp": "2020-01-05T01:04:05.702Z"
-    },
-    {
-      "entry": "Napping all day is stressful",
-      "timestamp": "2020-01-05T19:53:54.158Z",
-      "userId": 2,
+      "entry": "Napping all day is stressful!!",
       "promptId": 1,
-      "id": 47
-    },
-    {
-      "entry": "It will be ok. Even though it's scary.",
-      "timestamp": "2020-01-06T02:22:17.269Z",
-      "userId": 2,
-      "promptId": 3,
-      "id": 48
+      "timestamp": "2020-01-05T19:53:54.158Z"
     }
   ],
   "prompts": [

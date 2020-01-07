@@ -19,7 +19,7 @@ export default class JournalCard extends Component {
                     <p className="entryList">{this.props.journals.entry}</p>
                     <p className="entryDate">{new Date(this.props.journals.timestamp).toString()}</p>
                     <div>
-                    <ButtonGroup variant="contained" id="button-group" className="button-group" color="primary" aria-label="outlined primary button group">
+                    <ButtonGroup variant="contained" id="button-group" className="journal-button-group" color="primary" aria-label="outlined primary button group">
                     <Button
                         onClick={() => this.props.handleDelete(this.props.journals.id)}
                     >Delete</Button>
