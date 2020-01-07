@@ -358,6 +358,13 @@
       "userId": 2,
       "description": "Public speaking sucks",
       "id": 50
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-01-07T01:39:31.767Z",
+      "userId": 2,
+      "description": "Wowza that's high",
+      "id": 51
     }
   ],
   "interventions": [
@@ -1692,6 +1699,22 @@
       "anxietyScore": 6,
       "description": "",
       "id": 191
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-01-07T01:40:04.780Z",
+      "anxietyScore": 3,
+      "description": "That helped",
+      "id": 192
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-01-07T01:42:26.277Z",
+      "anxietyScore": 1,
+      "description": "",
+      "id": 193
     }
   ],
   "journals": [
@@ -1883,6 +1906,13 @@
       "entry": "Napping all day is stressful!!",
       "promptId": 1,
       "timestamp": "2020-01-05T19:53:54.158Z"
+    },
+    {
+      "entry": "My thinking could use some work. I can accept whatever happens, and just the act of letting go brings relief.",
+      "timestamp": "2020-01-07T01:42:26.250Z",
+      "userId": 2,
+      "promptId": 5,
+      "id": 48
     }
   ],
   "prompts": [
