@@ -1,7 +1,7 @@
 .entry-list-heading {
-    margin: 0 auto 0px;
-    padding: 10px 0;
-    width: 70%;
+    /* margin: 1em auto 1em; */
+    /* padding: 10px 0; */
+    /* width: 70%; */
     font-weight: 500;
     font-size: 3.2em;
 }
@@ -28,19 +28,18 @@
     color: rgb(155, 153, 153);
 }
 #card-container {
-    padding: 30px;
-    border: none;
-    /* background-color: rgba(0, 0 , 0, .5); */
+    padding: 10px 30px 40px;
     box-shadow: none;
 }
 .card {
-    padding: 40px 70px 20px;
+    padding: 20px 50px 10px;
     margin: 0 20px;
     border-radius: 20px; 
 }
 .entryList {
     font-family: 'Sriracha', cursive;
-    margin: 0 auto 60px;
+    margin: 0 0 60px;
+    padding-left: 30px;
     width: 70%;
     color: rgb(9, 226, 197);
     font-weight: 500;
@@ -53,8 +52,13 @@
 #button-group {
     margin: 0 220px;
 }
+#button-group.journal-button-group {
+    margin: 30px 0 50px;
+    margin-left: 30px;
+}
 .journal-card {
-    background: linear-gradient(to bottom, rgba(8, 241, 191, .1) 10%,  rgba(8, 241, 191, .01) 90%);
+    /* background: linear-gradient(to bottom, rgba(8, 241, 191, .1) 10%,  rgba(8, 241, 191, .01) 90%); */
+    box-shadow: 1em 1em 2em lightskyblue;
 }
 .center{
     display: block;
@@ -77,4 +81,19 @@ header.prompt.display {
 div.description > #description {
     color: rgb(14, 73, 139);
     font-size: 1.25em;
+}
+#journal-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17em;
+    margin: 0 1em;
+}
+#journal-heading svg{
+    margin: 0 1em 0;
+    align-content: center;
+}
+#journal-title {
+    padding: 0;
+    margin: 0;
 }
