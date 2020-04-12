@@ -12,7 +12,7 @@
       "username": "Midzie",
       "email": "cuddlebug@gmail.com",
       "password": "Kitty-High-Five",
-      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/hzhq9psigrjydxtp4fc1"
+      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/mlhimdlwjfndim2ktbei"
     }
   ],
   "baselineAnxietyScores": [
@@ -274,6 +274,41 @@
       "userId": 2,
       "description": "",
       "id": 38
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-04-03T16:23:44.028Z",
+      "userId": 2,
+      "description": "I am anxious right now",
+      "id": 39
+    },
+    {
+      "anxietyScore": 9,
+      "timestamp": "2020-04-06T15:32:57.219Z",
+      "userId": 2,
+      "description": "",
+      "id": 40
+    },
+    {
+      "anxietyScore": 9,
+      "timestamp": "2020-04-06T16:53:09.717Z",
+      "userId": 2,
+      "description": "",
+      "id": 41
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-04-08T19:33:06.128Z",
+      "userId": 2,
+      "description": "",
+      "id": 42
+    },
+    {
+      "anxietyScore": 10,
+      "timestamp": "2020-04-12T00:18:53.282Z",
+      "userId": 2,
+      "description": "Ahhh ",
+      "id": 43
     }
   ],
   "interventions": [
@@ -1288,6 +1323,94 @@
       "anxietyScore": 3,
       "description": "That helped a lot",
       "id": 152
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-04-03T16:26:32.552Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
+      "id": 153
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-04-03T16:28:34.538Z",
+      "anxietyScore": 4,
+      "description": "That helped",
+      "id": 154
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-04-06T15:36:29.651Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
+      "id": 155
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-04-06T15:38:50.297Z",
+      "anxietyScore": 4,
+      "description": "",
+      "id": 156
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-04-06T16:55:18.703Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
+      "id": 157
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-04-06T16:56:54.755Z",
+      "anxietyScore": 4,
+      "description": "That helped",
+      "id": 158
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-04-08T19:35:21.483Z",
+      "anxietyScore": 6,
+      "description": "Worried about running out of wet food",
+      "id": 159
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-04-08T19:36:55.704Z",
+      "anxietyScore": 4,
+      "description": "That helped",
+      "id": 160
+    },
+    {
+      "userId": 2,
+      "interventionId": 3,
+      "timestamp": "2020-04-08T19:41:27.454Z",
+      "anxietyScore": 3,
+      "description": "That helped a lot",
+      "id": 161
+    },
+    {
+      "userId": 2,
+      "interventionId": 6,
+      "timestamp": "2020-04-12T00:22:01.243Z",
+      "anxietyScore": 7,
+      "description": "Worried about running out of wet food",
+      "id": 162
+    },
+    {
+      "userId": 2,
+      "interventionId": 7,
+      "timestamp": "2020-04-12T00:24:43.623Z",
+      "anxietyScore": 4,
+      "description": "That helped",
+      "id": 163
     }
   ],
   "journals": [
@@ -1353,13 +1476,6 @@
       "userId": 2,
       "promptId": 4,
       "id": 17
-    },
-    {
-      "entry": "I am being very hard on myself. I am telling myself all sorts of terrible things about myself that aren't true. I am very hard-working there is hope.",
-      "timestamp": "2019-12-21T19:33:14.841Z",
-      "userId": 2,
-      "promptId": 5,
-      "id": 18
     },
     {
       "id": 19,
@@ -1493,6 +1609,13 @@
       "userId": 2,
       "promptId": 4,
       "id": 46
+    },
+    {
+      "id": 47,
+      "userId": 2,
+      "entry": "Blaaaahhhhh SO ANXIOUS RIGHT NOW!",
+      "promptId": 6,
+      "timestamp": "2020-04-08T19:36:55.663Z"
     }
   ],
   "prompts": [
