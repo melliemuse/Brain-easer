@@ -49,12 +49,12 @@ export default class InterventionRerate extends Component {
         // console.log([this.state.interventions[length-1].id])
         return (
             <div className="center">
-                <h2 className="heading center-text">You have completed {this.props.intervention.name.toLowerCase()}!</h2>
-                <h3 className="center-text">How is your anxiety now?</h3>
+                <h2 className="rerate-heading heading center-text">You have completed {this.props.intervention.name.toLowerCase()}!</h2>
+                <h3 className="rerate-subheading heading center-text">How is your anxiety now?</h3>
                 <div id="rerating-button-group">
                     {this.createbuttons()}
                 </div>
-                <div className="description center">
+                <div className="description-rerate center">
                     <input
                         id="description"
                         hidden={this.state.addDescriptionField}

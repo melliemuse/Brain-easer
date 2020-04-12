@@ -48,18 +48,20 @@ export default class JournalEditForm extends Component {
         return (
             <div className="main">
                 <h1>Edit Journal Entry</h1>
-                <h3>{this.state.prompt}</h3>
+                <h3 className="center-text">{this.state.prompt}</h3>
                 <form>
                     <fieldset>
                         <input 
+                        className="center"
                             id="entry"
                             type="text"
                             value={this.state.entry}
                             onChange={this.handleFieldChange}
                         />
-                        <div>
+                        <div className="button align-left">
                             <Button
                             color="primary"
+                            variant="contained"
                             onClick={this.createUpdatedEntry}
                             >Submit</Button>
                         </div>

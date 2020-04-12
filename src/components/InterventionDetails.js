@@ -88,7 +88,7 @@ export default class InterventionDetails extends Component {
         return (
             <>
                 <article className="intervention-details main">
-                    <h1>{this.state.intervention.name}</h1>
+                    <h1 id="intervention-title">{this.state.intervention.name}</h1>
                     {this.state.user.inner_child_image &&
                         this.state.intervention.id === 6 &&
                         <img src={this.state.user.inner_child_image} alt="inner child picture" className="inner-child-image"></img>
@@ -105,7 +105,7 @@ export default class InterventionDetails extends Component {
                             })}</p>}
                     </div>
                     <div className="intervention-instructions">
-                        <h3 className="center-text">Instructions</h3>
+                        <h3 id="intervention-instructions-title" className="center-text">Instructions</h3>
                         {this.state.intervention.instructions !== undefined &&
                             <p className="intervention-instructions">{this.state.intervention.instructions.split('\n').map(function (item, key) {
                                 return (
@@ -133,7 +133,7 @@ export default class InterventionDetails extends Component {
                         </Button> </ButtonGroup>
                     {this.state.intervention.id === 6 &&
                         <div>
-                            <img className="uploadImage center spacing" src={this.state.imageUrl} alt="" />
+                            <img className="uploadImage center" src={this.state.imageUrl} alt="" />
                             <div className="center-button">
                             <Button
                             variant="contained"

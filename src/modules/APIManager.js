@@ -23,7 +23,7 @@ export default {
     },
     // http://localhost:5002/userInterventions?userId=1&_expand=intervention
     getAllUserInterventionsWithInterventions(endpoint, userId) {
-        return fetch(`${baseUrl}/${endpoint}?userId=${userId}&_expand=intervention`)
+        return fetch(`${baseUrl}/${endpoint}?userId=${userId}&_sort=timestamp&_expand=intervention`)
         .then(data => data.json())
     },
     getUserInterventionsWithInterventions(endpoint, userId, interventionId) {
