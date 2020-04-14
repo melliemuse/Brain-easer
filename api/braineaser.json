@@ -5,14 +5,14 @@
       "username": "Melody",
       "email": "melliemuse@gmail.com",
       "password": "None-ya'bizness",
-      "inner_child_image": ""
+      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/z7336iqbforigywa14f7"
     },
     {
       "id": 2,
       "username": "Midzie",
       "email": "cuddlebug@gmail.com",
       "password": "Kitty-High-Five",
-      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/hmxj9apj13dtg3pexqki"
+      "inner_child_image": "https://res.cloudinary.com/dwjgfd51f/image/upload/v1577143497/Braineaser/mlhimdlwjfndim2ktbei"
     }
   ],
   "baselineAnxietyScores": [
@@ -276,94 +276,94 @@
       "id": 38
     },
     {
-      "anxietyScore": 7,
-      "timestamp": "2020-01-06T01:10:42.864Z",
+      "anxietyScore": 10,
+      "timestamp": "2020-04-03T16:23:44.028Z",
       "userId": 2,
-      "description": "",
+      "description": "I am anxious right now",
       "id": 39
     },
     {
-      "anxietyScore": 7,
-      "timestamp": "2020-01-06T01:11:22.186Z",
+      "anxietyScore": 9,
+      "timestamp": "2020-04-06T15:32:57.219Z",
       "userId": 2,
       "description": "",
-      "id,": 40
+      "id": 40
     },
     {
-      "anxietyScore": 7,
-      "timestamp": "2020-01-02T01:11:22.186Z",
+      "anxietyScore": 9,
+      "timestamp": "2020-04-06T16:53:09.717Z",
       "userId": 2,
       "description": "",
       "id": 41
     },
     {
-      "anxietyScore": 7,
-      "timestamp": "2020-01-01T01:11:22.186Z",
+      "anxietyScore": 10,
+      "timestamp": "2020-04-08T19:33:06.128Z",
       "userId": 2,
       "description": "",
       "id": 42
     },
     {
-      "anxietyScore": 7,
-      "timestamp": "2019-11-06T01:11:22.186Z",
+      "anxietyScore": 10,
+      "timestamp": "2020-04-12T00:18:53.282Z",
       "userId": 2,
-      "description": "",
-      "id,": 43
+      "description": "Ahhh ",
+      "id": 43
     },
     {
       "anxietyScore": 7,
-      "timestamp": "2019-11-02T01:11:22.186Z",
+      "timestamp": "2020-04-12T02:49:22.003Z",
       "userId": 2,
       "description": "",
       "id": 44
     },
     {
-      "anxietyScore": 7,
-      "timestamp": "2019-11-01T01:11:22.186Z",
+      "anxietyScore": 8,
+      "timestamp": "2020-04-12T02:51:24.048Z",
       "userId": 2,
       "description": "",
       "id": 45
     },
     {
-      "anxietyScore": 10,
-      "timestamp": "2020-01-06T02:19:37.504Z",
+      "anxietyScore": 4,
+      "timestamp": "2020-04-12T05:50:48.800Z",
       "userId": 2,
-      "description": "",
+      "description": "Just meditated",
       "id": 46
     },
     {
-      "anxietyScore": 9,
-      "timestamp": "2020-01-06T19:28:56.601Z",
-      "userId": 1,
+      "anxietyScore": 7,
+      "timestamp": "2020-04-12T05:52:04.715Z",
+      "userId": 2,
       "description": "",
       "id": 47
     },
     {
-      "anxietyScore": 10,
-      "timestamp": "2020-01-06T20:09:52.871Z",
+      "anxietyScore": 8,
+      "timestamp": "2020-04-13T20:43:56.033Z",
       "userId": 2,
-      "description": "Ahh",
+      "description": "",
       "id": 48
     },
     {
-      "anxietyScore": 10,
-      "timestamp": "2020-01-06T23:07:13.100Z",
+      "anxietyScore": 6,
+      "timestamp": "2020-04-14T02:21:56.332Z",
       "userId": 2,
       "description": "",
       "id": 49
     },
     {
-      "anxietyScore": 10,
-      "timestamp": "2020-01-07T00:15:56.391Z",
+      "anxietyScore": 8,
+      "timestamp": "2020-04-14T03:44:17.774Z",
       "userId": 2,
-      "description": "Public speaking sucks",
+      "description": "",
       "id": 50
     },
     {
-      "anxietyScore": 10,
-      "timestamp": "2020-01-07T01:39:31.767Z",
+      "anxietyScore": 9,
+      "timestamp": "2020-04-14T04:24:37.973Z",
       "userId": 2,
-      "description": "Wowza that's high",
+      "description": "Oh boy",
       "id": 51
     }
   ],
@@ -373,54 +373,54 @@
       "name": "Deep Breathing",
       "timestamp": "",
       "completed": "",
-      "description": "Practicing deep breathing - where you take a deep breath and exhale for longer than your inhale - calms the parasympathetic nervous system. This controls your fight or flight response (your body's survival response to threats responsible for producing anxiety).",
+      "description": "Practicing deep breathing, where you take a deep breath in and exhale for longer than your inhale calms the parasympathetic nervous system, which is what controls your fight or flight response. This response is triggered in moments of high stress or panic - this technique relieves that response.",
       "icon": "wind",
-      "instructions": "Breathe in for 10 seconds, and breathe out for longer, approximately 20 seconds. Repeat until you feel some relief."
+      "instructions": "Breathe in for 10 seconds, and breathe out for longer, approximately 15 seconds. Repeat until you feel some relief."
     },
     {
       "id": 2,
       "name": "Exercise",
       "timestamp": "",
       "completed": "",
-      "description": "Exercise has been shown to be highly effective for relieving stress. Renowned somatic researcher Peter Levine found that through physical activity such as shaking and running, the body is able to dispel panic even in extreme cases brought on by PTSD.",
+      "description": "Exercise has been shown to relieve stress even in cases of extreme trauma which are notoriously hard to treat. The fight or flight response triggered by a perceived threat produces anxiety, and renowned somatic researcher Peter Levine found through original research that through physical activity such as shaking and running, the traumatic response of extreme stress is releived. This holds true for lesser anxiety as well but the impact is demostrated by its efficacy in very hard to treat panic.",
       "icon": "biking",
-      "instructions": "Even mild exercise produces endorphins and positively impacts mood. If this is a difficult activity for you, start small and keep practicing as often as you can stomach it to reduce resistance and form a habit. You can work your way up from there. Here are a few low-commitment ideas to get you started: \n 1. Desk yoga \n 2. Taking a short walk \n 3. Lifting weights"
+      "instructions": "Even mild exercise produces endorphins and will have a positive impact on mood- this is really dealer's choice. If this is a difficult activity for you, start small and keep praciticing as often as you can stomach it to reduce resistance and form a habit."
     },
     {
       "id": 3,
       "name": "Feel Feelings",
       "timestamp": "",
       "completed": "",
-      "description": "There is a concept is Buddhism called 'the second arrow'- it's the idea that often when you are noticing an emotional reaction, it is not just one reaction but many. The second arrow refers to the secondary emotional reaction in response to your original emotional reaction. If you are able to relax and consciously tell yourself that what you are feeling is ok and you will survive it, you lessen the impact of the secondary emotional reaction, giving yourself relief. \n There is an overlap between physical sensation and emotional feeling- locating the physical gives you something concrete to focus on that can impact the emotional. You will tap into that physical seat of the emotional in this practice.",
+      "description": "There is a concept is Buddhism called 'the second arrow'- it's the idea that often when you are noticing an emotional reaction, it is not just one reaction but many. The second arrow refers to your emotional reaction to you emotional reaction. If you are able to relax and consciously tell yourself that what you are feeling is ok and you will survive it, you lessen the secondary emotional reaction, giving yourself relief. \n There is an overlap between physical sensation and emotional feeling- locating the physical gives you something concrete to focus on that can impact the emotional. You will tap into that physical seat of the emotional in this practice.",
       "icon": "feather",
-      "instructions": "Close your eyes and tune into what you are feeling in your body. Try to locate where you feel emotions within your body. This is generally where you feel the strongest sense of discomfort, often in the chest. Tell yourself that it's ok that the sensations are there and try to increase your awareness of the feeling, leaning into it. Paradoxically, trying to hold onto or increase the sensation this will generally cause it to dissipate along with the difficult emotion."
+      "instructions": "Close your eyes and tune into what you are feeling in your body. Try to locate where you feel emotion in your body. This is generally where you feel the strongest send of discomfort, often in the chest. Tell yourself that it's ok that the sensations are there and try to increase the your awareness of the feeling, leaning into it. Paradoxically, trying to hold onto or increase the sensation this will generally cause it to disspate along with the difficult emotion."
     },
     {
       "id": 4,
       "name": "Gratitude",
       "timestamp": "",
       "completed": "",
-      "description": "Practicing gratitude can help get you out of the headspace you find yourself in when you're experiencing anxiety. One of the challenges with anxiety and depression is something called state-dependant memory. It means that while you are in a certain frame of mind, it takes more effort to retrieve memories that were formed in another frame of mind. When you are anxious or depressed, your brain makes it hard to remember a time when you weren't feeling that way, and you have a harder time accessing the happy thoughts that could help pull you out of your negative headspace. But the bleak thoughts you have when it the throes of anxiety are not the whole picture, and practicing gratitude can help remind you of the balance that exists.",
+      "description": "Practicing gratitude can help get you out of the headspace you find yourself in when you're experiencing anxiety. One of the challenges with anxiety and depression is something called state-dependant memory. It means that while you are in a certain frame of mind, it takes more effort to retrieve memories that were formed in another frame of mind, meaning, when you are anxious or depressed, your brain makes it hard to remember a time when you weren't feeling that way, and you have a harder time accessing the happy thoughts that could help pull you out. But the bleak thoughts you have when it the throes of anxiety are not the whole picture, and praticing gratitude can help remind you of the balance that exists.",
       "icon": "heart",
-      "instructions": "Make out a list or write stream-of-consciousness (letting the words flow out without censoring yourself or worrying about spelling, grammar or punctuation) about some of the things you are grateful for. Try listing ten things you are grateful for. Thinking of things to be grateful for with regard to the anxiety-producing situation can be particularly fruitful. You may be surprised by what you come up with."
+      "instructions": "Make out a list or write stream-of-consciousness about all of the things you are grateful for (or if not all, shoot for 10)"
     },
     {
       "id": 5,
       "name": "Grounding",
       "timestamp": "",
       "completed": "",
-      "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses and loosen the grip of anxiety. Grounding techniques exist for all five senses, and some may resonate more for you than others. Try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation.",
+      "description": "Grounding techniques are used to anchor yourself in the present and in your body. You connect with your senses to acheive this result and loosen the grip of anxiety. Grounding techniques exist for all five senses, some may resonate more for you than others, so try a few and see what you like. Touch is very powerful, as is smell. Citrus, lavender and peppermint are all especially effective for anchoring yourself in the present if you are experiencing dissociation",
       "icon": "spa",
-      "instructions": "Touch: Tune into your body - in particular to the way your clothes feel on your skin. Try to maintain this focus while you take some deep breaths. \n Find items with textures you find soothing like a fuzzy blanket or sweater or a silky pillow. Really tune into the sensation as you feel those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. \n Sight: Count the number of red items in the room (or whatever color or class you like). Again, this will help bring you into the present. \n Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it. Then, spend some time with each bite. \n Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. \n Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you can be handy when you need to ground yourself on the go."
+      "instructions": "Touch: Tune into your body and tune into the way your clothes feel on your skin. Try to stick with this while you take some deep breaths. \n Find items with textures you find soothing like a fuzzy blanket or a silky pillow. Really tune into the sensation of feeling those textures and continue until you find some relief. A worry stone is a good to keep on hand so you have something to help ground yourself with when you are out and about. \n Sight: Count the number of red items in the room (or whatever color or class you like) again, this will help bring you into the present \n Taste: Use a cranberry or raisin- focus in on feeling the texture for a few minutes before biting into it, and spend some time with each bite. \n Hearing: Close your eyes and tune into all the sounds you hear. Stick with this for a few minutes, trying to identify at least 3 different noises. \n Smell: Find a fragrance you find pleasing and smell it when you are feeling anxious - carrying essential oils with you for this purpose can be handy when you need to ground yourself on the go"
     },
     {
       "id": 6,
       "name": "Comforting Inner Child",
       "timestamp": "",
       "completed": "",
-      "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. \n If your parents, like most people, did not possess this skill, then you most likely do not either. That is why it is necessary for many people to develop the ability to self-soothe later in life. \n The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way which might otherwise be difficult. \n Many times, emotional upset is tied to self-judgement, and often this has its roots in childhood. When we experience adversity as children, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations. With inner child work, we nurture and meet the needs of the vulnerable parts of ourselves, and in this way we become stronger and better able to cope with the emotional challenges in our lives.",
+      "description": "Self-soothing is the ability to comfort yourself when you are upset. As children, we learned to do this based on what our parents modeled for us. If your parents, like, most people, did not possess this skill, then you do not either. That is why it is necessary for many people to go through the process of consciously developing the ability to self-soothe later in life. The idea behind inner child work is to provide nurturing to the emotional part of yourself that is psychologically young and vulnerable. Seeing yourself in this way helps you develop empathy for yourself in a way which might otherwise be difficult. Many times, emotional upset is tied to self-judgement, and often this has its roots in childhood. When we experience adverse experiences as children, we lack the cognitive skills to realize that what happened to us was not our fault, and we carry shame throughout our lives that can easily be triggered by everyday situations.",
       "icon": "fan",
-      "instructions": "Grab your journal and write whatever comes to mind about the situations which are sparking distress and the thoughts you are having. \n Try to drill down into the beliefs you are carrying about yourself. Now find a picture of yourself as a small child (you can upload one below). The cuter you looked, the better. Stare at it for a while. See how sweet and innocent you were. That is you. \n Do the thoughts and beliefs you are having match up with what you see when you look at that picture? \n Now imagine yourself at your current age giving the smaller, hurting version of yourself a hug and telling them that you are there to protect them and everything is going to be alright."
+      "instructions": "Grab your journal and write whatever comes to mind about the situations which are sparking distress and the thoughts you are having. Try to drill down into the beliefs you are carrying about yourself. Now find a picture of yourself as a small child- the cuter you looked, the better. Stare at it for a while. See how sweet and innocent you were. That is you. Do the thoughts and beliefs you are having match up with what you see when you look at that picture? Now imagine yourself at your current age giving the smaller, hurting version of yourself a hug and telling them that you are there to protect them and everything is going to be alright."
     },
     {
       "id": 7,
@@ -429,16 +429,16 @@
       "completed": "",
       "description": "Your brain, trying to be helpful, will endlessly remind you of things it deems urgent. It's like an alarm clock that will only be snoozed, not silenced. \n Making a plan for how you will accomplish these tasks will allow you to shut off the alarm. This will allow your brain satisfaction that it's done its job by making sure you accomplish the tasks it deems important for your survival, and then it will let you have some peace. \n Journaling is an important precursor to planning. It helps by getting the looping, urgent, anxious thoughts out of your head. It empties your mind of clutter that can impede your ability to think clearly and gives you the perspective to analyze and plan effectively. A clear plan, increased perspective and the emptying of urgent mental clutter all lead to decreased anxiety and the switching off of your mental alarm.",
       "icon": "book",
-      "instructions": "Stream-of-consciousness writing is a highly effective method of journaling because you are writing so quickly that you do not have time to censor or judge yourself, and that is good because those self-judgements fan the flames of anxiety. I have written some prompts to help you think through cognitive pitfalls and come to a more constructive mode of thinking in order to alleviate your anxiety. Click on the button below to do some journaling."
+      "instructions": "Stream-of-consciousness writing is a highly effective method of journaling because you are writing so quickly that you do not have time to censor or judge yourself, and that is good because those self-judgements fan the flames of anxiety. I have written some prompts to help you think through some cognitive pitfalls and to come to a more constructive mode of thinking to alleviate your anxiety. Click on the button below to do some journaling."
     },
     {
       "id": 8,
       "name": "Meditation",
       "timestamp": "",
       "completed": "",
-      "description": "Meditation anchors you inside your body, allowing you to unhook from distressing thoughts and promoting the ability to sit with and tolerate discomfort. By allowing yourself to feel pain, you paradoxically reduce its effect on you, and by showing yourself you can tolerate something challenging, you strengthen your self-worth and reduce your anxiety.",
+      "description": "Much has been written about the efficacy of meditation for anxiety, and with good reason. Meditation anchors you inside your body, allows you to unhook from distressing thoughts, and promotes the ability to sit with and tolerate discomfort. By sitting with and allowing yourself to feel pain, you paradoxically reduce its effect on you, and by showing yourself you can tolerate something challenging, you strengthen your self-worth and reduce your anxiety.",
       "icon": "vihara",
-      "instructions": "Spend at least five minutes, ideally ten to twenty seated with your eyes slightly open gazing at a spot on the ground in front of you. Follow your breath as you allow your thoughts to come and go. If you become distracted, simply bring your attention back to your breath with kindness. Try to locate any discomfort in the body, especially if it seems tied to an uncomfortable emotion. Though it is counterintuitive, if you tell yourself that what you are feeling is ok and consciously lean into the sensation, it generally dissipates along with the distressing emotion."
+      "instructions": "Spend at least five minutes, ideally ten to twenty seated with your eyes slightly open gazing at a spot on the ground in front of you. Follow your breath as you allow your thoughts to come and go. If you notice yourself getting distracted, just bring your attention back to your breath with kindness. If you notice any dicomfort in the body, this is a good opportunity to practice acceptance. Though it is counterintuitive, if you consciously tell yourself that it is ok that you are feeling discomfort and try to lean into the sensation, it generally disspates."
     },
     {
       "id": 9,
@@ -447,14 +447,14 @@
       "completed": "",
       "description": "Physical touch between people and animals releases oxytocin, a bonding hormone that produces feelings of relaxation. It also lowers cortisol, which is a hormone produced by the body as a result of stress, and lowers blood pressure.",
       "icon": "hands",
-      "instructions": "Ask for hugs, go dancing, spend time with people who are both safe and physically affectionate, pet or cuddle an animal. Make contact, and lower your anxiety."
+      "instructions": "Pet or cuddle an animal, ask for hugs, go dancing, spend time with people who are both safe and physically affectionate."
     },
     {
       "id": 10,
       "name": "Social Support",
       "timestamp": "",
       "completed": "",
-      "description": "Social support is incredibly powerful for supporting mental health. It is considered a protective factor that can mean the difference between developing a condition as serious and debilitating as PTSD and being able to integrate emotionally overwhelming experiences. Being vulnerable with others and hearing that you are not alone in how you are feeling can help reduce shame and feelings of uniqueness that often accompany and exacerbate anxiety, especially in a culture where mental health is still taboo.",
+      "description": "Social support is incredibly powerful for supporting mental health. It is considered a protective factor that can mean the difference between developing a condition as serious and debilitating as PTSD and being able to integrate incredibly challenging experiences.",
       "icon": "comments",
       "instructions": "Take the time to spend with people who are supportive and make you feel like you belong when you are feeling anxious, especially if you can share how you are feeling and receive understanding and validation."
     }
@@ -1382,339 +1382,187 @@
     },
     {
       "userId": 2,
-      "interventionId": 7,
-      "timestamp": "2020-01-05T19:53:54.276Z",
-      "anxietyScore": 3,
-      "description": ":) ",
+      "interventionId": 6,
+      "timestamp": "2020-04-03T16:26:32.552Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
       "id": 153
     },
     {
       "userId": 2,
-      "timestamp": "2020-01-05T19:59:40.554Z",
-      "interventionId": 2,
-      "description": "",
-      "anxietyScore": "",
+      "interventionId": 7,
+      "timestamp": "2020-04-03T16:28:34.538Z",
+      "anxietyScore": 4,
+      "description": "That helped",
       "id": 154
     },
     {
       "userId": 2,
-      "timestamp": "2020-01-05T21:36:05.151Z",
-      "interventionId": 1,
-      "description": "",
-      "anxietyScore": "",
+      "interventionId": 6,
+      "timestamp": "2020-04-06T15:36:29.651Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
       "id": 155
     },
     {
       "userId": 2,
-      "timestamp": "2020-01-05T21:39:11.457Z",
-      "interventionId": 1,
+      "interventionId": 7,
+      "timestamp": "2020-04-06T15:38:50.297Z",
+      "anxietyScore": 4,
       "description": "",
-      "anxietyScore": "",
       "id": 156
     },
     {
       "userId": 2,
-      "timestamp": "2020-01-05T21:39:41.468Z",
-      "interventionId": 1,
-      "description": "",
-      "anxietyScore": "",
+      "interventionId": 6,
+      "timestamp": "2020-04-06T16:55:18.703Z",
+      "anxietyScore": 5,
+      "description": "Worried about running out of wet food",
       "id": 157
     },
     {
       "userId": 2,
-      "timestamp": "2020-01-05T21:41:29.164Z",
-      "interventionId": 1,
-      "description": "",
-      "anxietyScore": "",
+      "interventionId": 7,
+      "timestamp": "2020-04-06T16:56:54.755Z",
+      "anxietyScore": 4,
+      "description": "That helped",
       "id": 158
     },
     {
       "userId": 2,
-      "timestamp": "2020-01-05T21:41:32.233Z",
-      "interventionId": 1,
-      "description": "",
-      "anxietyScore": "",
+      "interventionId": 6,
+      "timestamp": "2020-04-08T19:35:21.483Z",
+      "anxietyScore": 6,
+      "description": "Worried about running out of wet food",
       "id": 159
     },
     {
       "userId": 2,
-      "interventionId": 1,
-      "timestamp": "2020-01-05T21:58:33.198Z",
-      "anxietyScore": 3,
-      "description": "That helped!",
+      "interventionId": 7,
+      "timestamp": "2020-04-08T19:36:55.704Z",
+      "anxietyScore": 4,
+      "description": "That helped",
       "id": 160
     },
     {
       "userId": 2,
-      "interventionId": 2,
-      "timestamp": "2020-01-06T01:15:43.586Z",
-      "anxietyScore": 2,
-      "description": "Felt much better after going for a walk",
+      "interventionId": 3,
+      "timestamp": "2020-04-08T19:41:27.454Z",
+      "anxietyScore": 3,
+      "description": "That helped a lot",
       "id": 161
     },
     {
       "userId": 2,
-      "interventionId": 1,
-      "timestamp": "2020-01-06T01:17:28.744Z",
-      "anxietyScore": 1,
-      "description": "",
+      "interventionId": 6,
+      "timestamp": "2020-04-12T00:22:01.243Z",
+      "anxietyScore": 7,
+      "description": "Worried about running out of wet food",
       "id": 162
     },
     {
       "userId": 2,
-      "interventionId": 5,
-      "timestamp": "2020-01-06T01:18:21.192Z",
-      "anxietyScore": 1,
-      "description": "",
+      "interventionId": 7,
+      "timestamp": "2020-04-12T00:24:43.623Z",
+      "anxietyScore": 4,
+      "description": "That helped",
       "id": 163
     },
     {
       "userId": 2,
-      "interventionId": 4,
-      "timestamp": "2020-01-06T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "I do have a lot to be grateful for. I needed the reminder.",
+      "interventionId": 1,
+      "timestamp": "2020-04-12T02:49:46.015Z",
+      "anxietyScore": 5,
+      "description": "Feeling really good ",
       "id": 164
     },
     {
       "userId": 2,
-      "interventionId": 5,
-      "timestamp": "2020-01-02T01:33:50.267Z",
-      "anxietyScore": 2,
+      "interventionId": 2,
+      "timestamp": "2020-04-12T02:51:53.062Z",
+      "anxietyScore": 3,
       "description": "",
       "id": 165
     },
     {
       "userId": 2,
-      "interventionId": 6,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
+      "interventionId": 10,
+      "timestamp": "2020-04-12T05:50:56.775Z",
+      "anxietyScore": 3,
+      "description": "That helped a lot",
       "id": 166
     },
     {
       "userId": 2,
-      "interventionId": 9,
-      "timestamp": "2019-11-02T01:33:50.267Z",
+      "interventionId": 1,
+      "timestamp": "2020-04-12T05:52:07.927Z",
       "anxietyScore": 2,
       "description": "",
       "id": 167
     },
     {
       "userId": 2,
-      "interventionId": 2,
-      "timestamp": "2019-11-06T01:33:50.267Z",
+      "interventionId": 3,
+      "timestamp": "2020-04-12T05:52:31.689Z",
       "anxietyScore": 2,
       "description": "",
       "id": 168
     },
     {
       "userId": 2,
-      "interventionId": 5,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
+      "interventionId": 4,
+      "timestamp": "2020-04-12T05:52:50.219Z",
+      "anxietyScore": 1,
       "description": "",
       "id": 169
     },
     {
       "userId": 2,
-      "interventionId": 8,
-      "timestamp": "2019-11-02T01:33:50.267Z",
+      "interventionId": 5,
+      "timestamp": "2020-04-12T05:53:29.149Z",
       "anxietyScore": 2,
       "description": "",
       "id": 170
     },
     {
       "userId": 2,
-      "interventionId": 3,
-      "timestamp": "2019-11-02T01:33:50.267Z",
-      "anxietyScore": 3,
+      "interventionId": 9,
+      "timestamp": "2020-04-12T05:53:53.419Z",
+      "anxietyScore": 2,
       "description": "",
       "id": 171
     },
     {
       "userId": 2,
-      "interventionId": 5,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
+      "interventionId": 3,
+      "timestamp": "2020-04-13T20:44:17.314Z",
+      "anxietyScore": 3,
       "description": "",
       "id": 172
     },
     {
       "userId": 2,
       "interventionId": 9,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
+      "timestamp": "2020-04-14T04:19:26.011Z",
+      "anxietyScore": 6,
+      "description": "Blargh so nervous",
       "id": 173
     },
     {
       "userId": 2,
-      "interventionId": 10,
-      "timestamp": "2019-11-01T01:33:50.267Z",
+      "interventionId": 3,
+      "timestamp": "2020-04-14T04:20:43.586Z",
       "anxietyScore": 2,
-      "description": "",
+      "description": "That helped a lot!",
       "id": 174
     },
     {
       "userId": 2,
-      "interventionId": 1,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
+      "interventionId": 8,
+      "timestamp": "2020-04-14T04:25:22.967Z",
+      "anxietyScore": 4,
       "description": "",
       "id": 175
-    },
-    {
-      "userId": 2,
-      "interventionId": 3,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 176
-    },
-    {
-      "userId": 2,
-      "interventionId": 4,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 177
-    },
-    {
-      "userId": 2,
-      "interventionId": 6,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 178
-    },
-    {
-      "userId": 2,
-      "interventionId": 3,
-      "timestamp": "2019-11-06T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 179
-    },
-    {
-      "userId": 2,
-      "interventionId": 8,
-      "timestamp": "2019-11-06T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 179
-    },
-    {
-      "userId": 2,
-      "interventionId": 2,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 180
-    },
-    {
-      "userId": 2,
-      "interventionId": 7,
-      "timestamp": "2019-11-01T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 181
-    },
-    {
-      "userId": 2,
-      "interventionId": 10,
-      "timestamp": "2019-11-02T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 182
-    },
-    {
-      "userId": 2,
-      "interventionId": 7,
-      "timestamp": "2019-11-06T01:33:50.267Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 183
-    },
-    {
-      "userId": 2,
-      "interventionId": 6,
-      "timestamp": "2020-01-06T02:21:11.006Z",
-      "anxietyScore": 6,
-      "description": "",
-      "id": 184
-    },
-    {
-      "userId": 2,
-      "interventionId": 7,
-      "timestamp": "2020-01-06T02:22:17.286Z",
-      "anxietyScore": 2,
-      "description": "",
-      "id": 185
-    },
-    {
-      "userId": 1,
-      "timestamp": "2020-01-06T19:29:26.205Z",
-      "interventionId": 1,
-      "description": "",
-      "anxietyScore": "",
-      "id": 186
-    },
-    {
-      "userId": 2,
-      "interventionId": 6,
-      "timestamp": "2020-01-06T20:11:26.156Z",
-      "anxietyScore": 2,
-      "description": "That helped a lot",
-      "id": 187
-    },
-    {
-      "userId": 2,
-      "interventionId": 7,
-      "timestamp": "2020-01-06T20:12:37.246Z",
-      "anxietyScore": 1,
-      "description": "",
-      "id": 188
-    },
-    {
-      "userId": 2,
-      "interventionId": 6,
-      "timestamp": "2020-01-06T23:09:08.802Z",
-      "anxietyScore": 6,
-      "description": "So effective!",
-      "id": 189
-    },
-    {
-      "userId": 2,
-      "interventionId": 6,
-      "timestamp": "2020-01-07T00:16:39.368Z",
-      "anxietyScore": 7,
-      "description": "",
-      "id": 190
-    },
-    {
-      "userId": 2,
-      "interventionId": 7,
-      "timestamp": "2020-01-07T00:17:21.604Z",
-      "anxietyScore": 6,
-      "description": "",
-      "id": 191
-    },
-    {
-      "userId": 2,
-      "interventionId": 6,
-      "timestamp": "2020-01-07T01:40:04.780Z",
-      "anxietyScore": 3,
-      "description": "That helped",
-      "id": 192
-    },
-    {
-      "userId": 2,
-      "interventionId": 7,
-      "timestamp": "2020-01-07T01:42:26.277Z",
-      "anxietyScore": 1,
-      "description": "",
-      "id": 193
     }
   ],
   "journals": [
@@ -1773,6 +1621,13 @@
       "userId": 1,
       "promptId": 3,
       "id": 14
+    },
+    {
+      "id": 17,
+      "userId": 2,
+      "entry": "Taking a break and getting a snack, then getting more practice and reading up on CSS.",
+      "promptId": 4,
+      "timestamp": "2019-12-21T16:36:03.389Z"
     },
     {
       "id": 19,
@@ -1901,18 +1756,18 @@
       "id": 45
     },
     {
-      "id": 47,
+      "entry": "Baby step towards completing app until they add up to completion",
+      "timestamp": "2020-01-05T01:04:05.702Z",
       "userId": 2,
-      "entry": "Napping all day is stressful!!",
-      "promptId": 1,
-      "timestamp": "2020-01-05T19:53:54.158Z"
+      "promptId": 4,
+      "id": 46
     },
     {
-      "entry": "My thinking could use some work. I can accept whatever happens, and just the act of letting go brings relief.",
-      "timestamp": "2020-01-07T01:42:26.250Z",
+      "id": 47,
       "userId": 2,
-      "promptId": 5,
-      "id": 48
+      "entry": "Blaaaahhhhh SO ANXIOUS RIGHT NOW!",
+      "promptId": 6,
+      "timestamp": "2020-04-08T19:36:55.663Z"
     }
   ],
   "prompts": [
@@ -1922,7 +1777,7 @@
     },
     {
       "id": 2,
-      "prompt": "Can I control the outcome of the situation I am worried about? \n How would it feel to let go of what I can't control and focus on what I can?"
+      "prompt": "Can I control the outcome of the situation I am worried about? How would it feel to let go of what I can't control and focus on what I can?"
     },
     {
       "id": 3,
@@ -1934,7 +1789,7 @@
     },
     {
       "id": 5,
-      "prompt": "Is my thinking realistic? \n Even if my fears are all accurate, could I accept those situations if I had to? \n Does the thought of letting go bring relief?"
+      "prompt": "Is my thinking realistic? Even if my fears are all accurate, could I accept those feared situations if I had to?"
     },
     {
       "id": 6,
@@ -1942,7 +1797,7 @@
     },
     {
       "id": 7,
-      "prompt": "Am I judging myself harshly? \n Do I think other people are judging me - generally this is self-judgement in diguise. \n Name at least one thing you like about yourself or that you are proud of."
+      "prompt": "Am I judging myself harshly? Do I think other people are judging me - generally this is self-judgement in diguise. Name at least one thing you like about yourself or that you are proud of."
     }
   ]
 }
