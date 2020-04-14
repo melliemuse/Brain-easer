@@ -36,6 +36,12 @@ export default class AnxietyRating extends Component {
         this.setState(stateToChange)
     }
 
+    handleDropdownChange = (event) => {
+        const stateToChange = {}
+        stateToChange['interventionId'] = event.target.value
+        this.setState(stateToChange)
+    }
+
     createbuttons = () => {
         let buttons = []
         for (let i = 0; i < 10; i++) {
@@ -121,9 +127,12 @@ export default class AnxietyRating extends Component {
                             </ButtonGroup>
                             <div hidden={this.state.addSelfCareField}>
                                 <FormControl id="dropdown">
-                                    <Select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleFieldChange}>
-                                        {this.state.interventions.map(intervention =>
-                                            <MenuItem key={intervention.id} value={intervention.id}>{intervention.name}</MenuItem>
+                                    <Select id="interventionId" name="interventionId" hidden={this.state.addSelfCareField} onChange={this.handleDropdownChange}>
+                                        {this.state.interventions.map(intervention => {
+                                            console.log(intervention)
+                                            return <MenuItem key={intervention.id} value={intervention.id}>{intervention.name}
+                                            </MenuItem>
+                                        }
                                         )}
                                     </Select>
                                 </FormControl>
